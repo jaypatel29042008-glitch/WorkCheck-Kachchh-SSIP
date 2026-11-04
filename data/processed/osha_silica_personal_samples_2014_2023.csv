@@ -1,0 +1,1087 @@
+INSPECTION_NUMBER,ESTABLISHMENT_NAME,STATE,NAICS_CODE,industry_group,DATE_SAMPLED,EIGHT_HR_TWA_CALC,TIME_SAMPLED,SUBSTANCE,result_ug_m3,over_action_25,over_PEL_50
+1236512,PAVER MASTER LLC.,FL,423810,Other,2017-NOV-16,N,290,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236512,PAVER MASTER LLC.,FL,423810,Other,2017-NOV-16,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236512,PAVER MASTER LLC.,FL,423810,Other,2017-NOV-16,N,292,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236512,PAVER MASTER LLC.,FL,423810,Other,2017-NOV-16,N,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236557,"American Concrete Industries, Inc.",FL,327390,Cement & concrete products,2017-NOV-03,N,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236557,"American Concrete Industries, Inc.",FL,327390,Cement & concrete products,2017-NOV-03,N,137,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236557,"American Concrete Industries, Inc.",FL,327390,Cement & concrete products,2017-NOV-03,N,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1236557,"American Concrete Industries, Inc.",FL,327390,Cement & concrete products,2017-NOV-03,N,137,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1237867,KENNEDY CONCRETE INC.,NJ,333120,Other,2017-SEP-08,N,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",796.0,True,True
+1237867,KENNEDY CONCRETE INC.,NJ,333120,Other,2017-SEP-08,N,55,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1240973,"Halquist Stone Company, Inc.",WI,327991,Stone & other mineral,2017-SEP-14,N,477,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1240973,"Halquist Stone Company, Inc.",WI,327991,Stone & other mineral,2017-SEP-14,N,490,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1240973,"Halquist Stone Company, Inc.",WI,327991,Stone & other mineral,2017-SEP-14,N,131,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",86.8,True,True
+1240973,"Halquist Stone Company, Inc.",WI,327991,Stone & other mineral,2017-SEP-14,N,185,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",95.0,True,True
+1240973,"Halquist Stone Company, Inc.",WI,327991,Stone & other mineral,2017-OCT-24,N,421,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1245851,ADVANCE MARBLE AND GRANITE INC ,MA,423320,Other,2017-OCT-05,N,393,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1245851,ADVANCE MARBLE AND GRANITE INC ,MA,423320,Other,2017-OCT-10,N,238,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1245994,"Melvin Pierce Sandblasting & Special Coatings, Inc.",AL,238990,Construction trades,2017-SEP-01,N,143,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",131.0,True,True
+1245994,"Melvin Pierce Sandblasting & Special Coatings, Inc.",AL,238990,Construction trades,2017-SEP-01,N,136,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1247746,DMC Global,PA,332322,Other,2017-SEP-13,N,236,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",122.0,True,True
+1247746,DMC Global,PA,332322,Other,2017-SEP-13,N,302,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1249362,"Hodge Foundry, Inc.",PA,331511,Steel/foundry,2017-AUG-31,N,387,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.8,False,False
+1250166,"STAR PIPE USA, LLC",KS,332312,Other,2017-SEP-25,N,420,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1250166,"STAR PIPE USA, LLC",KS,332312,Other,2017-SEP-25,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1251523,"Alotech Limited, LLC",OH,331524,Steel/foundry,2017-SEP-26,N,469,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.2,False,False
+1253880,"R.W. Sidley, Inc.",OH,327390,Cement & concrete products,2017-AUG-30,N,296,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",320.0,True,True
+1253880,"R.W. Sidley, Inc.",OH,327390,Cement & concrete products,2017-AUG-30,N,85,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1253880,"R.W. Sidley, Inc.",OH,327390,Cement & concrete products,2017-AUG-30,N,293,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1253880,"R.W. Sidley, Inc.",OH,327390,Cement & concrete products,2017-AUG-30,N,84,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1254003,Arnan Development Corporation,NY,327320,Cement & concrete products,2017-AUG-21,N,85,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",102.0,True,True
+1254041,Sculptured Stone Inc.,NJ,327390,Cement & concrete products,2017-SEP-19,Y,159,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1254870,"C.D.S. CONTRACTORS, INC",FL,337110,Other,2017-OCT-25,N,302,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",20.8,False,False
+1254870,"C.D.S. CONTRACTORS, INC",FL,337110,Other,2017-OCT-25,N,65,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1254870,"C.D.S. CONTRACTORS, INC",FL,337110,Other,2017-OCT-25,N,300,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.1,True,False
+1254870,"C.D.S. CONTRACTORS, INC",FL,337110,Other,2017-OCT-25,N,66,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1256459,Granite/RLW Joint Venture,CO,237310,Other,2017-AUG-18,N,358,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",83.6,True,True
+1256594,Danys Home Remodeling Inc,FL,327991,Stone & other mineral,2017-AUG-18,N,187,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",36.8,True,False
+1256594,Danys Home Remodeling Inc,FL,327991,Stone & other mineral,2017-AUG-18,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1256594,Danys Home Remodeling Inc,FL,327991,Stone & other mineral,2017-AUG-18,N,164,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1256594,Danys Home Remodeling Inc,FL,327991,Stone & other mineral,2017-AUG-18,N,148,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1257549,"Jones Stone & Marble, Inc.",PA,327991,Stone & other mineral,2017-DEC-13,N,387,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",290.0,True,True
+1257549,"Jones Stone & Marble, Inc.",PA,327991,Stone & other mineral,2017-DEC-13,N,387,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",162.0,True,True
+1258363,"GREVAN ARTISTIC VENTURES, INC.",FL,327991,Stone & other mineral,2017-AUG-23,N,322,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",746.0,True,True
+1258363,"GREVAN ARTISTIC VENTURES, INC.",FL,327991,Stone & other mineral,2017-AUG-23,N,390,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",290.0,True,True
+1258363,"GREVAN ARTISTIC VENTURES, INC.",FL,327991,Stone & other mineral,2017-AUG-23,N,372,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",350.0,True,True
+1258363,"GREVAN ARTISTIC VENTURES, INC.",FL,327991,Stone & other mineral,2017-AUG-23,N,388,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",198.0,True,True
+1258741,Westerwald Corporation of America,PA,327110,Clay/ceramic/tiles,2017-AUG-29,N,340,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259316,,,,Other,2017-AUG-29,N,51,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259397,Quikrete,CO,327320,Cement & concrete products,2017-SEP-06,N,282,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259397,Quikrete,CO,327320,Cement & concrete products,2017-SEP-06,N,281,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259654,Art Castings of Colorado,CO,331522,Steel/foundry,2017-OCT-02,N,364,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259654,Art Castings of Colorado,CO,331522,Steel/foundry,2017-OCT-02,N,448,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.2,True,False
+1259787,"XeteX, Inc.",WI,333415,Other,2017-AUG-29,N,68,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259826,"Capstone Construction Services, LLC",OK,236220,Other,2017-AUG-29,N,28,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259826,"Capstone Construction Services, LLC",OK,236220,Other,2017-AUG-30,N,173,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259872,"Bone Dry Waterproofing, LLC",OK,238390,Construction trades,2017-AUG-31,N,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1259881,"Concrete Enterprises, Inc.",OK,238110,Construction trades,2017-AUG-29,N,24,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1520.0,True,True
+1260006,"Fabcon Precast, LLC",PA,327390,Cement & concrete products,2017-OCT-11,N,230,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",362.0,True,True
+1260006,"Fabcon Precast, LLC",PA,327390,Cement & concrete products,2017-OCT-11,N,227,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",435.0,True,True
+1260141,"Lamm's Machine, Inc",PA,332710,Other,2017-SEP-05,N,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260141,"Lamm's Machine, Inc",PA,332710,Other,2017-SEP-05,N,358,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260141,"Lamm's Machine, Inc",PA,332710,Other,2017-SEP-05,N,109,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260491,Precision Industrial LTD,IL,238140,Construction trades,2017-AUG-31,N,31,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",242.0,True,True
+1260653,USDOL OSHA - (Mobile),AL,238990,Construction trades,2017-SEP-01,N,139,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260805,"Weathersure Systems, Inc.",CO,561499,Other,2017-SEP-06,N,246,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260805,"Weathersure Systems, Inc.",CO,561499,Other,2017-SEP-06,N,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1260805,"Weathersure Systems, Inc.",CO,561499,Other,2017-SEP-06,N,214,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.1,True,False
+1260805,"Weathersure Systems, Inc.",CO,561499,Other,2017-SEP-06,N,228,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.8,True,False
+1261021,"A-STAR MASONRY AND STUCCO, LLC ",TX,238140,Construction trades,2017-AUG-16,N,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261034,"Domo Engineering Plastics US, LLC",GA,326199,Other,2017-OCT-04,N,419,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261034,"Domo Engineering Plastics US, LLC",GA,326199,Other,2017-OCT-04,N,411,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261034,"Domo Engineering Plastics US, LLC",GA,326199,Other,2017-OCT-04,N,429,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261142,Del Zotto Products of Florida,FL,327390,Cement & concrete products,2017-SEP-06,N,307,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",44.5,True,False
+1261142,Del Zotto Products of Florida,FL,327390,Cement & concrete products,2017-SEP-06,N,162,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261142,Del Zotto Products of Florida,FL,327390,Cement & concrete products,2017-SEP-06,N,308,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261142,Del Zotto Products of Florida,FL,327390,Cement & concrete products,2017-SEP-06,N,168,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261741,"NJ Marble and Granite, LLC",NJ,327991,Stone & other mineral,2017-SEP-05,N,268,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",64.4,True,True
+1261741,"NJ Marble and Granite, LLC",NJ,327991,Stone & other mineral,2017-SEP-05,N,75,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261741,"NJ Marble and Granite, LLC",NJ,327991,Stone & other mineral,2017-SEP-05,N,268,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",291.0,True,True
+1261741,"NJ Marble and Granite, LLC",NJ,327991,Stone & other mineral,2017-SEP-05,N,75,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1261853,"J. H. BERRA CONSTRUCTION COMPANY, INC.",MO,237310,Other,2017-OCT-27,N,45,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",139.0,True,True
+1262059,Shaffer Block & Concrete Products,PA,327331,Cement & concrete products,2017-SEP-28,N,313,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",49.1,True,False
+1262177,James Clay,OH,238140,Construction trades,2017-SEP-15,N,254,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",865.0,True,True
+1262177,James Clay,OH,238140,Construction trades,2017-SEP-15,N,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",693.0,True,True
+1262177,James Clay,OH,238140,Construction trades,2017-SEP-15,N,137,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1262177,James Clay,OH,238140,Construction trades,2017-SEP-15,N,238,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263353,"RID STONE, INC.",IL,327991,Stone & other mineral,2017-OCT-11,N,437,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263353,"RID STONE, INC.",IL,327991,Stone & other mineral,2017-OCT-11,N,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263353,"RID STONE, INC.",IL,327991,Stone & other mineral,2017-OCT-11,N,404,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.5,False,False
+1263432,USDOL OSHA,MS,926150,Other,2017-SEP-13,N,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263487,"MJ Construction, Inc. ",WI,237110,Other,2017-SEP-13,N,283,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263487,"MJ Construction, Inc. ",WI,237110,Other,2017-SEP-13,N,272,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263533,USDOL OSHA - Milwaukee,WI,926150,Other,2017-SEP-13,N,253,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263646,"McClure Masonry and Concrete, Inc.",IL,238140,Construction trades,2017-SEP-14,N,38,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263662,USDOL OSHA - Peoria,IL,926150,Other,2017-SEP-14,N,53,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263817,USDOL OSHA-MILWAUKEE,WI,926150,Other,2017-SEP-14,N,248,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1263817,USDOL OSHA-MILWAUKEE,WI,926150,Other,2017-OCT-24,N,420,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1264112,USDOL OSHA ,FL,926150,Other,2017-AUG-18,N,307,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1264185,,,,Other,2017-SEP-06,N,336,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1264185,,,,Other,2017-SEP-06,N,302,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1264185,,,,Other,2017-SEP-06,N,45,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1264773,"L A Stone & Kitchens, LLC.",PA,327991,Stone & other mineral,2017-OCT-16,N,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",49.0,True,False
+1265064,Vinton Construction Company,WI,237310,Other,2017-SEP-18,N,215,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.4,True,False
+1265064,Vinton Construction Company,WI,237310,Other,2017-SEP-18,N,212,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80.5,True,True
+1265758,U.S. Paper Mills Corp.,WI,322121,Other,2017-SEP-25,N,185,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1265758,U.S. Paper Mills Corp.,WI,322121,Other,2017-SEP-25,N,183,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1265769,USDOL OSHA,WI,926150,Other,2017-SEP-25,N,142,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1267785,"Carmax Auto Superstores, Inc.",KS,441120,Other,2017-DEC-05,N,447,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1267785,"Carmax Auto Superstores, Inc.",KS,441120,Other,2017-DEC-05,N,435,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1267912,Allgaier Construction Corporation,NY,238140,Construction trades,2017-OCT-02,N,216,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",45.7,True,False
+1268031,"Preferred Materials, Inc.",FL,327320,Cement & concrete products,2017-OCT-05,N,423,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1268031,"Preferred Materials, Inc.",FL,327320,Cement & concrete products,2017-OCT-05,N,421,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1268587,"Consorti Bros. Paving & Sealcoating, Inc. ",NY,238990,Construction trades,2017-OCT-03,N,66,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",224.0,True,True
+1268658,Three Sons Restoration LLC,NJ,238140,Construction trades,2017-OCT-17,Y,79,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",421.0,True,True
+1268658,Three Sons Restoration LLC,NJ,238140,Construction trades,2017-OCT-17,Y,104,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",277.0,True,True
+1268658,Three Sons Restoration LLC,NJ,238140,Construction trades,2017-OCT-17,Y,160,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",594.0,True,True
+1268981,"Sierra Hard Surface Samples, Inc.",GA,326199,Other,2017-OCT-12,N,282,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1268981,"Sierra Hard Surface Samples, Inc.",GA,326199,Other,2017-OCT-12,N,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1268981,"Sierra Hard Surface Samples, Inc.",GA,326199,Other,2017-OCT-12,N,282,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",70.7,True,True
+1268981,"Sierra Hard Surface Samples, Inc.",GA,326199,Other,2017-OCT-12,N,130,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",63.3,True,True
+1269597,,,,Other,2017-OCT-11,N,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1270124,,,,Other,2017-NOV-01,N,138,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",253.0,True,True
+1270124,,,,Other,2017-NOV-01,N,100,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1270124,,,,Other,2017-NOV-07,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",131.0,True,True
+1270207,,,,Other,2017-NOV-30,N,394,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1270207,,,,Other,2017-NOV-30,N,397,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.1,True,False
+1272537,,,,Other,2017-OCT-25,N,87,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272538,,,,Other,2017-OCT-25,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",257.0,True,True
+1272538,,,,Other,2017-OCT-25,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",53.6,True,True
+1272538,,,,Other,2017-OCT-25,Y,474,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.3,False,False
+1272538,,,,Other,2017-OCT-25,Y,400,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272575,,,,Other,2017-OCT-26,N,165,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",144.0,True,True
+1272575,,,,Other,2017-OCT-26,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",42.3,True,False
+1272587,,,,Other,2017-OCT-26,N,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272587,,,,Other,2017-OCT-26,N,143,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272606,,,,Other,2017-OCT-26,Y,209,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",122.0,True,True
+1272606,,,,Other,2017-OCT-26,Y,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1770.0,True,True
+1272683,,,,Other,2017-OCT-25,N,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272683,,,,Other,2017-OCT-25,N,96,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272683,,,,Other,2017-OCT-25,N,165,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272881,,,,Other,2017-OCT-30,N,217,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1272881,,,,Other,2017-OCT-30,N,215,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273078,,,,Other,2017-DEC-07,N,266,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273258,,,,Other,2017-OCT-26,Y,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-21,N,244,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-21,N,150,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-24,N,254,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-24,N,177,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-21,N,390,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273344,,,,Other,2017-NOV-21,N,233,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.3,True,False
+1273344,,,,Other,2017-NOV-21,N,163,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273373,,,,Other,2017-NOV-16,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.8,True,True
+1273373,,,,Other,2017-NOV-16,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",50.5,True,True
+1273373,,,,Other,2017-NOV-16,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",51.7,True,True
+1273373,,,,Other,2017-NOV-16,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.9,False,False
+1273373,,,,Other,2017-NOV-16,N,354,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.7,False,False
+1273373,,,,Other,2017-NOV-16,N,125,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273373,,,,Other,2017-NOV-16,N,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",68.2,True,True
+1273386,,,,Other,2017-OCT-26,N,428,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273386,,,,Other,2017-OCT-26,N,423,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273386,,,,Other,2017-NOV-29,N,88,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80.0,True,True
+1273386,,,,Other,2017-NOV-29,N,24,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273386,,,,Other,2017-NOV-29,N,185,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273405,,,,Other,2017-OCT-25,N,389,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",88.1,True,True
+1273405,,,,Other,2017-OCT-25,N,415,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.6,False,False
+1273405,,,,Other,2017-OCT-25,N,416,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",94.5,True,True
+1273405,,,,Other,2017-OCT-25,N,400,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.9,False,False
+1273405,,,,Other,2017-OCT-25,N,403,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273405,,,,Other,2017-OCT-25,N,408,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273490,,,,Other,2017-OCT-27,N,45,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273673,,,,Other,2017-OCT-26,N,341,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1273781,,,,Other,2017-NOV-01,N,461,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",73.7,True,True
+1273781,,,,Other,2017-NOV-01,N,336,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",142.0,True,True
+1273781,,,,Other,2017-NOV-01,N,143,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",92.3,True,True
+1273781,,,,Other,2017-NOV-01,N,338,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",102.0,True,True
+1273781,,,,Other,2017-NOV-01,N,139,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",76.0,True,True
+1273781,,,,Other,2017-NOV-01,N,371,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",62.5,True,True
+1273781,,,,Other,2017-NOV-01,N,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.9,True,False
+1273781,,,,Other,2017-NOV-01,N,473,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",59.2,True,True
+1275328,"MENARD, INC.",WI,444110,Other,2017-NOV-30,N,8,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275328,"MENARD, INC.",WI,444110,Other,2017-NOV-30,N,8,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275328,"MENARD, INC.",WI,444110,Other,2017-NOV-30,N,21,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.8,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,472,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.2,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,475,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",127.0,True,True
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,460,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.2,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,465,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.8,True,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.4,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-14,Y,466,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1275602,"Casting Solutions, LLC",OH,331111,Steel/foundry,2017-NOV-15,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",82.8,True,True
+1275902,"GFMCO, LLC",GA,331511,Steel/foundry,2017-NOV-06,N,295,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",38.8,True,False
+1275902,"GFMCO, LLC",GA,331511,Steel/foundry,2017-NOV-06,N,436,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",33.4,True,False
+1276133,Platinum Granite Inc.,FL,212313,Other,2017-NOV-15,N,511,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276133,Platinum Granite Inc.,FL,212313,Other,2017-NOV-15,N,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276133,Platinum Granite Inc.,FL,212313,Other,2017-NOV-15,N,315,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276133,Platinum Granite Inc.,FL,212313,Other,2017-NOV-15,N,128,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276133,Platinum Granite Inc.,FL,212313,Other,2017-NOV-15,N,429,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,313,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,133,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,306,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,114,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,304,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,100,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,218,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,236,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,273,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,161,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,297,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276191,Kephaco Corporation,OH,327991,Stone & other mineral,2017-NOV-21,N,123,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276503,,,,Other,2017-NOV-14,N,290,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",20.9,False,False
+1276503,,,,Other,2017-NOV-14,N,238,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276662,,,,Other,2017-NOV-29,N,359,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276662,,,,Other,2017-NOV-29,N,255,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,187,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,200,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,193,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,200,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,216,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",74.3,True,True
+1276837,,,,Other,2017-DEC-07,N,209,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",150.0,True,True
+1276837,,,,Other,2017-DEC-07,N,209,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,257,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1276837,,,,Other,2017-DEC-07,N,201,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1277035,,,,Other,2017-NOV-14,N,290,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1277766,USDOL OSHA - FT. LAUDERDALE AO,FL,423320,Other,2017-NOV-16,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1278987,,,,Other,2017-NOV-21,N,276,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1278987,,,,Other,2017-NOV-21,N,138,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279053,USDOL,OH,926150,Other,2017-NOV-21,N,231,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",42.8,True,False
+1279053,USDOL,OH,926150,Other,2017-NOV-21,N,103,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279257,,,,Other,2017-NOV-29,Y,453,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",108.0,True,True
+1279257,,,,Other,2017-NOV-29,Y,361,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.3,False,False
+1279266,,,,Other,2017-NOV-27,N,255,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279266,,,,Other,2017-NOV-27,N,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279304,,,,Other,2017-NOV-27,N,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279440,,,,Other,2017-DEC-14,N,446,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.3,False,False
+1279440,,,,Other,2017-DEC-14,N,434,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",70.7,True,True
+1279440,,,,Other,2017-DEC-14,N,199,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1760.0,True,True
+1279440,,,,Other,2017-DEC-14,N,435,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",57.5,True,True
+1279746,,,,Other,2017-NOV-29,Y,385,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",465.0,True,True
+1279804,,,,Other,2017-DEC-01,N,245,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",71.1,True,True
+1279804,,,,Other,2017-DEC-01,N,230,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1279820,,,,Other,2017-NOV-29,Y,380,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",93.0,True,True
+1280191,,,,Other,2017-DEC-12,N,92,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1280191,,,,Other,2017-DEC-12,N,122,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1280191,,,,Other,2017-DEC-12,N,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1280495,,,,Other,2017-NOV-30,N,91,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",3770.0,True,True
+1280495,,,,Other,2017-NOV-30,N,123,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",5760.0,True,True
+1280562,,,,Other,2017-DEC-01,N,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1280691,,,,Other,2017-NOV-29,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1281124,USDOL OSHA - Wichita,KS,926150,Other,2017-DEC-05,N,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1282638,,,,Other,2017-DEC-12,N,113,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1282676,,,,Other,2017-DEC-12,N,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",330.0,True,True
+1282676,,,,Other,2017-DEC-12,N,48,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1282693,,,,Other,2017-DEC-12,N,157,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1283666,,,,Other,2017-DEC-14,N,108,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1283674,,,,Other,2017-DEC-20,Y,330,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",352.0,True,True
+1283674,,,,Other,2017-DEC-20,Y,315,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",220.0,True,True
+1283820,,,,Other,2017-DEC-20,N,494,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",130.0,True,True
+1283820,,,,Other,2017-DEC-20,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",97.1,True,True
+1283820,,,,Other,2017-DEC-21,N,475,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.3,True,False
+1283820,,,,Other,2017-DEC-20,N,473,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.0,False,False
+1283820,,,,Other,2017-DEC-20,N,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1283820,,,,Other,2017-DEC-20,N,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",46.4,True,False
+1283820,,,,Other,2017-DEC-20,N,454,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.6,False,False
+1283871,,,,Other,2017-DEC-18,N,185,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",436.0,True,True
+1283871,,,,Other,2017-DEC-18,N,186,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",344.0,True,True
+1283871,,,,Other,2017-DEC-18,N,34,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1283871,,,,Other,2017-DEC-21,N,186,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",168.0,True,True
+1283871,,,,Other,2017-DEC-21,N,196,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",142.0,True,True
+1284508,,,,Other,2017-DEC-19,N,205,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1284508,,,,Other,2017-DEC-19,N,105,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",240.0,True,True
+1284508,,,,Other,2017-DEC-19,N,205,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1284508,,,,Other,2017-DEC-19,N,105,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+318048550,,,,Other,2017-SEP-20,N,303,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.5,False,False
+318048550,,,,Other,2017-SEP-20,N,180,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+318048550,,,,Other,2017-SEP-20,N,364,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+318048550,,,,Other,2017-SEP-20,N,110,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+318048550,,,,Other,2017-SEP-20,N,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.0,False,False
+318048550,,,,Other,2017-SEP-20,N,75,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1629264,Soil Safe Inc,NJ,562219,Other,2023-JAN-04,N,449,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+4850,HOUSTON NORTH AREA OFFICE,TX,,Other,2023-JAN-10,N,404,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1642844,ATCO Structures & Logistics (USA) Inc.,TX,321992,Other,2023-JAN-10,N,404,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1642844,ATCO Structures & Logistics (USA) Inc.,TX,321992,Other,2023-JAN-10,N,453,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1642844,ATCO Structures & Logistics (USA) Inc.,TX,321992,Other,2023-JAN-10,N,458,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1642844,ATCO Structures & Logistics (USA) Inc.,TX,321992,Other,2023-JAN-10,N,451,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-JAN-05,N,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-JAN-05,N,67,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-JAN-05,N,440,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-JAN-05,N,84,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1634688,Western Slate Company,IL,327993,Stone & other mineral,2023-JAN-18,N,454,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1634688,Western Slate Company,IL,327993,Stone & other mineral,2023-JAN-18,N,420,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1634688,Western Slate Company,IL,327993,Stone & other mineral,2023-JAN-18,N,29,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1631540,Garney Holding Company,FL,237110,Other,2023-DEC-15,N,114,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1645608,"International Tile & Stone, LLC",FL,238340,Construction trades,2023-JAN-24,N,284,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.4,False,False
+1645608,"International Tile & Stone, LLC",FL,238340,Construction trades,2023-JAN-24,N,270,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+4904,OMAHA AREA OFFICE,NE,,Other,2023-JAN-26,N,406,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.6,False,False
+1645548,Risebob Inc.,NE,337110,Other,2023-JAN-26,N,244,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",95.9,True,True
+1645548,Risebob Inc.,NE,337110,Other,2023-JAN-26,N,64,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1645548,Risebob Inc.,NE,337110,Other,2023-JAN-26,N,232,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",72.7,True,True
+4930,ATLANTA EAST AO-TUCKER,GA,,Other,2023-JAN-30,N,317,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1647036,"Century Granite Company, Inc.",GA,212313,Other,2023-JAN-30,N,274,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",35.9,True,False
+1647036,"Century Granite Company, Inc.",GA,212313,Other,2023-JAN-30,N,221,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1647036,"Century Granite Company, Inc.",GA,212313,Other,2023-JAN-30,N,269,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.0,True,False
+4942,SPRINGFIELD AREA OFFICE,MA,,Other,2023-FEB-03,Y,121,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1648293,"Select Demo Services, LLC",MA,238910,Construction trades,2023-FEB-03,Y,163,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",54.1,True,True
+1648293,"Select Demo Services, LLC",MA,238910,Construction trades,2023-FEB-03,Y,163,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",50.5,True,True
+1628176,Nicolock Paving Stones,NJ,327331,Cement & concrete products,2023-JAN-17,N,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1628176,Nicolock Paving Stones,NJ,327331,Cement & concrete products,2023-JAN-17,N,55,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1646757,"Malyn Industrial Ceramics, Inc.",NY,332919,Other,2023-FEB-09,N,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.8,False,False
+1635963,Mack  Concrete Inc.,OH,327310,Cement & concrete products,2023-FEB-15,N,257,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.0,False,False
+1635963,Mack  Concrete Inc.,OH,327310,Cement & concrete products,2023-FEB-15,N,126,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1635963,Mack  Concrete Inc.,OH,327310,Cement & concrete products,2023-FEB-15,N,218,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1635963,Mack  Concrete Inc.,OH,327310,Cement & concrete products,2023-FEB-15,N,215,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",42.1,True,False
+1636974,CBP Engineering Corp.,PA,331210,Other,2023-FEB-23,N,415,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.0,False,False
+1636974,CBP Engineering Corp.,PA,331210,Other,2023-FEB-23,N,416,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.3,False,False
+1652027,"Pinnacle Marble & Granite, Inc.",TX,327991,Stone & other mineral,2023-FEB-23,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1451.0,True,True
+1652027,"Pinnacle Marble & Granite, Inc.",TX,327991,Stone & other mineral,2023-FEB-23,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",766.0,True,True
+1652027,"Pinnacle Marble & Granite, Inc.",TX,327991,Stone & other mineral,2023-FEB-23,Y,461,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",583.0,True,True
+1652027,"Pinnacle Marble & Granite, Inc.",TX,327991,Stone & other mineral,2023-FEB-28,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1353.0,True,True
+1652027,"Pinnacle Marble & Granite, Inc.",TX,327991,Stone & other mineral,2023-FEB-28,Y,474,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",669.0,True,True
+5043,APPLETON AREA OFFICE,WI,,Other,2023-FEB-28,N,227,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1653496,Mercury Marine,WI,331529,Steel/foundry,2023-FEB-28,N,217,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1653496,Mercury Marine,WI,331529,Steel/foundry,2023-FEB-28,N,126,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1653496,Mercury Marine,WI,331529,Steel/foundry,2023-FEB-28,N,220,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,225,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",51.9,True,True
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,225,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.6,True,False
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",58.8,True,True
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,225,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1652348,"Wilson, Kehoe & Miller Corporation",FL,238990,Construction trades,2023-MAR-01,N,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",45.0,True,False
+5049,CONCORD AREA OFFICE,NH,,Other,2023-FEB-24,N,50,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1644591,"Woodstock Soapstone Company, Inc.",NH,333414,Other,2023-FEB-24,N,46,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1641412,"Terry Ludwig Pastels, LLC",CO,339999,Other,2023-MAR-01,N,155,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1641412,"Terry Ludwig Pastels, LLC",CO,339999,Other,2023-MAR-01,N,152,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1651231,DEL PORTE CONSTRUCTION CORP,FL,238140,Construction trades,2023-FEB-16,N,75,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1651231,DEL PORTE CONSTRUCTION CORP,FL,238140,Construction trades,2023-FEB-16,N,109,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1651231,DEL PORTE CONSTRUCTION CORP,FL,238140,Construction trades,2023-FEB-16,N,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-FEB-28,N,350,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1626450,"Newoods, Inc.",AR,327331,Cement & concrete products,2023-FEB-28,N,90,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",113.0,True,True
+1637468,R.W. Sidley Inc.,OH,327390,Cement & concrete products,2023-MAR-02,N,50,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1953.0,True,True
+1652040,Saul Escobar,TX,327991,Stone & other mineral,2023-MAR-07,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",3639.0,True,True
+1652040,Saul Escobar,TX,327991,Stone & other mineral,2023-MAR-07,Y,472,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",4066.0,True,True
+1652040,Saul Escobar,TX,327991,Stone & other mineral,2023-MAR-07,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",58.4,True,True
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,126,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",105.0,True,True
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,136,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",68.0,True,True
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,134,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,132,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,149,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",45.0,True,False
+1639693,Carbon Graphite Materials Inc.,NY,335991,Other,2023-FEB-15,N,143,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",46.5,True,False
+5066,TOLEDO AREA OFFICE,OH,,Other,2023-MAR-08,N,298,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.1,False,False
+1641821,"Rusk Industries, Inc.",OH,238110,Construction trades,2023-MAR-08,N,272,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",225.0,True,True
+1641821,"Rusk Industries, Inc.",OH,238110,Construction trades,2023-MAR-08,N,204,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",121.0,True,True
+1641821,"Rusk Industries, Inc.",OH,238110,Construction trades,2023-MAR-08,N,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1120.0,True,True
+1631632,Colorado Better Kitchens Corp,CO,327991,Stone & other mineral,2023-MAR-03,N,291,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",156.0,True,True
+1631632,Colorado Better Kitchens Corp,CO,327991,Stone & other mineral,2023-MAR-03,N,298,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",226.0,True,True
+1631632,Colorado Better Kitchens Corp,CO,327991,Stone & other mineral,2023-MAR-03,N,292,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5089,MADISON AREA OFFICE,WI,,Other,2023-MAR-14,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655100,Kusel Equipment Co.,WI,332913,Other,2023-MAR-14,N,130,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655100,Kusel Equipment Co.,WI,332913,Other,2023-MAR-14,N,125,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",55.7,True,True
+1655100,Kusel Equipment Co.,WI,332913,Other,2023-MAR-14,N,92,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655100,Kusel Equipment Co.,WI,332913,Other,2023-MAR-14,N,110,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1657040,EnviroBlending LLC,PA,325520,Other,2023-MAR-16,N,254,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1648506,"Guy Chemical Company, Inc.",PA,325998,Other,2023-MAR-22,N,465,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.8,False,False
+1658303,"Nacirema Demolition and Recycling, Inc.",NJ,238910,Construction trades,2023-MAR-22,N,287,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1658303,"Nacirema Demolition and Recycling, Inc.",NJ,238910,Construction trades,2023-MAR-22,N,197,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1658303,"Nacirema Demolition and Recycling, Inc.",NJ,238910,Construction trades,2023-MAR-22,N,278,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",256.0,True,True
+1651209,"L & D Stoneworks, Inc.",PA,327991,Stone & other mineral,2023-MAR-23,N,289,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.9,True,False
+1651209,"L & D Stoneworks, Inc.",PA,327991,Stone & other mineral,2023-MAR-23,N,141,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1651209,"L & D Stoneworks, Inc.",PA,327991,Stone & other mineral,2023-MAR-23,N,284,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",52.3,True,True
+1651209,"L & D Stoneworks, Inc.",PA,327991,Stone & other mineral,2023-MAR-23,N,141,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",43.2,True,False
+5141,MADISON AREA OFFICE,WI,,Other,2023-MAR-24,N,463,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637938,"Badgerland Disposal, LLC",WI,562998,Other,2023-MAR-24,N,453,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637938,"Badgerland Disposal, LLC",WI,562998,Other,2023-MAR-24,N,471,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637938,"Badgerland Disposal, LLC",WI,562998,Other,2023-MAR-24,N,468,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637938,"Badgerland Disposal, LLC",WI,562998,Other,2023-MAR-24,N,485,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637938,"Badgerland Disposal, LLC",WI,562998,Other,2023-MAR-24,N,489,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1652021,Northern Granite & Marble LLC,MA,327991,Stone & other mineral,2023-MAR-28,N,313,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",216.0,True,True
+1652021,Northern Granite & Marble LLC,MA,327991,Stone & other mineral,2023-MAR-28,N,246,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",165.0,True,True
+1652706,Concrete Cutting LLC,FL,238140,Construction trades,2023-FEB-24,N,20,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1654270,"CoorsTek, LLC",CO,327110,Clay/ceramic/tiles,2023-MAR-29,N,401,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1654270,"CoorsTek, LLC",CO,327110,Clay/ceramic/tiles,2023-MAR-29,N,421,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1654270,"CoorsTek, LLC",CO,327110,Clay/ceramic/tiles,2023-MAR-29,N,376,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1657202,"Foley Products Company, LLC",FL,327332,Cement & concrete products,2023-MAR-28,N,455,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1657202,"Foley Products Company, LLC",FL,327332,Cement & concrete products,2023-MAR-28,N,517,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.1,False,False
+1657202,"Foley Products Company, LLC",FL,327332,Cement & concrete products,2023-MAR-28,N,498,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1657202,"Foley Products Company, LLC",FL,327332,Cement & concrete products,2023-MAR-28,N,506,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1643242,A & H Duffy Polishing and Finishing Co.,RI,332813,Other,2023-APR-05,N,445,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655821,Space Exploration Technologies Corp.,FL,481212,Other,2023-APR-11,N,414,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655821,Space Exploration Technologies Corp.,FL,481212,Other,2023-APR-11,N,147,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655821,Space Exploration Technologies Corp.,FL,481212,Other,2023-APR-11,N,289,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655821,Space Exploration Technologies Corp.,FL,481212,Other,2023-APR-11,N,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655515,MMW Industries LLC,CO,327991,Stone & other mineral,2023-APR-12,N,245,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655515,MMW Industries LLC,CO,327991,Stone & other mineral,2023-APR-12,N,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655515,MMW Industries LLC,CO,327991,Stone & other mineral,2023-APR-12,N,147,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1650885,Rogers Corporation,IL,325211,Other,2023-APR-12,N,407,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1650885,Rogers Corporation,IL,325211,Other,2023-APR-12,N,376,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",61.0,True,True
+5183,TOLEDO AREA OFFICE,OH,,Other,2023-APR-13,N,463,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.9,False,False
+1658847,"P&THE Manufacturing Acquisition, LLC",OH,331524,Steel/foundry,2023-APR-13,N,382,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",61.6,True,True
+1658847,"P&THE Manufacturing Acquisition, LLC",OH,331524,Steel/foundry,2023-APR-13,N,387,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",53.2,True,True
+1658847,"P&THE Manufacturing Acquisition, LLC",OH,331524,Steel/foundry,2023-APR-13,N,383,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.5,True,False
+1663816,"Top Notch Concrete, LLC",SD,238110,Construction trades,2023-APR-17,N,4,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1600.0,True,True
+1662407,"Washington Mills Tonawanda, Inc.",NY,327910,Stone & other mineral,2023-APR-20,N,430,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.1,False,False
+1662407,"Washington Mills Tonawanda, Inc.",NY,327910,Stone & other mineral,2023-APR-20,N,430,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.9,False,False
+1662407,"Washington Mills Tonawanda, Inc.",NY,327910,Stone & other mineral,2023-APR-20,N,430,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.4,False,False
+1660501,Promar Building Services LLC,FL,236220,Other,2023-APR-20,N,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.7,False,False
+1660501,Promar Building Services LLC,FL,236220,Other,2023-APR-20,N,425,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",37.2,True,False
+5209,KANSAS CITY AREA OFFICE,MO,,Other,2023-APR-13,N,350,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,166,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,200,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,124,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655823,SPRINGFIELD IRON & METAL,MO,423930,Other,2023-APR-13,N,367,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5207,KANSAS CITY AREA OFFICE,MO,,Other,2023-APR-20,N,414,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1663190,"The Southeast Restoration Group, Inc.",FL,238140,Construction trades,2023-APR-13,N,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",448.0,True,True
+1663190,"The Southeast Restoration Group, Inc.",FL,238140,Construction trades,2023-APR-13,N,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",493.0,True,True
+1663190,"The Southeast Restoration Group, Inc.",FL,238140,Construction trades,2023-APR-13,N,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",457.0,True,True
+1664655,"RAM Construction Services of Cleveland, LLC",OH,236220,Other,2023-APR-28,N,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1664655,"RAM Construction Services of Cleveland, LLC",OH,236220,Other,2023-APR-28,N,360,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.7,False,False
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,133,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.9,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,196,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",276.0,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,82,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",105.0,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,243,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",97.4,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,51,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",133.0,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",216.0,True,True
+1661222,CXT Incorporated,WV,327390,Cement & concrete products,2023-APR-27,N,50,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665711,Spiers New Technologies Inc.,OK,335911,Other,2023-APR-25,N,134,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665711,Spiers New Technologies Inc.,OK,335911,Other,2023-APR-25,N,163,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665711,Spiers New Technologies Inc.,OK,335911,Other,2023-APR-25,N,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665711,Spiers New Technologies Inc.,OK,335911,Other,2023-APR-25,N,172,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1666410,"Signode Industrial Group, LLC",NJ,322299,Other,2023-APR-28,N,555,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",10.7,False,False
+1666410,"Signode Industrial Group, LLC",NJ,322299,Other,2023-APR-27,N,339,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1666410,"Signode Industrial Group, LLC",NJ,322299,Other,2023-APR-27,N,540,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",11.5,False,False
+5216,COLUMBUS AREA OFFICE,OH,,Other,2023-APR-26,N,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1661564,Modvera LLC,OH,327215,Other,2023-APR-26,N,445,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1661564,Modvera LLC,OH,327215,Other,2023-APR-26,N,368,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1659275,"Columbia Chutes, LLC",IL,332313,Other,2023-MAY-01,N,47,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5226,TOLEDO AREA OFFICE,OH,,Other,2023-MAY-03,N,441,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1651710,HA International LLC,OH,212325,Other,2023-MAY-03,N,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.0,False,False
+1651710,HA International LLC,OH,212325,Other,2023-MAY-03,N,461,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.1,False,False
+1651710,HA International LLC,OH,212325,Other,2023-MAY-03,N,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.1,False,False
+1651710,HA International LLC,OH,212325,Other,2023-MAY-03,N,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",26.5,True,False
+1666478,"Casting Designs, Inc. (CDI)",TX,327999,Stone & other mineral,2023-MAY-03,N,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1666478,"Casting Designs, Inc. (CDI)",TX,327999,Stone & other mineral,2023-MAY-03,N,457,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1666478,"Casting Designs, Inc. (CDI)",TX,327999,Stone & other mineral,2023-MAY-03,N,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1664104,Forte Analytical LLC,CO,541380,Other,2023-MAY-05,N,455,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",49.1,True,False
+1645692,"Atlantic  Powder Coating, LLC",FL,332812,Other,2023-MAY-03,N,147,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",144.0,True,True
+1645692,"Atlantic  Powder Coating, LLC",FL,332812,Other,2023-MAY-03,N,122,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",67.0,True,True
+5231,CHARLESTON AREA OFFICE,WV,,Other,2023-APR-27,N,397,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1637036,"Cemex, Inc",FL,327320,Cement & concrete products,2023-MAY-11,N,418,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.7,True,False
+1637036,"Cemex, Inc",FL,327320,Cement & concrete products,2023-MAY-11,N,295,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5250,MADISON AREA OFFICE,WI,,Other,2023-MAY-11,N,413,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1667502,"T3 Manufacturing, Inc.",WI,326199,Other,2023-MAY-11,N,19,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1667502,"T3 Manufacturing, Inc.",WI,326199,Other,2023-MAY-11,N,211,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",74.2,True,True
+1667502,"T3 Manufacturing, Inc.",WI,326199,Other,2023-MAY-11,N,212,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",60.5,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,283,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",62.0,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,79,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",111.0,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,290,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",61.6,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,94,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",101.0,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,287,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",59.4,True,True
+1638621,Spring City Electrical Manufacturing Company,PA,335122,Other,2023-MAY-16,N,98,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",180.0,True,True
+1671399,"SealPros, Inc.",SD,238990,Construction trades,2023-MAY-22,N,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1671399,"SealPros, Inc.",SD,238990,Construction trades,2023-MAY-22,N,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1670714,"American Engineered Products, LLC",SD,332322,Other,2023-MAY-16,N,338,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1670714,"American Engineered Products, LLC",SD,332322,Other,2023-MAY-16,N,222,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1670714,"American Engineered Products, LLC",SD,332322,Other,2023-MAY-16,N,308,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1670714,"American Engineered Products, LLC",SD,332322,Other,2023-MAY-16,N,214,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5297,APPLETON AREA OFFICE,WI,,Other,2023-MAY-25,N,171,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,212,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,133,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,174,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,204,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,184,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,183,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673044,AMC of Wisconsin,WI,327991,Stone & other mineral,2023-MAY-25,N,198,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5291,OMAHA AREA OFFICE,NE,,Other,2023-MAY-23,N,401,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1658325,Neenah Foundry Company,NE,331529,Steel/foundry,2023-MAY-23,N,299,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.6,False,False
+1658325,Neenah Foundry Company,NE,331529,Steel/foundry,2023-MAY-23,N,158,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1658325,Neenah Foundry Company,NE,331529,Steel/foundry,2023-MAY-23,N,299,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.6,True,False
+1658325,Neenah Foundry Company,NE,331529,Steel/foundry,2023-MAY-23,N,156,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.3,True,False
+1667402,Amazing Granite LLC,CO,327991,Stone & other mineral,2023-MAY-24,N,246,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.9,True,False
+1667402,Amazing Granite LLC,CO,327991,Stone & other mineral,2023-MAY-24,N,234,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.5,True,False
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,50,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",150.6,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,39,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",159.1,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,33,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",251.0,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,28,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",215.1,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,52,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",115.8,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,36,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",162.4,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,37,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,31,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",245.2,True,True
+1668969,"Valmont Industries, Inc.",KS,332812,Other,2023-MAY-24,N,29,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673020,Jireh Concrete,SD,238110,Construction trades,2023-MAY-25,N,26,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1673020,Jireh Concrete,SD,238110,Construction trades,2023-MAY-25,N,25,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655459,"CDS Manufacturing, Inc.",FL,238110,Construction trades,2023-MAR-21,N,270,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655459,"CDS Manufacturing, Inc.",FL,238110,Construction trades,2023-MAR-21,N,270,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1655459,"CDS Manufacturing, Inc.",FL,238110,Construction trades,2023-MAR-21,N,270,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1660824,Almeida Marble and Granite LLC,MA,327991,Stone & other mineral,2023-JUN-01,N,459,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1660824,Almeida Marble and Granite LLC,MA,327991,Stone & other mineral,2023-JUN-01,N,457,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1662444,"Department of the Army, Crane Army Ammunition Activity, Crane, IN",IN,928110,Other,2023-MAY-23,N,352,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1662444,"Department of the Army, Crane Army Ammunition Activity, Crane, IN",IN,928110,Other,2023-MAY-23,N,458,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1674420,"American Veteran Contracting Solutions, LLC",OK,327991,Stone & other mineral,2023-MAY-31,N,230,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",63.1,True,True
+1674420,"American Veteran Contracting Solutions, LLC",OK,327991,Stone & other mineral,2023-MAY-31,N,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.3,True,False
+1674420,"American Veteran Contracting Solutions, LLC",OK,327991,Stone & other mineral,2023-MAY-31,N,194,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.9,True,False
+1674420,"American Veteran Contracting Solutions, LLC",OK,327991,Stone & other mineral,2023-MAY-31,N,191,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",38.3,True,False
+1674420,"American Veteran Contracting Solutions, LLC",OK,327991,Stone & other mineral,2023-MAY-31,N,245,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.0,True,False
+1675926,Westinghouse Electric Co LLC,FL,213112,Other,2023-JUN-07,N,203,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",36.2,True,False
+1675926,Westinghouse Electric Co LLC,FL,213112,Other,2023-JUN-07,N,152,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672443,"Dimensions Central Marble, Inc.",TX,327991,Stone & other mineral,2023-JUN-09,Y,416,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.8,False,False
+1672443,"Dimensions Central Marble, Inc.",TX,327991,Stone & other mineral,2023-JUN-09,Y,410,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672443,"Dimensions Central Marble, Inc.",TX,327991,Stone & other mineral,2023-JUN-09,Y,403,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.7,False,False
+1676790,"Chris Sopiarz, LLC.",WI,236118,Other,2023-JUN-13,N,192,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80300.0,True,True
+1672165,Remark Glass Ltd.,PA,327212,Other,2023-JUN-14,N,91,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672165,Remark Glass Ltd.,PA,327212,Other,2023-JUN-14,N,425,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672165,Remark Glass Ltd.,PA,327212,Other,2023-JUN-14,N,365,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672165,Remark Glass Ltd.,PA,327212,Other,2023-JUN-14,N,156,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1667024,Vibrantz Minerals LLC,WI,327992,Stone & other mineral,2023-JUN-14,N,501,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1667024,Vibrantz Minerals LLC,WI,327992,Stone & other mineral,2023-JUN-14,N,418,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1667024,Vibrantz Minerals LLC,WI,327992,Stone & other mineral,2023-JUN-14,N,485,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1661728,TET. Construction LLC,GA,238140,Construction trades,2023-JUN-13,N,433,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.6,False,False
+1650309,"Neil Tile and Fabrication, Inc.",IL,327991,Stone & other mineral,2023-JUN-14,N,125,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1650309,"Neil Tile and Fabrication, Inc.",IL,327991,Stone & other mineral,2023-JUN-14,N,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1671460,"Crazy Aaron Enterprises, Inc.",PA,326299,Other,2023-JUN-15,N,445,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1671460,"Crazy Aaron Enterprises, Inc.",PA,326299,Other,2023-JUN-15,N,390,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1643368,"Purecoat International, LLC",FL,332812,Other,2023-JUN-21,N,474,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.4,False,False
+5363,MOBILE AREA OFFICE,AL,,Other,2023-JUN-21,Y,404,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678248,"Hard Rock Stone & Tile, LLC",AL,327991,Stone & other mineral,2023-JUN-21,Y,435,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678248,"Hard Rock Stone & Tile, LLC",AL,327991,Stone & other mineral,2023-JUN-21,Y,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",95.4,True,True
+1678248,"Hard Rock Stone & Tile, LLC",AL,327991,Stone & other mineral,2023-JUN-21,Y,386,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",26.3,True,False
+1679325,"Vortex Construction Group, LLC",FL,236116,Other,2023-JUN-26,Y,214,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1679325,"Vortex Construction Group, LLC",FL,236116,Other,2023-JUN-26,Y,217,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1679325,"Vortex Construction Group, LLC",FL,236116,Other,2023-JUN-26,Y,219,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1679325,"Vortex Construction Group, LLC",FL,236116,Other,2023-JUN-26,Y,180,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1674946,"Mario Oliveira Enterprises, Inc.",FL,327991,Stone & other mineral,2023-JUN-07,Y,75,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1674946,"Mario Oliveira Enterprises, Inc.",FL,327991,Stone & other mineral,2023-JUN-07,Y,187,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.9,True,False
+1674946,"Mario Oliveira Enterprises, Inc.",FL,327991,Stone & other mineral,2023-JUN-07,Y,71,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",96.9,True,True
+1674946,"Mario Oliveira Enterprises, Inc.",FL,327991,Stone & other mineral,2023-JUN-07,Y,187,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",101.0,True,True
+5389,JACKSONVILLE AREA OFFICE,FL,,Other,2023-JUN-07,Y,65,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5389,JACKSONVILLE AREA OFFICE,FL,,Other,2023-JUN-07,Y,186,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1676596,"A J Trophies & Awards, INC.",FL,332999,Other,2023-JUN-14,Y,50,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672854,"J.A.M. Construction, Inc. of N.C. FL.",FL,238140,Construction trades,2023-JUN-02,Y,14,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672854,"J.A.M. Construction, Inc. of N.C. FL.",FL,238140,Construction trades,2023-JUN-02,Y,14,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680124,"Stone Craft Masters, LLC",FL,327991,Stone & other mineral,2023-JUL-06,Y,13,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680124,"Stone Craft Masters, LLC",FL,327991,Stone & other mineral,2023-JUL-06,Y,10,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680124,"Stone Craft Masters, LLC",FL,327991,Stone & other mineral,2023-JUL-11,Y,318,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680124,"Stone Craft Masters, LLC",FL,327991,Stone & other mineral,2023-JUL-11,Y,335,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675632,"Pavestone, LLC",NJ,327390,Cement & concrete products,2023-JUL-06,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675632,"Pavestone, LLC",NJ,327390,Cement & concrete products,2023-JUL-06,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675632,"Pavestone, LLC",NJ,327390,Cement & concrete products,2023-JUL-06,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,142,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,20,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,142,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,476,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,188,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672461,"Strategic Materials, Inc.",TX,423930,Other,2023-JUL-11,Y,214,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,165,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,115,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",54.0,True,True
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,175,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",46.7,True,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",97.5,True,True
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,115,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.6,True,True
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",35.9,True,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,170,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.8,True,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680792,"Oldcastle APG Northeast, Inc.",PA,327320,Cement & concrete products,2023-JUL-07,Y,65,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1685027,JCK Batch Plant LLC,TX,327320,Cement & concrete products,2023-JUL-20,Y,476,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1685027,JCK Batch Plant LLC,TX,327320,Cement & concrete products,2023-JUL-20,Y,360,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5492,MOBILE AREA OFFICE,AL,,Other,2023-JUL-20,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1681669,Heritage Electrical Services LLC,AL,238210,Construction trades,2023-JUL-20,Y,341,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1681669,Heritage Electrical Services LLC,AL,238210,Construction trades,2023-JUL-20,Y,337,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5508,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-JUL-19,Y,466,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.6,True,False
+1663093,"GQM Stone Solutions, Inc.",IL,327991,Stone & other mineral,2023-JUL-19,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",210.0,True,True
+1663093,"GQM Stone Solutions, Inc.",IL,327991,Stone & other mineral,2023-JUL-19,Y,458,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",262.0,True,True
+1681307,South Shore Construction LLC,NJ,333992,Other,2023-JUL-12,Y,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1681307,South Shore Construction LLC,NJ,333992,Other,2023-JUL-12,Y,453,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.9,False,False
+1681307,South Shore Construction LLC,NJ,333992,Other,2023-JUL-12,Y,434,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5528,HOUSTON NORTH AREA OFFICE,TX,,Other,2023-JUL-25,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678809,Texas Materials Group Inc.,TX,327310,Cement & concrete products,2023-JUL-25,Y,485,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.0,True,False
+1678809,Texas Materials Group Inc.,TX,327310,Cement & concrete products,2023-JUL-25,Y,485,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.1,False,False
+1678809,Texas Materials Group Inc.,TX,327310,Cement & concrete products,2023-JUL-25,Y,481,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",74.6,True,True
+1678591,ProTec PowderCoating L.LC.,FL,332812,Other,2023-JUL-25,Y,51,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",727.0,True,True
+1678591,ProTec PowderCoating L.LC.,FL,332812,Other,2023-JUL-25,Y,70,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",193.0,True,True
+1678591,ProTec PowderCoating L.LC.,FL,332812,Other,2023-JUL-25,Y,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",686.0,True,True
+5568,KANSAS CITY AREA OFFICE,MO,,Other,2023-JUL-14,Y,409,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665188,STONE MOUNTAIN MANUFACTURING LLC,MO,327991,Stone & other mineral,2023-JUL-14,Y,342,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1665188,STONE MOUNTAIN MANUFACTURING LLC,MO,327991,Stone & other mineral,2023-JUL-14,Y,340,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.0,False,False
+1665188,STONE MOUNTAIN MANUFACTURING LLC,MO,327991,Stone & other mineral,2023-JUL-14,Y,336,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1686719,"Robert H. Ward & Associates, Inc",WI,238110,Construction trades,2023-JUL-27,Y,246,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1686719,"Robert H. Ward & Associates, Inc",WI,238110,Construction trades,2023-JUL-27,Y,204,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687845,"Sitar Construction, LLC",WI,212321,Other,2023-AUG-02,Y,104,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687845,"Sitar Construction, LLC",WI,212321,Other,2023-AUG-02,Y,96,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",60.0,True,True
+5575,HOUSTON NORTH AREA OFFICE,TX,,Other,2023-AUG-01,Y,428,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1672252,Superior Industrial Services LLC,TX,325510,Other,2023-AUG-01,Y,371,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1410.0,True,True
+1672252,Superior Industrial Services LLC,TX,325510,Other,2023-AUG-01,Y,65,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",126.0,True,True
+1672252,Superior Industrial Services LLC,TX,325510,Other,2023-AUG-01,Y,76,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",360.0,True,True
+1672252,Superior Industrial Services LLC,TX,325510,Other,2023-AUG-01,Y,102,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5581,CINCINNATI AREA OFFICE,OH,,Other,2023-AUG-04,Y,485,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687197,OSCO Industries Inc.,OH,331511,Steel/foundry,2023-AUG-04,Y,451,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687197,OSCO Industries Inc.,OH,331511,Steel/foundry,2023-AUG-04,Y,487,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1685228,CHICAGO MAGNESIUM CASTING COMPANY,IL,331524,Steel/foundry,2023-AUG-03,Y,446,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.3,False,False
+1685228,CHICAGO MAGNESIUM CASTING COMPANY,IL,331524,Steel/foundry,2023-AUG-03,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.1,False,False
+1685228,CHICAGO MAGNESIUM CASTING COMPANY,IL,331524,Steel/foundry,2023-AUG-03,Y,410,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1685228,CHICAGO MAGNESIUM CASTING COMPANY,IL,331524,Steel/foundry,2023-AUG-03,Y,393,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5579,CALUMET CITY AREA OFFICE,IL,,Other,2023-AUG-03,Y,460,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5586,OMAHA AREA OFFICE,NE,,Other,2023-AUG-08,Y,368,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1680585,Sioux City Foundry Co.,NE,331513,Steel/foundry,2023-AUG-09,Y,193,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",66.5,True,True
+1680585,Sioux City Foundry Co.,NE,331513,Steel/foundry,2023-AUG-09,Y,270,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.0,True,False
+1680585,Sioux City Foundry Co.,NE,331513,Steel/foundry,2023-AUG-09,Y,328,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.9,True,False
+1680585,Sioux City Foundry Co.,NE,331513,Steel/foundry,2023-AUG-09,Y,84,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5582,APPLETON AREA OFFICE,WI,,Other,2023-AUG-08,Y,261,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678067,Wells Concrete Products Co.,WI,327390,Cement & concrete products,2023-AUG-08,Y,264,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",93.5,True,True
+5590,CINCINNATI AREA OFFICE,OH,,Other,2023-AUG-14,Y,379,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687212,"Mees Distributors, Inc.",OH,327991,Stone & other mineral,2023-AUG-14,Y,471,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",400.0,True,True
+1687212,"Mees Distributors, Inc.",OH,327991,Stone & other mineral,2023-AUG-14,Y,469,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5588,EAU CLAIRE AREA OFFICE,WI,,Other,2023-AUG-10,Y,69,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687908,"Tomahawk Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-10,Y,408,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",37.0,True,False
+1687908,"Tomahawk Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-10,Y,410,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",148.0,True,True
+1687908,"Tomahawk Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-10,Y,393,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",23.4,False,False
+1687908,"Tomahawk Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-10,Y,432,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.7,False,False
+1686341,"Advanced Masonry Services, LLC",FL,238140,Construction trades,2023-JUL-27,Y,223,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1686341,"Advanced Masonry Services, LLC",FL,238140,Construction trades,2023-JUL-27,Y,223,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1671091,"H.B. Fuller Construction Products, Inc.",FL,325520,Other,2023-AUG-17,Y,220,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",29.4,True,False
+1671091,"H.B. Fuller Construction Products, Inc.",FL,325520,Other,2023-AUG-17,Y,220,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1685013,"Black Bay Ventures VI, LLC",MA,331524,Steel/foundry,2023-AUG-17,Y,274,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",343.0,True,True
+1685013,"Black Bay Ventures VI, LLC",MA,331524,Steel/foundry,2023-AUG-17,Y,150,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",286.0,True,True
+5609,APPLETON AREA OFFICE,WI,,Other,2023-AUG-17,Y,376,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,465,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,456,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,457,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.4,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,452,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,454,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,455,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,447,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,446,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.6,False,False
+1678214,"Waupaca Foundry, Inc.",WI,331511,Steel/foundry,2023-AUG-17,Y,471,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.6,False,False
+1669417,"Aercon Florida, LLC.",FL,327390,Cement & concrete products,2023-AUG-17,Y,335,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1669417,"Aercon Florida, LLC.",FL,327390,Cement & concrete products,2023-AUG-17,Y,341,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5614,TAMPA AREA OFFICE,FL,,Other,2023-AUG-17,Y,333,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,127,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",88.9,True,True
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,150,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",447.0,True,True
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,165,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1430.0,True,True
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,119,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",5490.0,True,True
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,150,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",133.0,True,True
+1678305,"General Engines Company, Incorporated",FL,336212,Other,2023-AUG-16,Y,165,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",103.0,True,True
+1693067,MBJ Concrete Finishing Corp,FL,238190,Construction trades,2023-AUG-23,Y,218,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1693067,MBJ Concrete Finishing Corp,FL,238190,Construction trades,2023-AUG-23,Y,221,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1693067,MBJ Concrete Finishing Corp,FL,238190,Construction trades,2023-AUG-23,Y,226,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.6,True,False
+1693067,MBJ Concrete Finishing Corp,FL,238190,Construction trades,2023-AUG-23,Y,231,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1688971,"Therm-O-Rock East, Inc.",PA,327992,Stone & other mineral,2023-AUG-23,Y,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1688971,"Therm-O-Rock East, Inc.",PA,327992,Stone & other mineral,2023-AUG-23,Y,433,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1688971,"Therm-O-Rock East, Inc.",PA,327992,Stone & other mineral,2023-AUG-23,Y,443,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",26.6,True,False
+1686421,"JGM, Inc.",PA,238120,Construction trades,2023-AUG-23,Y,223,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.9,True,False
+1695478,"Henry Brick Company, Inc.",AL,327120,Clay/ceramic/tiles,2023-AUG-31,Y,523,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",57.5,True,True
+1695478,"Henry Brick Company, Inc.",AL,327120,Clay/ceramic/tiles,2023-AUG-31,Y,499,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",326.0,True,True
+1695478,"Henry Brick Company, Inc.",AL,327120,Clay/ceramic/tiles,2023-AUG-31,Y,151,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",58.3,True,True
+1695478,"Henry Brick Company, Inc.",AL,327120,Clay/ceramic/tiles,2023-AUG-31,Y,513,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",54.3,True,True
+1695785,"Daher Contracting, Inc.",FL,236220,Other,2023-SEP-06,Y,236,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1695785,"Daher Contracting, Inc.",FL,236220,Other,2023-SEP-06,Y,241,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1695785,"Daher Contracting, Inc.",FL,236220,Other,2023-SEP-06,Y,232,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5674,WICHITA AREA OFFICE,KS,,Other,2023-SEP-07,Y,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1696013,Concrete Designs,KS,327331,Cement & concrete products,2023-SEP-07,Y,434,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1696013,Concrete Designs,KS,327331,Cement & concrete products,2023-SEP-07,Y,422,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690719,Alpha Automotive LLC,WI,423120,Other,2023-SEP-07,Y,437,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690978,AAA Hellenic Marble Inc.,PA,238340,Construction trades,2023-SEP-07,Y,307,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690978,AAA Hellenic Marble Inc.,PA,238340,Construction trades,2023-SEP-07,Y,412,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690978,AAA Hellenic Marble Inc.,PA,238340,Construction trades,2023-SEP-07,Y,293,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690978,AAA Hellenic Marble Inc.,PA,238340,Construction trades,2023-SEP-07,Y,375,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.5,False,False
+1690978,AAA Hellenic Marble Inc.,PA,238340,Construction trades,2023-SEP-07,Y,373,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1668791,Cherokee Brick & Tile Company,GA,327120,Clay/ceramic/tiles,2023-SEP-07,Y,475,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.6,False,False
+1668791,Cherokee Brick & Tile Company,GA,327120,Clay/ceramic/tiles,2023-SEP-07,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",48.4,True,False
+1668791,Cherokee Brick & Tile Company,GA,327120,Clay/ceramic/tiles,2023-SEP-07,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.5,False,False
+1668791,Cherokee Brick & Tile Company,GA,327120,Clay/ceramic/tiles,2023-SEP-07,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",20.7,False,False
+1668791,Cherokee Brick & Tile Company,GA,327120,Clay/ceramic/tiles,2023-SEP-07,Y,475,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1694815,USDOL OSHA - Concord Area Office,NH,926150,Other,2023-AUG-31,Y,423,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691901,"Watts Water Technologies, Inc.",NH,332911,Other,2023-AUG-31,Y,365,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691901,"Watts Water Technologies, Inc.",NH,332911,Other,2023-AUG-31,Y,358,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691587,"Trueform Concrete, LLC",NJ,327390,Cement & concrete products,2023-SEP-13,Y,323,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.5,False,False
+1691587,"Trueform Concrete, LLC",NJ,327390,Cement & concrete products,2023-SEP-13,Y,333,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691587,"Trueform Concrete, LLC",NJ,327390,Cement & concrete products,2023-SEP-13,Y,366,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691587,"Trueform Concrete, LLC",NJ,327390,Cement & concrete products,2023-SEP-13,Y,353,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",53.0,True,True
+5697,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-SEP-14,Y,370,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",54.8,True,True
+1687058,"Rossi Contractors, Inc.",IL,237110,Other,2023-SEP-14,Y,378,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",20.4,False,False
+1687058,"Rossi Contractors, Inc.",IL,237110,Other,2023-SEP-14,Y,373,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1687058,"Rossi Contractors, Inc.",IL,237110,Other,2023-SEP-14,Y,368,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5694,ATLANTA WEST AREA OFFICE,GA,,Other,2023-SEP-13,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5694,ATLANTA WEST AREA OFFICE,GA,,Other,2023-SEP-13,Y,131,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5694,ATLANTA WEST AREA OFFICE,GA,,Other,2023-SEP-13,Y,109,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5694,ATLANTA WEST AREA OFFICE,GA,,Other,2023-SEP-13,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",62.7,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,58,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",162.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,62,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",145.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,57,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,119,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80.1,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,66,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",133.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,78,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",141.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,40,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",185.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,54,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,63,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,59,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,114,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",48.7,True,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,45,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,54,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",218.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,60,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",141.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,61,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",160.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,114,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",144.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,134,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",92.2,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-SEP-13,Y,57,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",227.0,True,True
+5693,TOLEDO AREA OFFICE,OH,,Other,2023-SEP-12,Y,491,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1694641,"MCM Precision Castings, Inc.",OH,331529,Steel/foundry,2023-SEP-12,Y,395,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1694641,"MCM Precision Castings, Inc.",OH,331529,Steel/foundry,2023-SEP-12,Y,220,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1693783,Alsip Manufacturing Inc,IL,332710,Other,2023-SEP-07,Y,20,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1678344,"Meloon Foundries, LLC",NY,331524,Steel/foundry,2023-SEP-19,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",29.6,True,False
+1678344,"Meloon Foundries, LLC",NY,331524,Steel/foundry,2023-SEP-19,Y,474,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.2,True,False
+1678344,"Meloon Foundries, LLC",NY,331524,Steel/foundry,2023-SEP-19,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",59.3,True,True
+1678344,"Meloon Foundries, LLC",NY,331524,Steel/foundry,2023-SEP-19,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.9,True,False
+1678344,"Meloon Foundries, LLC",NY,331524,Steel/foundry,2023-SEP-19,Y,445,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",29.8,True,False
+5754,PHOENIX AREA OFFICE,AZ,,Other,2023-SEP-28,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.0,False,False
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",53.4,True,True
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",51.0,True,True
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",52.9,True,True
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1691623,Superlite an Oldcastle Company,AZ,327331,Cement & concrete products,2023-SEP-28,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5752,BATON ROUGE AREA OFFICE,LA,,Other,2023-SEP-27,Y,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1699867,Jones Tile,LA,238330,Construction trades,2023-SEP-27,Y,423,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.6,True,False
+1689165,Buonato Granite & Marble,MA,337110,Other,2023-SEP-20,Y,375,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.0,False,False
+5771,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-OCT-03,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.5,False,False
+1686611,"Rossi Contractors, Inc.",IL,237110,Other,2023-OCT-03,Y,447,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.2,False,False
+1686611,"Rossi Contractors, Inc.",IL,237110,Other,2023-OCT-03,Y,430,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.8,False,False
+1686611,"Rossi Contractors, Inc.",IL,237110,Other,2023-OCT-03,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.0,True,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,150,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,120,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,90,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,210,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.3,True,False
+1701280,"Belmarmi, LLC",FL,327991,Stone & other mineral,2023-OCT-05,Y,90,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5774,OKLAHOMA CITY AREA OFFICE,OK,,Other,2023-OCT-04,Y,253,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,253,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,189,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,185,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,247,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.1,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,263,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,180,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,259,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,183,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,267,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-OCT-04,Y,189,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1700712,"Sambor Stone, Ltd.",IL,327991,Stone & other mineral,2023-OCT-05,Y,436,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",60.8,True,True
+1700712,"Sambor Stone, Ltd.",IL,327991,Stone & other mineral,2023-OCT-05,Y,426,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",23.3,False,False
+1700712,"Sambor Stone, Ltd.",IL,327991,Stone & other mineral,2023-OCT-05,Y,434,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",47.6,True,False
+1703619,Art Stones Design Corp,FL,327991,Stone & other mineral,2023-OCT-17,Y,348,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703619,Art Stones Design Corp,FL,327991,Stone & other mineral,2023-OCT-17,Y,327,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5812,MOBILE AREA OFFICE,AL,,Other,2023-OCT-17,Y,289,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703446,Cemex USA,AL,327320,Cement & concrete products,2023-OCT-17,Y,285,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703446,Cemex USA,AL,327320,Cement & concrete products,2023-OCT-17,Y,268,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1702995,"Millennium Flooring Contractors, LLC",FL,236220,Other,2023-OCT-19,Y,369,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.9,False,False
+1702995,"Millennium Flooring Contractors, LLC",FL,236220,Other,2023-OCT-19,Y,370,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.2,False,False
+5833,ATLANTA WEST AREA OFFICE,GA,,Other,2023-OCT-23,Y,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,63,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,23,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,137,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",88.7,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,58,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",112.0,True,True
+1690025,"Aludyne Columbus, LLC",GA,336390,Other,2023-OCT-23,Y,207,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",183.0,True,True
+1702413,"Universal Ready Mix and Supply, LLC",PA,327320,Cement & concrete products,2023-OCT-24,Y,67,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1702413,"Universal Ready Mix and Supply, LLC",PA,327320,Cement & concrete products,2023-OCT-24,Y,406,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1702443,"Silver Mason Supply Company, Inc.",NJ,423320,Other,2023-OCT-25,Y,124,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,109,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80.4,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,135,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",116.0,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,269,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",63.6,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",94.7,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,129,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",48.2,True,False
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,101,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",60.4,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,116,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.1,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,122,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",297.0,True,True
+1702769,"Dakota Foundry, Inc.",SD,331511,Steel/foundry,2023-OCT-23,Y,56,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",253.0,True,True
+5835,TOLEDO AREA OFFICE,OH,,Other,2023-OCT-24,Y,459,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.4,False,False
+1704138,"Shelly Materials Inc. - Stoneco, Inc - Carey Facility",OH,324121,Other,2023-OCT-24,Y,465,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704138,"Shelly Materials Inc. - Stoneco, Inc - Carey Facility",OH,324121,Other,2023-OCT-24,Y,397,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5840,WICHITA AREA OFFICE,KS,,Other,2023-OCT-26,Y,410,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,190,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",46.0,True,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,216,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",60.1,True,True
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,169,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,244,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.6,True,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,154,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,194,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",62.6,True,True
+1703028,Artistic Marble & Granite,KS,327991,Stone & other mineral,2023-OCT-26,Y,160,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",69.3,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,122,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",603.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,182,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",601.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,118,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",639.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,181,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",326.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-27,Y,116,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",5100.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-27,Y,179,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",355.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,107,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",148.0,True,True
+1705448,"KC Granite & Cabinetry, LLC",KS,423320,Other,2023-OCT-25,Y,181,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",198.0,True,True
+1705651,"Southern Wall Products, Inc.",GA,327420,Lime/gypsum,2023-OCT-26,Y,309,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.8,False,False
+1705651,"Southern Wall Products, Inc.",GA,327420,Lime/gypsum,2023-OCT-26,Y,111,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1705651,"Southern Wall Products, Inc.",GA,327420,Lime/gypsum,2023-OCT-26,Y,304,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.6,True,False
+1705651,"Southern Wall Products, Inc.",GA,327420,Lime/gypsum,2023-OCT-26,Y,129,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",48.1,True,False
+1706159,Prestige Marble & Granite Inc.,PA,327991,Stone & other mineral,2023-OCT-27,Y,225,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",47.6,True,False
+1706159,Prestige Marble & Granite Inc.,PA,327991,Stone & other mineral,2023-OCT-26,Y,205,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",52.5,True,True
+5832,PHOENIX AREA OFFICE,AZ,,Other,2023-OCT-24,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704489,THERM-O-ROCK WEST,AZ,327992,Stone & other mineral,2023-OCT-24,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704489,THERM-O-ROCK WEST,AZ,327992,Stone & other mineral,2023-OCT-24,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704489,THERM-O-ROCK WEST,AZ,327992,Stone & other mineral,2023-OCT-24,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.2,True,False
+1704489,THERM-O-ROCK WEST,AZ,327992,Stone & other mineral,2023-OCT-24,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.8,False,False
+1705746,Stone World Imports and Manufacturing Corp,FL,423320,Other,2023-OCT-30,Y,180,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.7,True,False
+1702689,"AG Stone of Jacksonville, Inc.",FL,327991,Stone & other mineral,2023-OCT-23,Y,190,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,250,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703653,"The Quikrete Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,195,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5851,TAMPA AREA OFFICE,FL,,Other,2023-OCT-30,Y,160,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-OCT-30,Y,152,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1694359,"W.C. Canniff & Sons, Inc.",MA,327991,Stone & other mineral,2023-NOV-01,Y,411,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1694359,"W.C. Canniff & Sons, Inc.",MA,327991,Stone & other mineral,2023-NOV-01,Y,70,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",101.0,True,True
+1699912,"Liberty Casting Company, LLC",OH,331511,Steel/foundry,2023-NOV-01,Y,474,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",73.0,True,True
+1699912,"Liberty Casting Company, LLC",OH,331511,Steel/foundry,2023-NOV-01,Y,466,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.9,False,False
+1699912,"Liberty Casting Company, LLC",OH,331511,Steel/foundry,2023-NOV-01,Y,469,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",23.1,False,False
+1699912,"Liberty Casting Company, LLC",OH,331511,Steel/foundry,2023-NOV-01,Y,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",37.9,True,False
+1699912,"Liberty Casting Company, LLC",OH,331511,Steel/foundry,2023-NOV-01,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",37.2,True,False
+5837,COLUMBUS AREA OFFICE,OH,,Other,2023-OCT-26,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1700589,EFCO Corp.,OH,327390,Cement & concrete products,2023-OCT-26,Y,421,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.2,False,False
+1700589,EFCO Corp.,OH,327390,Cement & concrete products,2023-OCT-26,Y,356,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.7,False,False
+1700589,EFCO Corp.,OH,327390,Cement & concrete products,2023-OCT-26,Y,422,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.1,False,False
+5853,COLUMBUS AREA OFFICE,OH,,Other,2023-OCT-25,Y,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",26.1,True,False
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-OCT-25,Y,435,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",320.0,True,True
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-OCT-25,Y,349,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",197.0,True,True
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-OCT-25,Y,428,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",270.0,True,True
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-OCT-25,Y,420,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",508.0,True,True
+5855,OKLAHOMA CITY AREA OFFICE,OK,,Other,2023-NOV-01,Y,89,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,251,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,181,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,260,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,201,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,254,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,194,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,454,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,257,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,205,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,271,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1675666,"Mid American Steel & Wire Co., LLC",OK,331110,Steel/foundry,2023-NOV-01,Y,181,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5857,KANSAS CITY AREA OFFICE,MO,,Other,2023-NOV-02,Y,147,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1690207,OZARK MOUNTAIN GRANITE & TILE CO,MO,327991,Stone & other mineral,2023-NOV-02,Y,166,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",214.0,True,True
+5856,MOBILE AREA OFFICE,AL,,Other,2023-NOV-01,Y,400,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1707588,"Cosby - Carmichael, Inc",AL,327320,Cement & concrete products,2023-NOV-01,Y,405,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.3,False,False
+1707588,"Cosby - Carmichael, Inc",AL,327320,Cement & concrete products,2023-NOV-01,Y,402,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5862,MOBILE AREA OFFICE,AL,,Other,2023-OCT-31,Y,493,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708159,"Absolute Granite PCB, LLC",FL,327991,Stone & other mineral,2023-OCT-31,Y,449,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708159,"Absolute Granite PCB, LLC",FL,327991,Stone & other mineral,2023-OCT-31,Y,441,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",80.5,True,True
+1704688,CL Granite & Marble LLC,MD,327991,Stone & other mineral,2023-OCT-27,Y,471,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",161.0,True,True
+1704688,CL Granite & Marble LLC,MD,327991,Stone & other mineral,2023-OCT-27,Y,483,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",5093.0,True,True
+1704688,CL Granite & Marble LLC,MD,327991,Stone & other mineral,2023-OCT-27,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",134.0,True,True
+1704688,CL Granite & Marble LLC,MD,327991,Stone & other mineral,2023-OCT-27,Y,476,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",116.0,True,True
+1697034,"Spot on Staffing, LLC",MD,237310,Other,2023-OCT-31,Y,227,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",67.4,True,True
+1697034,"Spot on Staffing, LLC",MD,237310,Other,2023-OCT-31,Y,222,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",45.8,True,False
+1697034,"Spot on Staffing, LLC",MD,237310,Other,2023-OCT-31,Y,231,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",92.4,True,True
+1697027,"Freyssinet, Inc.",MD,237310,Other,2023-OCT-31,Y,210,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",41.5,True,False
+1707104,"Art of Granite, Inc.",FL,423320,Other,2023-NOV-06,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.0,True,False
+1707104,"Art of Granite, Inc.",FL,423320,Other,2023-NOV-06,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",515.0,True,True
+5869,TOLEDO AREA OFFICE,OH,,Other,2023-NOV-08,Y,420,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704140,J R Edwards Concrete Co,OH,238110,Construction trades,2023-NOV-08,Y,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704140,J R Edwards Concrete Co,OH,238110,Construction trades,2023-NOV-08,Y,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5866,BATON ROUGE AREA OFFICE,LA,,Other,2023-NOV-07,Y,540,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",47.9,True,False
+1708618,Carmeuse America,LA,327991,Stone & other mineral,2023-NOV-07,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708618,Carmeuse America,LA,327991,Stone & other mineral,2023-NOV-07,Y,453,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.1,False,False
+1705760,"S & S Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,148,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1705760,"S & S Companies, LLC",FL,327320,Cement & concrete products,2023-NOV-01,Y,154,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5870,ATLANTA WEST AREA OFFICE,GA,,Other,2023-NOV-02,Y,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.1,False,False
+5870,ATLANTA WEST AREA OFFICE,GA,,Other,2023-NOV-02,Y,349,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.2,False,False
+1708018,"ART STONE-GRANITE & MARBLE, INC.",GA,327991,Stone & other mineral,2023-NOV-02,Y,394,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",44.7,True,False
+1708018,"ART STONE-GRANITE & MARBLE, INC.",GA,327991,Stone & other mineral,2023-NOV-02,Y,386,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",54.9,True,True
+1708018,"ART STONE-GRANITE & MARBLE, INC.",GA,327991,Stone & other mineral,2023-NOV-02,Y,383,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",65.6,True,True
+1708900,"Florida Custom Marble, Inc.",FL,327991,Stone & other mineral,2023-NOV-09,Y,227,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.7,True,False
+1708900,"Florida Custom Marble, Inc.",FL,327991,Stone & other mineral,2023-NOV-09,Y,251,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",23.4,False,False
+1688971,"Therm-O-Rock East, Inc.",PA,327992,Stone & other mineral,2023-NOV-08,Y,448,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.1,False,False
+1709090,"Concrete Precast Products, Inc.",FL,327390,Cement & concrete products,2023-NOV-09,Y,349,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.9,False,False
+1709090,"Concrete Precast Products, Inc.",FL,327390,Cement & concrete products,2023-NOV-09,Y,307,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.7,False,False
+1709090,"Concrete Precast Products, Inc.",FL,327390,Cement & concrete products,2023-NOV-09,Y,307,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.9,False,False
+1709090,"Concrete Precast Products, Inc.",FL,327390,Cement & concrete products,2023-NOV-09,Y,303,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1697687,"E Glass Industries, LLC",SD,336211,Other,2023-NOV-09,Y,123,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",83.6,True,True
+1708143,Ames Construction LLC,PA,236220,Other,2023-NOV-17,Y,276,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",33.0,True,False
+1708138,Romstone Fabrication Inc.,NY,327991,Stone & other mineral,2023-NOV-08,Y,340,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.7,False,False
+1708138,Romstone Fabrication Inc.,NY,327991,Stone & other mineral,2023-NOV-08,Y,355,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",169.0,True,True
+5895,COLUMBUS AREA OFFICE,OH,,Other,2023-NOV-08,Y,339,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5897,MOBILE AREA OFFICE,AL,,Other,2023-NOV-14,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710535,Castone Corporation,AL,327390,Cement & concrete products,2023-NOV-14,Y,526,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710535,Castone Corporation,AL,327390,Cement & concrete products,2023-NOV-14,Y,531,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710535,Castone Corporation,AL,327390,Cement & concrete products,2023-NOV-14,Y,529,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5902,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-NOV-14,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1707579,Terrazzo & Marble Supply Co. of Illinois,IL,423320,Other,2023-NOV-14,Y,441,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1707579,Terrazzo & Marble Supply Co. of Illinois,IL,423320,Other,2023-NOV-14,Y,427,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.8,False,False
+1707579,Terrazzo & Marble Supply Co. of Illinois,IL,423320,Other,2023-NOV-14,Y,440,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5851,TAMPA AREA OFFICE,FL,,Other,2023-NOV-08,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,74,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,326,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,324,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,84,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,87,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1703783,The Home Depot,FL,444130,Other,2023-NOV-08,Y,179,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708592,Wild English Stoneworks LLC,NY,327991,Stone & other mineral,2023-NOV-16,Y,96,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708592,Wild English Stoneworks LLC,NY,327991,Stone & other mineral,2023-NOV-16,Y,109,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5903,TOLEDO AREA OFFICE,OH,,Other,2023-NOV-16,Y,436,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1709321,Traditional Marble & Granite LTD,OH,327991,Stone & other mineral,2023-NOV-16,Y,251,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1709321,Traditional Marble & Granite LTD,OH,327991,Stone & other mineral,2023-NOV-16,Y,324,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5901,TOLEDO AREA OFFICE,OH,,Other,2023-NOV-15,Y,490,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1706289,"Balconi Monuments, Inc.",OH,327991,Stone & other mineral,2023-NOV-15,Y,440,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.3,False,False
+1706289,"Balconi Monuments, Inc.",OH,327991,Stone & other mineral,2023-NOV-15,Y,440,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.4,False,False
+1706289,"Balconi Monuments, Inc.",OH,327991,Stone & other mineral,2023-NOV-15,Y,435,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.5,False,False
+5898,MADISON AREA OFFICE,WI,,Other,2023-NOV-15,Y,436,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1709304,"Kent's Stone Products & Design, LLC",WI,327991,Stone & other mineral,2023-NOV-15,Y,436,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.1,False,False
+1705462,Granite Centers Inc,KS,327991,Stone & other mineral,2023-NOV-21,Y,316,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",1210.0,True,True
+1705462,Granite Centers Inc,KS,327991,Stone & other mineral,2023-NOV-22,Y,319,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",29.3,True,False
+1701001,"Western Bronze,  Inc.",MA,331523,Steel/foundry,2023-NOV-21,Y,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",83.5,True,True
+1701001,"Western Bronze,  Inc.",MA,331523,Steel/foundry,2023-NOV-21,Y,444,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.9,False,False
+1690426,Texas Materials Group Inc.,TX,324121,Other,2023-NOV-21,Y,486,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.8,False,False
+1690426,Texas Materials Group Inc.,TX,324121,Other,2023-NOV-21,Y,491,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.4,False,False
+1690426,Texas Materials Group Inc.,TX,324121,Other,2023-NOV-21,Y,488,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.5,True,False
+1690426,Texas Materials Group Inc.,TX,324121,Other,2023-NOV-21,Y,459,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.8,False,False
+1702777,All Granite & Marble Corp.,NJ,327991,Stone & other mineral,2023-NOV-29,Y,412,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",14.8,False,False
+1702777,All Granite & Marble Corp.,NJ,327991,Stone & other mineral,2023-NOV-29,Y,293,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",26.0,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,456,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",50.3,True,True
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.7,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",49.9,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,408,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",45.7,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,442,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.6,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,432,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.1,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,216,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.9,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,437,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",38.3,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,309,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",43.4,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,427,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.9,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,441,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",55.7,True,True
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,439,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.5,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-NOV-29,Y,451,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",38.1,True,False
+5913,COLUMBUS AREA OFFICE,OH,,Other,2023-NOV-21,Y,388,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-NOV-21,Y,382,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",29.3,True,False
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-NOV-21,Y,427,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.4,False,False
+1702845,Granite -N- Marble C'Bus LLC.,OH,327991,Stone & other mineral,2023-NOV-21,Y,416,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",39.3,True,False
+1695732,Doren Inc.,PA,327331,Cement & concrete products,2023-NOV-28,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.6,False,False
+1695732,Doren Inc.,PA,327331,Cement & concrete products,2023-NOV-28,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",15.7,False,False
+1700427,Sun Energy Services LLC,PA,213112,Other,2023-NOV-30,Y,18,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",915.0,True,True
+5917,MOBILE AREA OFFICE,AL,,Other,2023-NOV-29,Y,368,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712708,"Kyle Nelson Customs, LLC",AL,327991,Stone & other mineral,2023-NOV-29,Y,171,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712708,"Kyle Nelson Customs, LLC",AL,327991,Stone & other mineral,2023-NOV-29,Y,400,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,211,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",365.0,True,True
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,145,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",625.0,True,True
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,198,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",517.0,True,True
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",549.0,True,True
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,224,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",399.0,True,True
+1710847,Summit Brick & Tile Company - Lakewood Plant,CO,327991,Stone & other mineral,2023-NOV-29,Y,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",492.0,True,True
+1713559,Granite Galleria Fabrication Inc.,PA,327991,Stone & other mineral,2023-NOV-30,Y,177,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5919,TOLEDO AREA OFFICE,OH,,Other,2023-NOV-30,Y,492,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,365,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.3,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,392,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,353,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,12,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,39,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708043,"Al-Co Products, Inc",OH,327991,Stone & other mineral,2023-NOV-30,Y,428,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713909,Weaver's Level Best Septic & Excavation Inc,CO,562991,Other,2023-DEC-01,Y,178,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713909,Weaver's Level Best Septic & Excavation Inc,CO,562991,Other,2023-DEC-01,Y,175,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713212,"East Coast Powder Coating, Inc.",FL,332813,Other,2023-DEC-06,Y,40,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",287.0,True,True
+1713212,"East Coast Powder Coating, Inc.",FL,332813,Other,2023-DEC-06,Y,30,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",47600.0,True,True
+1713212,"East Coast Powder Coating, Inc.",FL,332813,Other,2023-DEC-06,Y,40,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",75100.0,True,True
+1713212,"East Coast Powder Coating, Inc.",FL,332813,Other,2023-DEC-06,Y,20,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",49100.0,True,True
+1713212,"East Coast Powder Coating, Inc.",FL,332813,Other,2023-DEC-06,Y,20,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",72900.0,True,True
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,127,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,231,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,121,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,238,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,128,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712354,"Protective Coating Specialists, Inc.",SD,332812,Other,2023-DEC-04,Y,222,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1706065,BCG Marble & Granite,NJ,327991,Stone & other mineral,2023-NOV-30,Y,376,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.1,True,False
+1706065,BCG Marble & Granite,NJ,327991,Stone & other mineral,2023-NOV-30,Y,418,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",39.8,True,False
+1706065,BCG Marble & Granite,NJ,327991,Stone & other mineral,2023-NOV-30,Y,409,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",43.0,True,False
+1710672,"D. G. Paterson & Sons, Inc.",NY,327991,Stone & other mineral,2023-NOV-27,Y,119,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",111.0,True,True
+1710672,"D. G. Paterson & Sons, Inc.",NY,327991,Stone & other mineral,2023-NOV-27,Y,437,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",52.5,True,True
+5940,MILWAUKEE AREA OFFICE,WI,,Other,2023-DEC-06,Y,434,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-DEC-06,Y,445,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.3,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-DEC-06,Y,465,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.6,True,False
+1701470,Aluminum Foundry of Wisconsin LLC,WI,332999,Other,2023-DEC-06,Y,461,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.1,False,False
+1710510,"Imperial Granite & Marble, Inc.",NY,327991,Stone & other mineral,2023-DEC-01,Y,320,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",23.0,False,False
+1710510,"Imperial Granite & Marble, Inc.",NY,327991,Stone & other mineral,2023-DEC-01,Y,230,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.1,True,False
+5947,CALUMET CITY AREA OFFICE,IL,,Other,2023-DEC-06,Y,479,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.5,False,False
+1707963,"Owens Corning Roofing and Asphalt, LLC",IL,324122,Other,2023-DEC-06,Y,481,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",18.9,False,False
+1707963,"Owens Corning Roofing and Asphalt, LLC",IL,324122,Other,2023-DEC-06,Y,478,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.4,False,False
+1707963,"Owens Corning Roofing and Asphalt, LLC",IL,324122,Other,2023-DEC-06,Y,477,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.4,False,False
+5920,TAMPA AREA OFFICE,FL,,Other,2023-DEC-05,Y,470,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712541,"General Engines Company, Incorporated",FL,336212,Other,2023-DEC-05,Y,152,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712541,"General Engines Company, Incorporated",FL,336212,Other,2023-DEC-05,Y,285,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710845,Texan Powder Coating LLC,TX,332812,Other,2023-DEC-05,Y,406,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",28.8,True,False
+1710845,Texan Powder Coating LLC,TX,332812,Other,2023-DEC-05,Y,234,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",25.1,True,False
+1710160,"Architectural Granite, Inc.",FL,327991,Stone & other mineral,2023-DEC-07,Y,313,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1710160,"Architectural Granite, Inc.",FL,327991,Stone & other mineral,2023-DEC-07,Y,256,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5950,EAU CLAIRE AREA OFFICE,WI,,Other,2023-DEC-07,Y,180,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1715156,"Melgard Monument Company, Inc.",WI,423320,Other,2023-DEC-07,Y,186,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1708431,"Marble, Onyx, Granite & Terrazzo Corp.",NY,327991,Stone & other mineral,2023-DEC-05,Y,339,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1715080,Robinson Flagstones,PA,327991,Stone & other mineral,2023-DEC-12,Y,406,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5963,MOBILE AREA OFFICE,AL,,Other,2023-DEC-13,Y,134,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1704117,"Shelby Concrete, Inc.",AL,327390,Cement & concrete products,2023-DEC-13,Y,140,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712194,Pool Control Inc,FL,238990,Construction trades,2023-NOV-27,Y,41,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",748.0,True,True
+1707985,Oldcastle Materials,FL,327320,Cement & concrete products,2023-DEC-07,Y,337,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1707985,Oldcastle Materials,FL,327320,Cement & concrete products,2023-DEC-07,Y,110,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713304,Rhodes Brick & Block Inc.,WV,423320,Other,2023-DEC-14,Y,236,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713304,Rhodes Brick & Block Inc.,WV,423320,Other,2023-DEC-14,Y,155,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",58.4,True,True
+1713304,Rhodes Brick & Block Inc.,WV,423320,Other,2023-DEC-14,Y,237,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713304,Rhodes Brick & Block Inc.,WV,423320,Other,2023-DEC-14,Y,176,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713304,Rhodes Brick & Block Inc.,WV,423320,Other,2023-DEC-14,Y,464,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.3,False,False
+6000,FORT LAUDERDALE AREA OFFICE,FL,,Other,2023-DEC-14,Y,383,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1716515,Radical Cosmetics LLC,FL,446120,Other,2023-DEC-14,Y,370,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",19.9,False,False
+1716515,Radical Cosmetics LLC,FL,446120,Other,2023-DEC-14,Y,386,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",16.0,False,False
+1716521,"GL Staffing Services, Inc.",FL,446120,Other,2023-DEC-14,Y,376,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",17.4,False,False
+1716521,"GL Staffing Services, Inc.",FL,446120,Other,2023-DEC-14,Y,324,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1716521,"GL Staffing Services, Inc.",FL,446120,Other,2023-DEC-14,Y,52,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5962,EAU CLAIRE AREA OFFICE,WI,,Other,2023-DEC-12,Y,343,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1715977,"St. Croix Granite & Quartz, LLC.",WI,327991,Stone & other mineral,2023-DEC-12,Y,353,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",166.0,True,True
+1715977,"St. Croix Granite & Quartz, LLC.",WI,327991,Stone & other mineral,2023-DEC-12,Y,386,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",31.0,True,False
+1715977,"St. Croix Granite & Quartz, LLC.",WI,327991,Stone & other mineral,2023-DEC-12,Y,316,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",32.7,True,False
+6001,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-DEC-14,Y,240,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1714743,DTK Stone Works Inc.,IL,327991,Stone & other mineral,2023-DEC-14,Y,476,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.6,False,False
+1714743,DTK Stone Works Inc.,IL,327991,Stone & other mineral,2023-DEC-14,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",12.9,False,False
+1714743,DTK Stone Works Inc.,IL,327991,Stone & other mineral,2023-DEC-14,Y,437,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.9,False,False
+1696828,Island Redi-Mix,NY,238110,Construction trades,2023-DEC-08,Y,309,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1696828,Island Redi-Mix,NY,238110,Construction trades,2023-DEC-08,Y,339,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1696828,Island Redi-Mix,NY,238110,Construction trades,2023-DEC-08,Y,323,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1696828,Island Redi-Mix,NY,238110,Construction trades,2023-DEC-08,Y,311,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+5961,TAMPA AREA OFFICE,FL,,Other,2023-DEC-12,Y,480,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1713838,DeSanctis Development Corporation,FL,327991,Stone & other mineral,2023-DEC-12,Y,254,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",50.9,True,True
+1713838,DeSanctis Development Corporation,FL,327991,Stone & other mineral,2023-DEC-12,Y,194,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",52.2,True,True
+1713838,DeSanctis Development Corporation,FL,327991,Stone & other mineral,2023-DEC-12,Y,241,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",36.9,True,False
+1713838,DeSanctis Development Corporation,FL,327991,Stone & other mineral,2023-DEC-12,Y,189,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",33.0,True,False
+1691951,"Home Depot U.S.A., Inc.",MD,444110,Other,2023-DEC-15,Y,105,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",103.0,True,True
+1691951,"Home Depot U.S.A., Inc.",MD,444110,Other,2023-DEC-15,Y,102,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",57.7,True,True
+1715174,"Diamond A Cutstone, LLC",TX,327991,Stone & other mineral,2023-DEC-14,Y,462,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.0,False,False
+1715174,"Diamond A Cutstone, LLC",TX,327991,Stone & other mineral,2023-DEC-14,Y,439,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",24.1,False,False
+1715174,"Diamond A Cutstone, LLC",TX,327991,Stone & other mineral,2023-DEC-14,Y,408,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",33.9,True,False
+1715174,"Diamond A Cutstone, LLC",TX,327991,Stone & other mineral,2023-DEC-14,Y,411,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",27.2,True,False
+1695732,Doren Inc.,PA,327331,Cement & concrete products,2023-DEC-14,Y,143,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",40.8,True,False
+6042,CHICAGO NORTH AREA OFFICE,IL,,Other,2023-DEC-20,Y,409,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1711380,"Marble & Granite Tech, Inc.",IL,423320,Other,2023-DEC-20,Y,458,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",22.4,False,False
+1711380,"Marble & Granite Tech, Inc.",IL,423320,Other,2023-DEC-20,Y,449,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",20.5,False,False
+1711380,"Marble & Granite Tech, Inc.",IL,423320,Other,2023-DEC-20,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1711380,"Marble & Granite Tech, Inc.",IL,423320,Other,2023-DEC-20,Y,443,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",30.6,True,False
+1715432,"DISCOVER QUARTZ AND GRANITE, LLC",FL,327991,Stone & other mineral,2023-DEC-19,Y,411,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1715432,"DISCOVER QUARTZ AND GRANITE, LLC",FL,327991,Stone & other mineral,2023-DEC-19,Y,415,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",73.7,True,True
+1715432,"DISCOVER QUARTZ AND GRANITE, LLC",FL,327991,Stone & other mineral,2023-DEC-19,Y,404,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.9,True,False
+1714628,Marble America Corp.,NY,327991,Stone & other mineral,2023-DEC-20,Y,300,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",314.0,True,True
+1714628,Marble America Corp.,NY,327991,Stone & other mineral,2023-DEC-20,Y,163,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,281,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",106.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,194,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",177.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,275,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",129.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,207,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",286.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,271,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",167.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,208,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",212.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,256,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.8,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,239,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",56.0,True,True
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,236,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",34.7,True,False
+1717908,"ACME Foundry, Inc.",KS,331511,Steel/foundry,2023-DEC-20,Y,244,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1714516,Fillings Marble & Tile Outlet,NJ,423320,Other,2023-DEC-20,Y,468,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1714516,Fillings Marble & Tile Outlet,NJ,423320,Other,2023-DEC-20,Y,456,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.4,False,False
+1714516,Fillings Marble & Tile Outlet,NJ,423320,Other,2023-DEC-20,Y,467,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",13.7,False,False
+1717434,"Luxury Granite, LLC.",WI,423320,Other,2023-DEC-22,Y,14,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",405.0,True,True
+6044,MADISON AREA OFFICE,WI,,Other,2023-DEC-21,Y,387,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1717182,"Milis Flatwork, LLC",WI,238110,Construction trades,2023-DEC-21,Y,93,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1717182,"Milis Flatwork, LLC",WI,238110,Construction trades,2023-DEC-21,Y,103,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+6080,NEW YORK AREA OFFICE,NY,,Other,2023-DEC-27,Y,342,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",21.7,False,False
+1717863,Super Stone Global Inc,NY,327991,Stone & other mineral,2023-DEC-27,Y,351,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",390.0,True,True
+1717863,Super Stone Global Inc,NY,327991,Stone & other mineral,2023-DEC-27,Y,73,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",94.3,True,True
+1716361,Alise Marble & Granite Corporation,NY,327991,Stone & other mineral,2023-DEC-16,Y,210,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",61.2,True,True
+6122,BATON ROUGE AREA OFFICE,LA,,Other,2023-NOV-28,Y,450,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712581,"Sunbelt Crushing, LLC.",LA,327390,Cement & concrete products,2023-NOV-28,Y,460,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
+1712581,"Sunbelt Crushing, LLC.",LA,327390,Cement & concrete products,2023-NOV-28,Y,460,"Silica, Crystalline, Mixed Respirable  (Quartz,Cristobalite,Tridymite)",0.0,False,False
