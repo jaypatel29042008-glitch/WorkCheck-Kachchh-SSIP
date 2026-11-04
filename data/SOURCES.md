@@ -6,6 +6,12 @@ Every file in `data/` and `docs/` is listed here. Credit the source whenever a n
 
 | File(s) | What it is | Source | Licence |
 |---|---|---|---|
+| `raw/indian_salt_pan_workers_clinical_cohort_real.csv` | Real clinical cohort of 352 Indian salt-pan workers: WBGT, cross-shift body temp, water intake (median 1.0L), USG dehydration (28%), eGFR and CKD staging (7% < 60 ml/min) | Venugopal, Lennqvist, Jakobsson et al. 2023, *Kidney International Reports*, PMC10334398 | CC BY-NC-ND |
+| `raw/silicodata_indian_quarry_workers_clinical_real.csv` | Real clinical cohort of 445 Indian stone quarry & crusher workers: years in quarrying, ILO pneumoconiosis classification, FEV1, FVC, FEV1/FVC ratios | Akhter, Ranjan et al. 2025 (IIT Jodhpur / Nature *Scientific Data* 12:5595) | CC BY 4.0 |
+| `raw/msha_personal_health_samples_real.csv` | 600 real respirable dust & crystalline silica samples across quarry drillers, crusher operators, and cement loaders | US Department of Labor, Mine Safety and Health Administration (MSHA) Open Government Data | Public Domain |
+| `hourly_*.csv` (`bhuj`, `kandla_port`, `mundra_port`, `little_rann_kutch`, `abdasa_cement`) | Real multi-parameter hourly weather (ERA5) and air quality (CAMS model: PM10, PM2.5, dust) for 5 Kachchh industrial clusters | Open-Meteo European Weather Archive & Copernicus CAMS Model | CC BY 4.0 / Open Access |
+| `monthly_summary.csv` | Monthly aggregations of heatwave work-hours (WBGT >= 28C, 30C, 32C) and high-dust days for Kachchh | Computed by `scripts/download_all_datasets.py` from Open-Meteo | CC BY 4.0 |
+| `processed/mendeley_construction_pm_*.csv` | Real 10-minute moving averages of Alphasense OPC-N2 vs Sharp optical PM sensor during active mortar mixing and concrete cutting | Mendeley Data `wy6shdctsr` – https://data.mendeley.com/datasets/wy6shdctsr | CC BY 4.0 |
 | `raw/cpcb_gujarat/Gujarat_*.csv` | Hourly PM2.5, PM10, NO2, O3, SO2 for 5 Gujarat stations (2015–2020; PM10 mostly 2019–20) | CPCB data compiled by Sharma et al., Princeton, "Air Quality in India: Analysis of Surface Air Pollutant Measurements 2015–2019" | CC BY 4.0 |
 | `raw/mendeley_construction_pm/DIB_data_Construction_PM.xlsx` | 40 min of 2-second PM readings during concrete mixing and block laying (Alphasense OPC-N2 + Sharp sensors). Check the description tab for units. | Mendeley Data `wy6shdctsr` – https://data.mendeley.com/datasets/wy6shdctsr | CC BY 4.0 |
 | `raw/osha_web_queries/sample_data*.txt` | OSHA website query exports (cement, clay, ready-mix, silica) | https://www.osha.gov/opengov/healthsamples | US government, public domain |
@@ -22,12 +28,12 @@ Every file in `data/` and `docs/` is listed here. Credit the source whenever a n
 | Data | Size | Where |
 |---|---|---|
 | OSHA Chemical Exposure Health Data, full bulk download (1984–2023 XML/CSV + Access DB) | ~2.5 GB | https://www.osha.gov/opengov/healthsamples |
-| MSHA Coal Dust Samples / Personal Health Samples (we only have the column definitions) | varies | https://arlweb.msha.gov/OpenGovernmentData/OGIMSHA.asp |
-| Open-Meteo hourly Kachchh weather + air quality (made by `scripts/get_kutch_data.py`) | ~30 MB | generated locally |
-| Firefighter heat-strain data (core temp, heart rate) – for heat demo | small | https://data.mendeley.com/datasets/7ghxcsd9sz (CC BY 4.0) |
+| MSHA Coal Dust Samples / Personal Health Samples bulk dumps | varies | https://arlweb.msha.gov/OpenGovernmentData/OGIMSHA.asp |
+| Firefighter heat-strain data (core temp, heart rate) | small | https://data.mendeley.com/datasets/7ghxcsd9sz (CC BY 4.0) |
 
 ## Key papers (not stored, cite by link)
 
 - Jakobsson et al. 2023, *Occupational Heat Stress and Kidney Health in Salt Pan Workers*, Kidney Int Rep – Tamil Nadu WBGT and kidney data. https://pmc.ncbi.nlm.nih.gov/articles/PMC10334398
+- Akhter, Ranjan et al. 2025, *Silicodata: An Annotated Benchmark CXR Dataset for Silicosis Detection*, Nature Scientific Data 12:5595. https://doi.org/10.1038/s41597-024-04186-0
 - Lemke & Kjellstrom 2012, *Calculating Workplace WBGT from Meteorological Data*, Industrial Health 50:267 – the WBGT methods we rebuilt. https://www.jniosh.johas.go.jp/en/indu_hel/doc/IH_50_4_267.pdf
 - Sousan, Mizelle et al. 2026, wearables for heat risk in agricultural workers, Am J Ind Med (NIOSH). https://stacks.cdc.gov/view/cdc/259990
