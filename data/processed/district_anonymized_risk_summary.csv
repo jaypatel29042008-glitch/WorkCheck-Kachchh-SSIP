@@ -1,0 +1,13 @@
+taluka,site_type,total_active_sites,total_monitored_workers,mean_wbgt_c,peak_wbgt_c,total_hours_above_30c_wbgt,total_overexposed_worker_days,sites_lacking_drinking_water
+Anjar,port_berth,1,22,38.7,47.5,187.0,22,0
+Anjar,stone_crusher,7,134,37.82,47.5,1136.9,134,71
+Bhuj,port_berth,2,42,36.9,45.3,354.5,42,0
+Bhuj,salt_pan,1,19,38.27,44.9,161.5,19,0
+Bhuj,stone_crusher,7,119,37.32,48.1,1006.7,119,0
+Gandhidham,cement_plant,1,25,36.5,45.3,209.9,25,0
+Gandhidham,salt_pan,3,71,37.57,47.6,598.5,71,44
+Mandvi,cement_plant,2,29,36.81,47.1,244.5,29,0
+Mandvi,salt_pan,11,219,37.14,47.6,1841.6,219,73
+Mundra,port_berth,2,46,37.55,45.9,383.7,46,0
+Mundra,salt_pan,11,209,37.59,47.7,1756.5,209,57
+Mundra,stone_crusher,2,34,37.34,47.9,284.2,34,16

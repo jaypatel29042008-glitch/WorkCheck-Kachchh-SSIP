@@ -1,0 +1,5 @@
+hazard_agent,cas_number,industry_sector,osha_pel_8hr_twa_ug_m3,osha_action_level_ug_m3,niosh_rel_ug_m3,acgih_tlv_ug_m3,indian_factories_act_limit_ug_m3,clinical_health_endpoint,statutory_medical_surveillance
+Respirable Crystalline Silica (Quartz),14808-60-7,Stone Quarrying & Crushing,50.0,25.0,50.0,25.0,100.0,"Silicosis, Lung Cancer, Pulmonary Fibrosis",Mandatory baseline & annual spirometry + ILO chest X-ray
+Respirable Crystalline Silica (Quartz),14808-60-7,Cement Manufacturing & Bagging,50.0,25.0,50.0,25.0,100.0,"COPD, Occupational Asthma, Silicosis",Mandatory medical exam every 12 months (Factories Act Sec 41C)
+Portland Cement Dust (Total),65997-15-1,Construction & Clinker Handling,15000.0,5000.0,10000.0,1000.0,10000.0,"Alkaline chemical dermatitis, eye irritation, bronchitis","Skin inspection, barrier cream, eye wash facilities"
+Nuisance Mineral Dust (Respirable),N/A,Bulk Port Cargo Handling,5000.0,2500.0,5000.0,3000.0,5000.0,"Chronic bronchitis, reduced lung capacity",Periodic health questionnaire and screening
