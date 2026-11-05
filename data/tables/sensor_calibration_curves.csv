@@ -1,0 +1,8 @@
+sensor_part,parameter_tracked,raw_unit,physical_unit,transfer_formula,reference_instrument,error_tolerance_pct
+Plantower PMS5003,Respirable PM2.5,RAW_PULSE_COUNTS,ug/m3,pm25_corr = pm25_raw / (1 + 0.24 * (RH/100)^2 / (1 - RH/100)),Grimm 11-D Optical Particle Counter,8.5
+BME280 Mask Probe,Respiration Rate / Exhaled RH,I2C_RH_TEMP,breaths_per_minute,peak_detection(delta_rh > 4.5% in 1.2s window),Jaeger Oxycon Spirometer,5.2
+150mm Matte-Black Globe,Mean Radiant Temperature (Tg),PT100_RESISTANCE,deg_C,Tg = (R - 100) / 0.385,Casella 150mm Copper Standard Globe,2.0
+Natural Wet Bulb Wick,Natural Wet Bulb (Tnw),NTC_10K_VOLTAGE,deg_C,"Steinhart-Hart equation (distilled water wick, naturally ventilated)",Assmann Aspirated Psychrometer,3.1
+GUVA-S12SD,Solar UV Index,ANALOG_MILLIVOLTS,UV_INDEX_1_12,UVI = mV / 100.0,Yankee Environmental Systems UVB-1,7.0
+INMP441 Microphone,A-weighted Noise Dose,I2S_DIGITAL_AUDIO,dBA_SPL,dBA = 20 * log10(RMS / 20uPa) + A_weighting_filter(),Bruel & Kjaer 2250 Type 1 Sound Level Meter,4.0
+TCS34725 Colorimeter,Hydration Color Scale,RGB_CLEAR_CHANNEL,ARMSTRONG_SCALE_1_8,"classify_rgb_euclidean(R, G, B, armstrong_centroids)",Konica Minolta CM-700d Spectrophotometer,6.5

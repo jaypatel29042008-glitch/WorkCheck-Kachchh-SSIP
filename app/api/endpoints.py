@@ -844,3 +844,113 @@ def get_cool_shift_stats():
             }
         ]
     }
+
+
+# ==============================================================================
+# 7. CLINICAL EXTENSIONS & EVIDENCE REPOSITORY ENDPOINTS
+# ==============================================================================
+
+DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
+
+@router.get("/facilities")
+def get_health_facilities(taluka: Optional[str] = None):
+    """Returns Kachchh healthcare facilities and diagnostic capabilities."""
+    file_path = DATA_DIR / "tables" / "health_facilities_kachchh.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        # Parse booleans
+        for r in records:
+            r["latitude"] = float(r["latitude"])
+            r["longitude"] = float(r["longitude"])
+            for bool_col in ["has_digital_xray", "has_spirometer", "has_audiometry", "has_biochemical_lab", "has_cbnaat_tb_testing", "emergency_108_base"]:
+                r[bool_col] = (str(r.get(bool_col, "")).lower() == "true")
+        if taluka:
+            records = [r for r in records if r.get("taluka", "").lower() == taluka.lower()]
+        return records
+
+
+@router.get("/research/breath-telemetry")
+def get_bme280_breath_telemetry(worker_id: Optional[str] = None, limit: int = 50):
+    """
+    Returns Mentor's BME280 breath sensor experiment data (respiratory rate,
+    minute ventilation, and condensation warnings inside masks).
+    """
+    file_path = DATA_DIR / "simulation" / "sim_bme280_breath_telemetry.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        if worker_id:
+            records = [r for r in records if r.get("worker_id") == worker_id]
+        return records[:limit]
+
+
+@router.get("/research/silica-assays")
+def get_silica_lab_assays():
+    """
+    Returns lab-verified free crystalline silica (quartz %) from NIOH Ahmedabad
+    regional XRD assays across Kachchh industries (stone crushing, cement, bentonite, salt).
+    """
+    file_path = DATA_DIR / "tables" / "local_silica_lab_assays.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        for r in records:
+            r["respirable_dust_conc_mg_m3"] = float(r["respirable_dust_conc_mg_m3"])
+            r["quartz_silica_pct_xrd"] = float(r["quartz_silica_pct_xrd"])
+            r["cristobalite_pct_xrd"] = float(r["cristobalite_pct_xrd"])
+        return records
+
+
+@router.get("/audit/consent-log")
+def get_consent_audit_log(limit: int = 50):
+    """Returns 3-tier DPDP Act 2023 privacy access audit trail."""
+    file_path = DATA_DIR / "simulation" / "worker_consent_audit_log.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        return records[:limit]
+
+
+@router.get("/workers/unregistered")
+def get_unregistered_enrollments(limit: int = 50):
+    """Returns workflow records capturing untracked migrant worker onboarding at check-ups."""
+    file_path = DATA_DIR / "simulation" / "unregistered_worker_enrollment.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        return records[:limit]
+
+
+@router.get("/statutory/fitness-forms")
+def get_statutory_fitness_forms(limit: int = 50):
+    """Returns statutory fitness certificates (Gujarat Rule 9 Form 5 & Central Form VIII)."""
+    file_path = DATA_DIR / "tables" / "statutory_fitness_forms.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        records = list(reader)
+        return records[:limit]
+
+
+@router.get("/calibration/curves")
+def get_sensor_calibration_curves():
+    """Returns mathematical transfer functions and reference instruments for hardware sensors."""
+    file_path = DATA_DIR / "tables" / "sensor_calibration_curves.csv"
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+

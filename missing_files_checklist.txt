@@ -1,0 +1,238 @@
+================================================================================
+PS000109 PROJECT - SUMMARY CHECKLIST OF MISSING DATASET FILES
+Project: Worker Occupational Health & Exposure Tracking Dashboard (Kachchh, Gujarat)
+Generated on: 2026-11-05
+================================================================================
+
+This document outlines the missing datasets, sensor telemetry files, clinical 
+schemas, and infrastructure tables required to fulfill the project scope, the 
+mentor's BME280 breath sensor experiment, and the 5 alert parameters (Noise, UV, 
+Hydration, Work Hours, Combined Workload).
+
+--------------------------------------------------------------------------------
+QUICK PRIORITY CHECKLIST
+--------------------------------------------------------------------------------
+
+[ ] P0 - sim_bme280_breath_telemetry.csv
+    Mentor's mask/respiration sensor experiment data & breathing rate.
+
+[ ] P0 - sim_clinical_test_records.csv
+    Clinical examination values (spirometry, chest X-ray ILO, creatinine, audiogram).
+
+[ ] P1 - sim_rfid_qr_checkin_logs.csv
+    Daily attendance/tap-in logs backing Work Hours (55+ h) & Combined Workload.
+
+[ ] P1 - health_facilities_kachchh.csv
+    Master directory of Kachchh PHCs, CHCs, hospitals & diagnostic capabilities.
+
+[ ] P1 - unregistered_worker_enrollment.csv
+    Workflow records capturing untracked migrant worker onboarding at check-ups.
+
+[ ] P2 - sensor_calibration_curves.csv
+    Hardware conversion curves (ADC/mV/RGB to dBA, UV Index, Armstrong urine scale).
+
+[ ] P2 - worker_consent_audit_log.csv
+    3-tier privacy enforcement (Worker-held record, Doctor consent, DDO anonymity).
+
+[ ] P2 - statutory_fitness_forms.csv
+    Statutory medical fitness records (Gujarat OSH Rule 9 Form 5 & Central Form VIII).
+
+[ ] P2 - local_silica_lab_assays.csv
+    Kachchh/Gujarat regional quartz % XRD lab assays to ground cumulative silica.
+
+
+================================================================================
+DETAILED FILE SPECIFICATIONS & SCHEMAS
+================================================================================
+
+--------------------------------------------------------------------------------
+1. HARDWARE & SENSOR TELEMETRY FILES
+--------------------------------------------------------------------------------
+
+[ ] FILE 1: sim_bme280_breath_telemetry.csv
+    Priority: P0 (Critical)
+    Purpose: Directly addresses the Mentor's BME280 breath sensor proposal (DFKI 
+             study, 96% accuracy in face-mask settings, minute ventilation 
+             refinement, respiratory rate tracking).
+    Target Folder: simulation/
+    Suggested Columns:
+      - timestamp                      : ISO8601 timestamp (e.g. 2025-05-10T11:30:00)
+      - worker_id                      : Worker identifier (e.g. SIM-001)
+      - temperature_c                  : BME280 sensor temperature inside mask (°C)
+      - relative_humidity_pct          : BME280 humidity inside mask (%)
+      - pressure_hpa                   : Atmospheric pressure inside mask (hPa)
+      - respiratory_rate_bpm           : Calculated breaths per minute
+      - mask_donned_flag               : Boolean (True if mask is worn properly)
+      - minute_ventilation_est_l_min   : Estimated volume of air inhaled (L/min)
+      - condensation_clog_flag         : Sensor moisture saturation indicator
+
+[ ] FILE 2: sim_rfid_qr_checkin_logs.csv
+    Priority: P1 (High)
+    Purpose: Backs up the Work Hours (55+ hrs over 4 weeks) and Combined Workload 
+             parameters from the image table. Current simulation lacks raw 
+             time-stamped tap events.
+    Target Folder: simulation/
+    Suggested Columns:
+      - log_id                         : Unique transaction identifier
+      - worker_id                      : Worker identifier
+      - node_id                        : Hardware ESP32 node identifier
+      - site_id                        : Worksite location ID (e.g. bhuj, kandla_port)
+      - timestamp                      : Scan timestamp
+      - event_type                     : CHECK_IN / CHECK_OUT
+      - scan_method                    : RFID_CARD / QR_CODE / PROVISIONAL_MANUAL
+      - weekly_accumulated_hours       : Rolling 7-day total hours worked
+      - consecutive_weeks_over_55      : Count of consecutive weeks >= 55 hours
+
+[ ] FILE 3: sensor_calibration_curves.csv
+    Priority: P2 (Medium)
+    Purpose: Mathematical transfer functions and reference instruments for the 
+             hardware parts specified in the project image.
+    Target Folder: tables/
+    Suggested Columns:
+      - sensor_part                    : INMP441 / GUVA-S12SD / TCS34725 / BME280
+      - parameter_tracked              : Noise dose / UV dose / Hydration / Respiration
+      - raw_unit                       : ADC_RMS_COUNTS / MILLIVOLTS / RGB_CLEAR_LUX
+      - physical_unit                  : dBA / UV_INDEX_SED / ARMSTRONG_URINE_SCALE_1_8
+      - transfer_formula               : Calibration function or lookup equation
+      - reference_instrument           : Type 2 Sound Meter / Spectroradiometer / Colorimeter
+      - error_tolerance_pct            : Expected prototype margin of error
+
+
+--------------------------------------------------------------------------------
+2. CLINICAL & MEDICAL DIAGNOSTIC FILES
+--------------------------------------------------------------------------------
+
+[ ] FILE 4: sim_clinical_test_records.csv
+    Priority: P0 (Critical)
+    Purpose: Provides actual medical numbers for clinic screens so that 
+             "doctors decide what the tests mean". Currently, README.md notes 
+             no clinical test values are generated.
+    Target Folder: simulation/
+    Suggested Columns:
+      - test_id                        : Unique medical examination ID
+      - worker_id                      : Worker identifier
+      - screening_date                 : Date of clinical visit
+      - facility_id                    : Facility where check-up occurred
+      - doctor_registration_no         : Examining physician / surgeon ID
+      - fev1_litres                    : Forced Expiratory Volume in 1 second
+      - fvc_litres                     : Forced Vital Capacity
+      - fev1_fvc_ratio                 : Ratio indicating obstructive/restrictive defect
+      - fev1_pct_predicted             : % of age/height predicted normal value
+      - cxr_ilo_profusion              : ILO classification category (e.g. 0/0, 1/1, 2/1)
+      - cxr_opacities_shape            : Round (p, q, r) or irregular (s, t, u)
+      - serum_creatinine_mg_dl         : Lab blood creatinine (kidney check)
+      - egfr_ckd_epi                   : Estimated GFR (mL/min/1.73m²)
+      - urine_specific_gravity         : Hydration status indicator
+      - urine_protein_dipstick         : Proteinuria indicator (NIL / TRACE / 1+ / 2+)
+      - spo2_pct                       : Pulse oximetry oxygen saturation (%)
+      - resting_pulse_bpm              : Pulse rate (beats/min)
+      - systolic_bp_mmhg               : Systolic blood pressure (for long-hours trigger)
+      - diastolic_bp_mmhg              : Diastolic blood pressure
+      - pta_hearing_threshold_db_4khz  : Pure Tone Audiometry hearing threshold at 4 kHz
+      - sputum_cbnaat_result           : TB test result (NEGATIVE / POSITIVE / NOT_TESTED)
+      - clinical_verdict               : NORMAL / SUSPECTED_SILICOSIS / CKD_RISK / HYPERTENSION
+      - fitness_certificate_status     : FIT / FIT_WITH_RESTRICTION / TEMPORARILY_UNFIT
+
+[ ] FILE 5: statutory_fitness_forms.csv
+    Priority: P2 (Medium)
+    Purpose: Tracks legal compliance under the legal rules quoted in the project 
+             (Gujarat OSH Rules 2025 Rule 9 Form 5; Central OSH Rules 2026 Rule 5 Form VIII).
+    Target Folder: tables/
+    Suggested Columns:
+      - form_id                        : Official certificate serial number
+      - worker_id                      : Worker identifier
+      - form_type                      : GUJARAT_FORM_5 / CENTRAL_FORM_VIII
+      - employer_id                    : Current employer or contractor
+      - legal_exam_trigger_age         : Age 45 (State sphere) or Age 40 (Central dock/port)
+      - certifying_surgeon_name        : Doctor signature record
+      - issue_date                     : Date certified
+      - renewal_due_date               : 1-year validity expiration date
+      - compliance_status              : COMPLIANT / OVERDUE_EXAM / EXEMPT
+
+
+--------------------------------------------------------------------------------
+3. HEALTHCARE INFRASTRUCTURE & REFERRAL ROUTING
+--------------------------------------------------------------------------------
+
+[ ] FILE 6: health_facilities_kachchh.csv
+    Priority: P1 (High)
+    Purpose: Provides the referral destination network across Kachchh talukas 
+             (Bhuj, Gandhidham, Anjar, Mandvi, Mundra, Abdasa, Lakhpat, Nakhatrana, Rapar, Bhachau).
+    Target Folder: tables/
+    Suggested Columns:
+      - facility_id                    : Unique clinic/hospital code
+      - facility_name                  : e.g. GK General Hospital Bhuj, CHC Nakhatrana, ESIC Adipur
+      - facility_tier                  : PHC / CHC / SUB_DISTRICT_HOSPITAL / DISTRICT_HOSPITAL / ESIC / MOBILE_VAN
+      - taluka                         : Taluka name
+      - latitude                       : Geographic latitude
+      - longitude                      : Geographic longitude
+      - has_digital_xray               : Boolean
+      - has_spirometer                 : Boolean
+      - has_audiometry                 : Boolean
+      - has_biochemical_lab            : Boolean (Creatinine / Urine)
+      - has_cbnaat_tb_testing          : Boolean
+      - emergency_108_base             : Boolean
+
+
+--------------------------------------------------------------------------------
+4. WORKER IDENTITY, ONBOARDING & PRIVACY
+--------------------------------------------------------------------------------
+
+[ ] FILE 7: unregistered_worker_enrollment.csv
+    Priority: P1 (High)
+    Purpose: Demonstrates the core project claim: "Untracked workers get reported 
+             at check-ups. A worker missing from any register is enrolled when 
+             they come in for screening."
+    Target Folder: simulation/
+    Suggested Columns:
+      - enrollment_id                  : Onboarding transaction ID
+      - provisional_worker_id          : Temporary ID before formal register sync
+      - intake_channel                 : MOBILE_HEALTH_VAN / CLINIC_WALK_IN / SITE_CAMP
+      - enrollment_date                : Date discovered/enrolled
+      - eshram_uan_masked              : e-Shram UAN (if possessed)
+      - aadhaar_virtual_token          : Masked identity token
+      - contractor_declared            : Declared labor contractor / unorganized
+      - prior_work_years_silica        : Worker-reported years in dusty trades
+      - assigned_permanent_id          : Permanent worker_id linked in system
+
+[ ] FILE 8: worker_consent_audit_log.csv
+    Priority: P2 (Medium)
+    Purpose: Implements the strict project constraint: "The worker holds their 
+             record, clinic staff see cases with consent, and the DDO sees anonymous totals."
+    Target Folder: simulation/
+    Suggested Columns:
+      - consent_event_id               : Unique access record ID
+      - worker_id                      : Worker whose data is being accessed
+      - requester_role                 : CLINIC_STAFF / DDO_ADMIN / SUPERVISOR / WORKER_SELF
+      - requester_id                   : Individual staff user ID
+      - data_scope                     : FULL_CLINICAL / ANONYMOUS_AGGREGATE / RISK_FLAG_ONLY
+      - consent_method                 : OTP_VERIFIED / BIOMETRIC_TAP / STATUTORY_EMERGENCY
+      - consent_status                 : GRANTED / DENIED / EXPIRED / REVOKED
+      - event_timestamp                : Audit timestamp
+
+
+--------------------------------------------------------------------------------
+5. GROUND-TRUTH LAB REFERENCE DATA
+--------------------------------------------------------------------------------
+
+[ ] FILE 9: local_silica_lab_assays.csv
+    Priority: P2 (Medium)
+    Purpose: Replaces generic US OSHA samples with lab-verified quartz percentages 
+             from Kachchh/Gujarat dust to support the 4-step silica estimation claim:
+             (1) Measure dust -> (2) Find silica share -> (3) Add work history -> (4) Show range.
+    Target Folder: tables/
+    Suggested Columns:
+      - assay_id                       : Sample lab test ID
+      - location_id                    : Worksite location ID (e.g. abdasa_cement, bhuj)
+      - industry_type                  : STONE_CRUSHING / CEMENT / BENTONITE / PORT_BULK / SALT_PAN
+      - sample_collection_method       : CYCLONE_RESPIRABLE_DUST_NIOSH_0600
+      - respirable_dust_conc_mg_m3     : Measured respirable dust concentration
+      - quartz_silica_pct_xrd          : % Free Crystalline Silica (Quartz) by XRD
+      - cristobalite_pct_xrd           : % Cristobalite by XRD
+      - testing_laboratory             : NIOH Ahmedabad / NABL Accredited Laboratory
+      - analysis_date                  : Date of lab report
+
+================================================================================
+END OF SUMMARY CHECKLIST
+================================================================================
+

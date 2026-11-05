@@ -86,6 +86,21 @@ async def serve_district_view(request: Request):
     return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "district"})
 
 
+@app.get("/research", response_class=HTMLResponse)
+async def serve_research_view(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "research"})
+
+
+@app.get("/facilities", response_class=HTMLResponse)
+async def serve_facilities_view(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "facilities"})
+
+
+@app.get("/login", response_class=HTMLResponse)
+async def serve_login_view(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "login"})
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

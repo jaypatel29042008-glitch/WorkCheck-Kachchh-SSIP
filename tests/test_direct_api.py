@@ -35,7 +35,14 @@ from app.api.endpoints import (
     get_district_summary,
     get_district_hotspots,
     export_statutory_report,
-    get_cool_shift_stats
+    get_cool_shift_stats,
+    get_health_facilities,
+    get_bme280_breath_telemetry,
+    get_silica_lab_assays,
+    get_consent_audit_log,
+    get_unregistered_enrollments,
+    get_statutory_fitness_forms,
+    get_sensor_calibration_curves
 )
 
 
@@ -234,6 +241,60 @@ class TestWorkCheckDirectAPI(unittest.TestCase):
         res = update_site_compliance(site_id, payload)
         self.assertEqual(res["status"], "COMPLIANCE_UPDATED")
         self.assertEqual(res["site_id"], site_id)
+
+    def test_15_health_facilities(self):
+        """Tests health facilities directory retrieval (PHC, CHC, ESIC, Dhanvantari Rath)."""
+        facs = get_health_facilities()
+        self.assertIsInstance(facs, list)
+        self.assertGreaterEqual(len(facs), 10)
+        bhuj = [f for f in facs if "bhuj" in f["taluka"].lower()]
+        self.assertGreater(len(bhuj), 0)
+        self.assertTrue(bhuj[0]["has_digital_xray"])
+
+    def test_16_bme280_respiration_telemetry(self):
+        """Tests Mentor's BME280 breath sensor experiment data."""
+        data = get_bme280_breath_telemetry(limit=25)
+        self.assertIsInstance(data, list)
+        self.assertGreater(len(data), 0)
+        self.assertIn("respiratory_rate_bpm", data[0])
+        self.assertIn("minute_ventilation_est_l_min", data[0])
+
+    def test_17_local_silica_lab_assays(self):
+        """Tests NIOH Ahmedabad XRD quartz % assays for regional Kachchh industries."""
+        assays = get_silica_lab_assays()
+        self.assertIsInstance(assays, list)
+        self.assertEqual(len(assays), 7)
+        stone_crushing = [a for a in assays if a["industry_type"] == "STONE_CRUSHING"]
+        self.assertGreater(len(stone_crushing), 0)
+        self.assertAlmostEqual(stone_crushing[0]["quartz_silica_pct_xrd"], 18.4)
+
+    def test_18_consent_audit_log(self):
+        """Tests 3-tier DPDP Act 2023 privacy access audit trail."""
+        logs = get_consent_audit_log(limit=20)
+        self.assertIsInstance(logs, list)
+        self.assertGreater(len(logs), 0)
+        self.assertIn("consent_event_id", logs[0])
+        self.assertIn("requester_role", logs[0])
+
+    def test_19_unregistered_worker_enrollment(self):
+        """Tests untracked migrant worker onboarding workflow."""
+        unreg = get_unregistered_enrollments(limit=20)
+        self.assertIsInstance(unreg, list)
+        self.assertGreater(len(unreg), 0)
+        self.assertIn("provisional_worker_id", unreg[0])
+        self.assertIn("assigned_permanent_id", unreg[0])
+
+    def test_20_statutory_fitness_forms_and_curves(self):
+        """Tests Form 5 statutory compliance records and sensor calibration curves."""
+        forms = get_statutory_fitness_forms(limit=20)
+        self.assertIsInstance(forms, list)
+        self.assertGreater(len(forms), 0)
+        self.assertIn("form_type", forms[0])
+
+        curves = get_sensor_calibration_curves()
+        self.assertIsInstance(curves, list)
+        self.assertEqual(len(curves), 7)
+
 
 
 if __name__ == "__main__":
