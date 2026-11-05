@@ -55,9 +55,9 @@ app.include_router(api_router)
 async def serve_dashboard(request: Request, view: str = "worker"):
     """Serves the unified multi-persona WorkCheck Kachchh interactive dashboard."""
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
+        request=request,
+        name="index.html",
+        context={
             "initial_view": view,
             "project_name": "WorkCheck Kachchh",
             "team_id": "TM005024",
@@ -68,22 +68,22 @@ async def serve_dashboard(request: Request, view: str = "worker"):
 
 @app.get("/worker", response_class=HTMLResponse)
 async def serve_worker_view(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "initial_view": "worker"})
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "worker"})
 
 
 @app.get("/site", response_class=HTMLResponse)
 async def serve_site_view(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "initial_view": "site"})
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "site"})
 
 
 @app.get("/van", response_class=HTMLResponse)
 async def serve_van_view(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "initial_view": "van"})
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "van"})
 
 
 @app.get("/district", response_class=HTMLResponse)
 async def serve_district_view(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "initial_view": "district"})
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "district"})
 
 
 if __name__ == "__main__":
