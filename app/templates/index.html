@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkCheck Kachchh — Digital Occupational Health Monitoring & ABHA Health Locker</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Leaflet CSS & JS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- QRCode.js CDN for dynamic worker badge generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            hazard: {
+              green: '#22c55e',
+              yellow: '#eab308',
+              orange: '#f97316',
+              red: '#ef4444'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Gujarati', sans-serif;
+    }
+    .lamp-glow-green { box-shadow: 0 0 35px rgba(34, 197, 94, 0.7); }
+    .lamp-glow-yellow { box-shadow: 0 0 35px rgba(234, 179, 8, 0.7); }
+    .lamp-glow-orange { box-shadow: 0 0 35px rgba(249, 115, 22, 0.7); }
+    .lamp-glow-red { box-shadow: 0 0 45px rgba(239, 68, 68, 0.9); animation: pulse 1.5s infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.03); }
+    }
+    #district-map { height: 420px; border-radius: 0.75rem; z-index: 10; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-emerald-500 selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- TOP NAVIGATION HEADER -->
+  <!-- ===================================================================== -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- Brand & Project Identity -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+          <i data-lucide="shield-check" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-lg font-bold tracking-tight text-white">WorkCheck Kachchh</h1>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PS000109</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Team TM005024</span>
+          </div>
+          <p class="text-xs text-slate-400">Digital Occupational Health Monitoring & ABDM ABHA Publishing · DDO Kachchh</p>
+        </div>
+      </div>
+
+      <!-- Persona Navigation Tabs -->
+      <nav class="flex items-center bg-slate-800/80 p-1 rounded-xl border border-slate-700/60 overflow-x-auto">
+        <button onclick="switchView('worker')" id="tab-worker" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center space-x-1.5 bg-emerald-600 text-white shadow-sm">
+          <i data-lucide="qr-code" class="w-4 h-4"></i>
+          <span>Worker Health Pass</span>
+        </button>
+        <button onclick="switchView('site')" id="tab-site" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center space-x-1.5 text-slate-300 hover:text-white hover:bg-slate-700/50">
+          <i data-lucide="activity" class="w-4 h-4"></i>
+          <span>Worksite Live Watch</span>
+        </button>
+        <button onclick="switchView('van')" id="tab-van" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center space-x-1.5 text-slate-300 hover:text-white hover:bg-slate-700/50">
+          <i data-lucide="truck" class="w-4 h-4"></i>
+          <span>Mobile Medical Van</span>
+        </button>
+        <button onclick="switchView('district')" id="tab-district" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center space-x-1.5 text-slate-300 hover:text-white hover:bg-slate-700/50">
+          <i data-lucide="map" class="w-4 h-4"></i>
+          <span>District Heatmap</span>
+        </button>
+      </nav>
+
+      <!-- Language & Controls -->
+      <div class="flex items-center space-x-2">
+        <!-- Language Switcher -->
+        <div class="flex items-center bg-slate-800 rounded-lg p-0.5 border border-slate-700 text-xs">
+          <button onclick="setLang('gu')" id="lang-gu" class="px-2.5 py-1 rounded font-medium text-slate-300 hover:text-white transition">ગુજરાતી</button>
+          <button onclick="setLang('hi')" id="lang-hi" class="px-2.5 py-1 rounded font-medium text-slate-300 hover:text-white transition">हिंदी</button>
+          <button onclick="setLang('en')" id="lang-en" class="px-2.5 py-1 rounded font-medium bg-emerald-600 text-white transition">EN</button>
+        </div>
+
+        <!-- High-Contrast Sunlight Mode -->
+        <button onclick="toggleHighContrast()" id="btn-contrast" title="Toggle High-Contrast for Bright Sunlight" class="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-amber-400 transition">
+          <i data-lucide="sun" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN CONTENT AREA -->
+  <!-- ===================================================================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 lg:p-8 space-y-6">
+
+    <!-- =================================================================== -->
+    <!-- VIEW 1: WORKER QR HEALTH PASS & ABHA LOCKER -->
+    <!-- =================================================================== -->
+    <div id="view-worker" class="view-panel space-y-6">
+      
+      <!-- Worker Selection Header -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center space-x-2">
+            <i data-lucide="user-check" class="w-5 h-5 text-emerald-400"></i>
+            <span class="lang-text" data-en="Worker Health Pass & ABHA PHR Locker" data-gu="શ્રમિક આરોગ્ય પાસ અને આભા હેલ્થ લોકર" data-hi="श्रमिक स्वास्थ्य पास और आभा हेल्थ लॉकर">Worker Health Pass & ABHA PHR Locker</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-0.5">
+            <span class="lang-text" data-en="Portable, worker-owned health credential linked to e-Shram UAN and ABDM ABHA ID." data-gu="ઈ-શ્રમ UAN અને આભા ID સાથે જોડાયેલું શ્રમિકનું પોતાનું ડિજિટલ આરોગ્ય પ્રમાણપત્ર." data-hi="ई-श्रम UAN और आभा ID से जुड़ा श्रमिक का अपना डिजिटल स्वास्थ्य प्रमाण पत्र।">Portable, worker-owned health credential linked to e-Shram UAN and ABDM ABHA ID.</span>
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-3 w-full sm:w-auto">
+          <div class="relative flex-1 sm:w-72">
+            <select id="worker-select" onchange="onWorkerSelected()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <option value="">Loading workers...</option>
+            </select>
+          </div>
+          <button onclick="refreshWorkerProfile()" class="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl border border-slate-700">
+            <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Worker Pass Details Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Left Column: The Digital QR Health Card -->
+        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+          <div class="absolute -top-12 -right-12 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl"></div>
+          
+          <!-- Card Header -->
+          <div class="flex items-start justify-between border-b border-slate-800 pb-4 mb-4">
+            <div>
+              <span class="text-[10px] tracking-wider uppercase font-bold text-emerald-400">Government of Gujarat · DDO Kachchh</span>
+              <h3 id="card-name" class="text-xl font-bold text-white mt-0.5">Ramesh Ahir</h3>
+              <p id="card-role" class="text-xs text-slate-400 font-medium">Salt Raker (Agariya) · Little Rann</p>
+            </div>
+            <div id="card-status-badge" class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              ACTIVE
+            </div>
+          </div>
+
+          <!-- Digital QR Code -->
+          <div class="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-inner my-4">
+            <div id="worker-qrcode"></div>
+            <p class="text-[10px] text-slate-700 font-mono mt-2 font-bold tracking-tight">SCAN FOR CLINICAL REFERRAL / CHECKUP</p>
+          </div>
+
+          <!-- Identity Details -->
+          <div class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+            <div class="flex justify-between">
+              <span class="text-slate-500">e-Shram UAN:</span>
+              <span id="card-uan" class="font-mono font-bold text-white">1000-XXXX-4091</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">ABHA Address:</span>
+              <span id="card-abha" class="font-mono font-bold text-emerald-400">ramesh.ahir@abdm</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Age / Gender:</span>
+              <span id="card-age-gender" class="text-white">47 yrs · Male</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Current Worksite:</span>
+              <span id="card-site" class="text-white font-medium">Little Rann Salt Cluster #3</span>
+            </div>
+          </div>
+
+          <!-- Action: View Full ABHA Certificate -->
+          <button onclick="openCertificateModal()" class="w-full mt-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/20">
+            <i data-lucide="file-badge-2" class="w-4 h-4"></i>
+            <span class="lang-text" data-en="View Verified ABHA Certificate" data-gu="સત્તાવાર આભા પ્રમાણપત્ર જુઓ" data-hi="आधिकारिक आभा प्रमाण पत्र देखें">View Verified ABHA Certificate</span>
+          </button>
+        </div>
+
+        <!-- Middle Column: Exposure Thermometer & Statutory Status -->
+        <div class="space-y-6">
+          
+          <!-- Statutory Gate Status Card (Rule 9 / Rule 5) -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+                <i data-lucide="scale" class="w-4 h-4 text-blue-400"></i>
+                <span class="lang-text" data-en="Statutory Examination Status" data-gu="કાયદેસર વાર્ષિક તપાસ સ્થિતિ" data-hi="सांविधिक वार्षिक जांच स्थिति">Statutory Examination Status</span>
+              </h4>
+              <span id="statutory-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                RULE 9 APPLIES
+              </span>
+            </div>
+            <p id="statutory-explanation" class="text-xs text-slate-300 leading-relaxed">
+              Gujarat OSH Rules 2025 (Rule 9): Factory & construction workers aged 45+ are entitled to an annual examination within 120 days of year start (Form 5).
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center text-xs">
+              <span class="text-slate-400">120-Day Annual Deadline:</span>
+              <span class="font-mono font-bold text-amber-400">30 April 2027</span>
+            </div>
+          </div>
+
+          <!-- Personal Exposure Thermometer -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <h4 class="text-sm font-bold text-white flex items-center space-x-2 mb-3">
+              <i data-lucide="flame" class="w-4 h-4 text-amber-400"></i>
+              <span class="lang-text" data-en="Personal Exposure Thermometer" data-gu="વ્યક્તિગત હીટ અને ધૂળનું જોખમ" data-hi="व्यक्तिगत हीट और धूल का जोखिम">Personal Exposure Thermometer</span>
+            </h4>
+            
+            <div class="space-y-4">
+              <!-- Cumulative Dust Dose -->
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-400">Cumulative Silica Dust Dose:</span>
+                  <span id="exp-dust" class="font-bold text-amber-400">1.84 mg/m³·hr</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                  <div id="bar-dust" class="bg-amber-500 h-2 rounded-full" style="width: 55%"></div>
+                </div>
+                <span class="text-[10px] text-slate-500">Clinical Referral Threshold: 2.50 mg/m³·hr</span>
+              </div>
+
+              <!-- Severe Heat Hours (WBGT > 30°C) -->
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-400">Recent Hours in Severe Heat (&gt;30°C WBGT):</span>
+                  <span id="exp-heat" class="font-bold text-red-400">4.5 hrs</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                  <div id="bar-heat" class="bg-red-500 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+                <span class="text-[10px] text-slate-500">ACGIH Heat Exhaustion Alert: &gt; 3.0 hrs continuous</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 1-Touch Symptom Self-Reporting -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+                <i data-lucide="clipboard-plus" class="w-4 h-4 text-emerald-400"></i>
+                <span class="lang-text" data-en="1-Touch Symptom Self-Reporting" data-gu="૧-ટચ લક્ષણ નોંધણી" data-hi="१-टच लक्षण रिपोर्टिंग">1-Touch Symptom Self-Reporting</span>
+              </h4>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">Route 3 Trigger</span>
+            </div>
+            <p class="text-xs text-slate-400 mb-4">
+              <span class="lang-text" data-en="Tap any symptom you experienced during today's shift. Your report is private and will never be shared with contractors." data-gu="આજના શિફ્ટ દરમિયાન અનુભવાયેલ કોઈપણ તકલીફ પર ટેપ કરો. આ માહિતી ગુપ્ત છે અને કોન્ટ્રાક્ટરને ક્યારેય આપવામાં આવશે નહીં." data-hi="आज की शिफ्ट में महसूस हुए किसी भी लक्षण पर टैप करें। यह जानकारी निजी है और ठेकेदार से कभी साझा नहीं की जाएगी।">Tap any symptom you experienced today. Completely confidential.</span>
+            </p>
+
+            <div class="space-y-2.5">
+              <!-- Dark Urine -->
+              <label class="flex items-center p-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+                <input type="checkbox" id="sym-dark-urine" class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-600">
+                <div class="ml-3">
+                  <p class="text-xs font-semibold text-white lang-text" data-en="Dark Amber / Brown Urine" data-gu="ઘેરો પીળો અથવા કાળો પેશાબ" data-hi="गहरा पीला या भूरा पेशाब">Dark Amber / Brown Urine</p>
+                  <p class="text-[10px] text-slate-400">Early sign of dehydration & acute renal strain</p>
+                </div>
+              </label>
+
+              <!-- Dizziness / Fainting -->
+              <label class="flex items-center p-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+                <input type="checkbox" id="sym-dizziness" class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-600">
+                <div class="ml-3">
+                  <p class="text-xs font-semibold text-white lang-text" data-en="Dizziness, Fainting or Confusion" data-gu="ચક્કર આવવા અથવા બેહોશી" data-hi="चक्कर आना या बेहोशी">Dizziness, Fainting or Confusion</p>
+                  <p class="text-[10px] text-slate-400">Heat exhaustion warning (Emergency: Call 108)</p>
+                </div>
+              </label>
+
+              <!-- Persistent Cough -->
+              <label class="flex items-center p-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+                <input type="checkbox" id="sym-cough" class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-600">
+                <div class="ml-3">
+                  <p class="text-xs font-semibold text-white lang-text" data-en="Persistent Dry Cough or Chest Tightness" data-gu="લાંબા સમયની ઉધરસ અથવા છાતીમાં દબાણ" data-hi="लगातार सूखी खांसी या सीने में जकड़न">Persistent Dry Cough</p>
+                  <p class="text-[10px] text-slate-400">Respirable dust / silica inhalation irritation</p>
+                </div>
+              </label>
+
+              <!-- Salt Glare Eye Burning -->
+              <label class="flex items-center p-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+                <input type="checkbox" id="sym-eye-glare" class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-600">
+                <div class="ml-3">
+                  <p class="text-xs font-semibold text-white lang-text" data-en="Eye Burning from Intense Salt Glare" data-gu="મીઠાના તડકાથી આંખની તીવ્ર બળતરા" data-hi="नमक की चमक से आंखों में जलन">Eye Burning from Intense Salt Glare</p>
+                  <p class="text-[10px] text-slate-400">UV keratitis and pterygium risk in Little Rann</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800">
+            <button onclick="submitWorkerSymptoms()" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs border border-slate-700 transition flex items-center justify-center space-x-2">
+              <i data-lucide="send" class="w-4 h-4 text-emerald-400"></i>
+              <span class="lang-text" data-en="Submit Confidential Health Log" data-gu="ગુપ્ત આરોગ્ય નોંધણી સબમિટ કરો" data-hi="गोपनीय स्वास्थ्य रिपोर्ट जमा करें">Submit Confidential Health Log</span>
+            </button>
+            <p id="symptom-msg" class="text-[11px] text-center text-emerald-400 mt-2 font-medium hidden"></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- VIEW 2: WORKSITE LIVE WATCH & ISO 7243 LAMP -->
+    <!-- =================================================================== -->
+    <div id="view-site" class="view-panel space-y-6 hidden">
+      
+      <!-- Worksite Controls & Selector -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center space-x-2">
+            <i data-lucide="flame" class="w-5 h-5 text-amber-400"></i>
+            <span class="lang-text" data-en="Worksite Microclimate Live Watch & ISO 7243 Lamp" data-gu="કાર્યસ્થળ પર્યાવરણ લાઈવ વોચ અને લેમ્પ સિસ્ટમ" data-hi="कार्यस्थल पर्यावरण लाइव वॉच और लैंप सिस्टम">Worksite Microclimate Live Watch & ISO 7243 Lamp</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-0.5">
+            <span class="lang-text" data-en="Real-time ESP32 node monitoring of outdoor WBGT, 150mm globe temp, and PMS5003 dust." data-gu="ESP32 સાઈટ નોડ દ્વારા આઉટડોર WBGT, ૧૫૦mm ગ્લોબ અને PMS5003 ધૂળનું લાઈવ મોનિટરિંગ." data-hi="ESP32 साइट नोड द्वारा आउटडोर WBGT, 150mm ग्लोब और PMS5003 धूल की लाइव निगरानी।">Real-time ESP32 node monitoring of outdoor WBGT, 150mm globe temp, and PMS5003 dust.</span>
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-3 w-full sm:w-auto">
+          <div class="relative flex-1 sm:w-72">
+            <select id="site-select" onchange="onSiteSelected()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <option value="">Loading worksites...</option>
+            </select>
+          </div>
+          <button onclick="simulateTelemetryPacket()" title="Simulate ESP32 Sensor Packet" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition shadow-lg shadow-emerald-600/20">
+            <i data-lucide="radio" class="w-4 h-4"></i>
+            <span>Simulate Node</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Live Watch Dashboard -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+        <!-- Column 1: Giant ISO 7243 Status Lamp -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-between text-center relative overflow-hidden">
+          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Physical Lamp Status</span>
+          
+          <!-- The Glowing Physical Lamp Circle -->
+          <div class="my-6 relative">
+            <div id="site-lamp-indicator" class="w-28 h-28 rounded-full bg-hazard-orange lamp-glow-orange flex items-center justify-center transition-all duration-500 border-4 border-white/20">
+              <i data-lucide="sun" class="w-12 h-12 text-white"></i>
+            </div>
+          </div>
+
+          <div>
+            <h3 id="lamp-color-text" class="text-2xl font-black text-amber-400 tracking-tight">ORANGE ALERT</h3>
+            <p id="lamp-cycle-text" class="text-xs font-medium text-slate-300 mt-1">30 min work / 30 min shaded rest</p>
+            <p id="lamp-water-text" class="text-[11px] text-slate-400 mt-1">Drink 1.0 L water with ORS per hour</p>
+          </div>
+
+          <div class="w-full mt-4 pt-3 border-t border-slate-800 text-[10px] text-slate-500 flex justify-between">
+            <span>Hardware: Neopixel Ring</span>
+            <span>ESP32 Node #04</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Live WBGT & Environmental Gauges -->
+        <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="gauge" class="w-4 h-4 text-emerald-400"></i>
+              <span>Live Sensor Telemetry (ISO 7243 Metric)</span>
+            </h4>
+            <span class="text-xs text-emerald-400 font-mono flex items-center space-x-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+              <span>LIVE 1 Hz</span>
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <!-- WBGT -->
+            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/80">
+              <span class="text-[11px] text-slate-400 block">Outdoor WBGT</span>
+              <span id="metric-wbgt" class="text-2xl font-black text-amber-400 font-mono">30.4°C</span>
+              <span class="text-[10px] text-slate-500 block">Limit: 28.0°C</span>
+            </div>
+
+            <!-- Globe Temp -->
+            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/80">
+              <span class="text-[11px] text-slate-400 block">150mm Globe (Tg)</span>
+              <span id="metric-globe" class="text-2xl font-black text-red-400 font-mono">49.2°C</span>
+              <span class="text-[10px] text-slate-500 block">Black copper ball</span>
+            </div>
+
+            <!-- Ambient Temp & RH -->
+            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/80">
+              <span class="text-[11px] text-slate-400 block">Air Temp / RH%</span>
+              <span id="metric-temp-rh" class="text-xl font-bold text-white font-mono">39.1°C / 64%</span>
+              <span class="text-[10px] text-slate-500 block">BME280 sensor</span>
+            </div>
+
+            <!-- PM2.5 Corrected -->
+            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/80">
+              <span class="text-[11px] text-slate-400 block">Dust PM2.5 (Corr)</span>
+              <span id="metric-pm25" class="text-2xl font-black text-amber-300 font-mono">68 µg/m³</span>
+              <span class="text-[10px] text-slate-500 block">Plantower PMS5003</span>
+            </div>
+          </div>
+
+          <!-- Active Work-Rest Countdown Timer -->
+          <div class="mt-6 bg-slate-950 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-semibold text-slate-400 block">Mandatory Work-Rest Countdown</span>
+              <span id="timer-display" class="text-2xl font-mono font-bold text-emerald-400">24:18 remaining</span>
+              <span class="text-[10px] text-slate-500 block">Currently: Work Interval (30 min work schedule)</span>
+            </div>
+            <div class="flex space-x-2">
+              <button onclick="toggleTimer()" id="btn-timer-toggle" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold">Pause</button>
+              <button onclick="resetTimer()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Facility Compliance Checklist & Cool-Shift Optimizer -->
+        <div class="space-y-4">
+          
+          <!-- Facility Compliance Checklist -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3 flex items-center space-x-2">
+              <i data-lucide="check-square" class="w-4 h-4 text-emerald-400"></i>
+              <span>Mandatory Site Facilities</span>
+            </h4>
+
+            <div class="space-y-2.5 text-xs">
+              <label class="flex items-center justify-between p-2 rounded-lg bg-slate-800/60 cursor-pointer">
+                <span class="text-slate-300">Potable Drinking Water</span>
+                <input type="checkbox" id="comp-water" onchange="updateSiteCompliance()" class="w-4 h-4 rounded text-emerald-600">
+              </label>
+
+              <label class="flex items-center justify-between p-2 rounded-lg bg-slate-800/60 cursor-pointer">
+                <span class="text-slate-300">Sanitation Latrines</span>
+                <input type="checkbox" id="comp-toilets" onchange="updateSiteCompliance()" class="w-4 h-4 rounded text-emerald-600">
+              </label>
+
+              <label class="flex items-center justify-between p-2 rounded-lg bg-slate-800/60 cursor-pointer">
+                <span class="text-slate-300">Shaded Rest Canopy (&lt;100m)</span>
+                <input type="checkbox" id="comp-shade" onchange="updateSiteCompliance()" class="w-4 h-4 rounded text-emerald-600">
+              </label>
+            </div>
+          </div>
+
+          <!-- Shift Timing Optimization Highlight -->
+          <div class="bg-gradient-to-br from-blue-950/40 to-slate-900 border border-blue-900/40 rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-blue-400">Cool-Shift Insight</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 font-mono">-21.2% Heat</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Moving standard 9am–6pm shifts to <strong class="text-white">6am–3pm</strong> avoids <strong class="text-emerald-400">358 hours/year</strong> of dangerous heat (&gt;27.5°C WBGT) across Kachchh sites.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- VIEW 3: MOBILE MEDICAL VAN (DHANVANTARI RATH) & ABHA PUBLISHER -->
+    <!-- =================================================================== -->
+    <div id="view-van" class="view-panel space-y-6 hidden">
+      
+      <!-- Van Header -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <h2 class="text-lg font-bold text-white">Gujarat BOCW Dhanvantari Arogya Rath & Salt-Worker Van</h2>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold">ABDM M2 STATION</span>
+          </div>
+          <p class="text-xs text-slate-400 mt-0.5">Clinical Examination Station · Spirometry, Creatinine, ILO X-Ray & 1-Click ABHA ID Publisher</p>
+        </div>
+
+        <!-- Filter by the 3 Clinician-Approved Routes -->
+        <div class="flex items-center space-x-2 bg-slate-800 p-1 rounded-xl border border-slate-700 text-xs">
+          <button onclick="filterVanQueue('ALL')" id="van-filter-all" class="px-2.5 py-1 rounded-lg font-medium bg-emerald-600 text-white transition">All Due (709)</button>
+          <button onclick="filterVanQueue('ROUTE_1_STATUTORY')" id="van-filter-r1" class="px-2.5 py-1 rounded-lg font-medium text-slate-300 hover:text-white transition">Route 1: Rule 9/5</button>
+          <button onclick="filterVanQueue('ROUTE_2_EXPOSURE')" id="van-filter-r2" class="px-2.5 py-1 rounded-lg font-medium text-slate-300 hover:text-white transition">Route 2: Exposure</button>
+          <button onclick="filterVanQueue('ROUTE_3_SYMPTOMS')" id="van-filter-r3" class="px-2.5 py-1 rounded-lg font-medium text-slate-300 hover:text-white transition">Route 3: Symptoms</button>
+        </div>
+      </div>
+
+      <!-- Main Queue & Clinical Examination Split View -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- Left: Prioritized Worker Due List (5 cols) -->
+        <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col h-[650px]">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
+            <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Priority Due Queue (Ranked)</span>
+            <span class="text-xs text-slate-500">Sorted by Severity Score</span>
+          </div>
+
+          <div id="van-queue-list" class="flex-1 overflow-y-auto space-y-2 pr-1">
+            <!-- Dynamic worker queue items will render here -->
+            <div class="p-4 text-center text-slate-500 text-xs">Loading clinical queue...</div>
+          </div>
+        </div>
+
+        <!-- Right: Rapid Clinical Entry Form & ABHA Publisher (7 cols) -->
+        <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+              <div>
+                <h3 id="exam-worker-name" class="text-base font-bold text-white">Ramesh Ahir</h3>
+                <p id="exam-worker-meta" class="text-xs text-slate-400">e-Shram UAN: 1000-XXXX-4091 · ABHA: ramesh.ahir@abdm · 47y M · Salt Raker</p>
+              </div>
+              <span id="exam-route-badge" class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                Route 2: Dust & Heat Over-exposure
+              </span>
+            </div>
+
+            <!-- Clinical Inputs Form -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- Spirometry FEV1 / FVC -->
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/80">
+                <span class="text-xs font-bold text-emerald-400 flex items-center space-x-1.5 mb-2">
+                  <i data-lucide="wind" class="w-4 h-4"></i>
+                  <span>Spirometry Lung Function</span>
+                </span>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <div>
+                    <label class="text-slate-400 block mb-1">FEV1 (Liters)</label>
+                    <input type="number" step="0.01" id="exam-fev1" value="2.85" onchange="calcFevRatio()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-white font-mono">
+                  </div>
+                  <div>
+                    <label class="text-slate-400 block mb-1">FVC (Liters)</label>
+                    <input type="number" step="0.01" id="exam-fvc" value="3.65" onchange="calcFevRatio()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-white font-mono">
+                  </div>
+                </div>
+                <div class="mt-2 text-[11px] flex justify-between text-slate-300">
+                  <span>FEV1/FVC Ratio:</span>
+                  <span id="exam-ratio" class="font-mono font-bold text-emerald-400">0.78 (Normal)</span>
+                </div>
+              </div>
+
+              <!-- Renal Biomarkers -->
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/80">
+                <span class="text-xs font-bold text-blue-400 flex items-center space-x-1.5 mb-2">
+                  <i data-lucide="droplet" class="w-4 h-4"></i>
+                  <span>Renal & Dehydration Profile</span>
+                </span>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <div>
+                    <label class="text-slate-400 block mb-1">Serum Creatinine</label>
+                    <input type="number" step="0.01" id="exam-creatinine" value="1.05" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-white font-mono">
+                    <span class="text-[9px] text-slate-500">mg/dL (0.7-1.2)</span>
+                  </div>
+                  <div>
+                    <label class="text-slate-400 block mb-1">Urine Sp. Gravity</label>
+                    <input type="number" step="0.001" id="exam-usg" value="1.018" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-white font-mono">
+                    <span class="text-[9px] text-slate-500">≥1.020 = Dehydrated</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chest X-Ray ILO Category -->
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/80">
+                <label class="text-xs font-bold text-slate-300 block mb-1.5">Chest X-Ray ILO Pneumoconiosis Grade</label>
+                <select id="exam-ilo" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white">
+                  <option value="0/-">0/- (Completely normal)</option>
+                  <option value="0/0" selected>0/0 (No parenchymal opacities)</option>
+                  <option value="1/0">1/0 (Questionable rounded opacities)</option>
+                  <option value="1/1">1/1 (Early simple pneumoconiosis / silica)</option>
+                  <option value="2/1">2/1 (Moderate rounded opacities)</option>
+                  <option value="2/2">2/2 (Significant opacities)</option>
+                  <option value="PMF">PMF (Progressive Massive Fibrosis)</option>
+                </select>
+                <span class="text-[10px] text-slate-500 mt-1 block">Clinical review required for grades 1/0 and higher.</span>
+              </div>
+
+              <!-- Doctor Registration & Form 5 History -->
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/80">
+                <label class="text-xs font-bold text-slate-300 block mb-1.5">Doctor Council Registration No.</label>
+                <input type="text" id="exam-doc-reg" value="GMC-KUTCH-MD-4081" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white font-mono">
+                <div class="flex items-center mt-2 text-xs">
+                  <input type="checkbox" id="exam-bocw" class="w-4 h-4 rounded text-emerald-600">
+                  <label for="exam-bocw" class="ml-2 text-slate-300 text-[11px]">BOCW Welfare Board Assistance Claimed</label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Clinical Notes -->
+            <div class="mt-4">
+              <label class="text-xs font-bold text-slate-300 block mb-1">Physician's Clinical Observations & Form 5 Notes</label>
+              <textarea id="exam-notes" rows="2" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-white placeholder-slate-500" placeholder="Periodic occupational examination completed aboard Dhanvantari Arogya Rath..."></textarea>
+            </div>
+          </div>
+
+          <!-- Bottom Action: 1-Click Publish to ABHA ID -->
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+            <div class="text-xs text-slate-400">
+              <span>Standard: </span>
+              <strong class="text-emerald-400">HL7 FHIR R4 DiagnosticReport</strong>
+            </div>
+
+            <button onclick="publishToAbhaAction()" id="btn-publish-abha" class="py-2.5 px-6 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-bold text-xs shadow-lg shadow-emerald-600/30 transition flex items-center space-x-2">
+              <i data-lucide="cloud-upload" class="w-4 h-4"></i>
+              <span>1-Click Publish to ABHA Health Locker</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- VIEW 4: DISTRICT ADMINISTRATION (DDO KACHCHH) MACRO HEATMAP -->
+    <!-- =================================================================== -->
+    <div id="view-district" class="view-panel space-y-6 hidden">
+      
+      <!-- District Header -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <h2 class="text-lg font-bold text-white">District Development Office (DDO), Kachchh</h2>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-bold">100% DPDP ACT 2023 COMPLIANT</span>
+          </div>
+          <p class="text-xs text-slate-400 mt-0.5">Macro Occupational Health Surveillance · Anonymized Taluka Heatmaps & Mobile Van Resource Allocation</p>
+        </div>
+
+        <!-- Statutory 1-Click CSV/JSON Exports -->
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="/api/district/export/bocw" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>BOCW Due List (.csv)</span>
+          </a>
+          <a href="/api/district/export/salt_pan" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-blue-400"></i>
+            <span>Salt Pan Roster (.csv)</span>
+          </a>
+          <a href="/api/district/export/npcchh" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+            <i data-lucide="file-json" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>NPCCHH Weekly (.json)</span>
+          </a>
+          <a href="/api/district/export/esic" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-purple-400"></i>
+            <span>ESIC Referral (.csv)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- District Metrics Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+          <span class="text-xs text-slate-400 block">Total Monitored Workers</span>
+          <span class="text-2xl font-black text-white font-mono">1,000</span>
+          <span class="text-[10px] text-emerald-400 block mt-1">Across 50 active Kachchh sites</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+          <span class="text-xs text-slate-400 block">Severe Heat Hours (&gt;30°C WBGT)</span>
+          <span class="text-2xl font-black text-red-400 font-mono">1,842 hrs</span>
+          <span class="text-[10px] text-red-400 block mt-1">Little Rann & Kandla highest</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+          <span class="text-xs text-slate-400 block">Pending Health Screenings</span>
+          <span class="text-2xl font-black text-amber-400 font-mono">709</span>
+          <span class="text-[10px] text-slate-400 block mt-1">Assigned to Dhanvantari Rath Vans</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+          <span class="text-xs text-slate-400 block">Water / Shade Deficit Sites</span>
+          <span class="text-2xl font-black text-purple-400 font-mono">4 Sites</span>
+          <span class="text-[10px] text-slate-400 block mt-1">Enforcement notices issued</span>
+        </div>
+      </div>
+
+      <!-- Geographic Map & Job Hotspots Split -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Interactive Leaflet Map of Kachchh (7 cols) -->
+        <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+              <span>Geographic Hazard Heatmap (Kachchh Talukas)</span>
+            </h3>
+            <span class="text-[10px] text-slate-400">Real Worksite Coordinates</span>
+          </div>
+
+          <div id="district-map"></div>
+        </div>
+
+        <!-- Right: Hotspots by Job Role Chart (5 cols) -->
+        <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2 mb-3">
+              <i data-lucide="bar-chart-3" class="w-4 h-4 text-amber-400"></i>
+              <span>Screening Referrals by Job Role</span>
+            </h3>
+            <div class="h-64">
+              <canvas id="job-hotspots-chart"></canvas>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400">
+            <strong class="text-slate-200">Key Finding:</strong> Salt rakers & quarry crushers experience 3.3× higher referral rates than shaded crane operators. Job matters more than geography.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: OFFICIAL VERIFIED ABHA HEALTH CERTIFICATE -->
+  <!-- ===================================================================== -->
+  <div id="modal-certificate" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white text-slate-900 w-full max-w-2xl rounded-2xl shadow-2xl p-6 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeCertificateModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Certificate Header -->
+      <div class="border-b-2 border-emerald-600 pb-4 text-center">
+        <span class="text-[10px] tracking-widest uppercase font-bold text-emerald-700">Government of Gujarat · Ayushman Bharat Digital Mission (ABDM)</span>
+        <h2 class="text-xl font-black text-slate-900 mt-1">PERIODIC OCCUPATIONAL HEALTH SCREENING RECORD</h2>
+        <p class="text-xs text-slate-600">Gujarat OSH Rules 2025 (Rule 9, Form 5) & Central OSH Rules 2026 (Rule 5)</p>
+      </div>
+
+      <!-- Worker Credentials -->
+      <div class="grid grid-cols-2 gap-4 py-4 border-b border-slate-200 text-xs">
+        <div>
+          <span class="text-slate-500 block">Worker Name:</span>
+          <strong id="cert-name" class="text-sm font-bold text-slate-900">Ramesh Ahir</strong>
+        </div>
+        <div>
+          <span class="text-slate-500 block">e-Shram UAN:</span>
+          <strong id="cert-uan" class="font-mono text-sm font-bold text-slate-900">1000-XXXX-4091</strong>
+        </div>
+        <div>
+          <span class="text-slate-500 block">ABHA ID:</span>
+          <strong id="cert-abha-id" class="font-mono text-slate-800">91-2041-8890-1234</strong>
+        </div>
+        <div>
+          <span class="text-slate-500 block">ABHA Address:</span>
+          <strong id="cert-abha-addr" class="font-mono text-emerald-700">ramesh.ahir@abdm</strong>
+        </div>
+      </div>
+
+      <!-- Clinical Findings -->
+      <div class="py-4 border-b border-slate-200 text-xs space-y-2">
+        <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px]">Examination Results (Dhanvantari Arogya Rath)</h4>
+        <div class="grid grid-cols-2 gap-3 bg-slate-50 p-3 rounded-lg border border-slate-200">
+          <div><span>Spirometry FEV1/FVC:</span> <strong id="cert-fev" class="text-slate-900">0.78 (Normal)</strong></div>
+          <div><span>Serum Creatinine:</span> <strong id="cert-creat" class="text-slate-900">1.05 mg/dL</strong></div>
+          <div><span>Urine Specific Gravity:</span> <strong id="cert-usg" class="text-slate-900">1.018</strong></div>
+          <div><span>Chest X-Ray ILO Grade:</span> <strong id="cert-xray" class="text-slate-900">0/0 (No Opacities)</strong></div>
+        </div>
+      </div>
+
+      <!-- ABDM Cryptographic Proof -->
+      <div class="py-4 text-[11px] text-slate-600 space-y-1">
+        <div>CareContext Reference: <span id="cert-care-ctx" class="font-mono font-bold text-slate-900">CARE-CTX-20261105-0012</span></div>
+        <div>HL7 FHIR R4 SHA-256: <span id="cert-sha256" class="font-mono text-[10px] text-slate-500">e8b7a4c901f...</span></div>
+        <div>Examining Medical Officer: <strong class="text-slate-900">GMC-KUTCH-MD-4081 (MBBS, DOH)</strong></div>
+      </div>
+
+      <div class="mt-4 pt-4 border-t border-slate-200 flex justify-end space-x-3">
+        <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition">
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: ABDM FHIR R4 JSON & SMS DISPATCH PREVIEW -->
+  <!-- ===================================================================== -->
+  <div id="modal-fhir" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border border-slate-800 text-slate-100 w-full max-w-3xl rounded-2xl shadow-2xl p-6 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeFhirModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="border-b border-slate-800 pb-3 mb-4">
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">ABDM Milestone 2 (M2) Transaction Confirmed</span>
+        <h3 class="text-lg font-bold text-white mt-1">Published to Worker's ABHA Health Locker</h3>
+      </div>
+
+      <!-- Bilingual SMS Sent Notice -->
+      <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 mb-4">
+        <span class="text-xs font-bold text-amber-400 flex items-center space-x-1.5 mb-1">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>Automated Bilingual SMS Dispatched to Worker</span>
+        </span>
+        <p id="fhir-sms-gu" class="text-xs text-slate-200 font-medium"></p>
+        <p id="fhir-sms-hi" class="text-xs text-slate-300 mt-1"></p>
+      </div>
+
+      <!-- FHIR Bundle JSON Viewer -->
+      <div>
+        <span class="text-xs font-bold text-slate-400 block mb-2">Cryptographic FHIR R4 Bundle Payload</span>
+        <pre id="fhir-json-preview" class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto max-h-72 border border-slate-800"></pre>
+      </div>
+
+      <div class="mt-4 pt-4 border-t border-slate-800 flex justify-end">
+        <button onclick="closeFhirModal()" class="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs">
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT APPLICATION LOGIC -->
+  <!-- ===================================================================== -->
+  <script>
+    // Global State
+    let currentLang = 'en';
+    let currentView = '{{ initial_view }}' || 'worker';
+    let allWorkers = [];
+    let currentWorker = null;
+    let allSites = [];
+    let currentSite = null;
+    let vanQueue = [];
+    let selectedVanWorker = null;
+    let timerSeconds = 1800; // 30 mins
+    let timerRunning = true;
+    let timerInterval = null;
+    let districtMap = null;
+
+    // Initialize application on load
+    document.addEventListener('DOMContentLoaded', async () => {
+      lucide.createIcons();
+      switchView(currentView);
+      await loadInitialData();
+      startWorkRestTimer();
+    });
+
+    // View Switching
+    function switchView(viewName) {
+      currentView = viewName;
+      document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-sm');
+        btn.classList.add('text-slate-300');
+      });
+
+      const activeView = document.getElementById(`view-${viewName}`);
+      if (activeView) activeView.classList.remove('hidden');
+
+      const activeTab = document.getElementById(`tab-${viewName}`);
+      if (activeTab) {
+        activeTab.classList.add('bg-emerald-600', 'text-white', 'shadow-sm');
+        activeTab.classList.remove('text-slate-300');
+      }
+
+      if (viewName === 'district' && !districtMap) {
+        setTimeout(initDistrictMap, 200);
+      }
+      lucide.createIcons();
+    }
+
+    // Multilingual Switching
+    function setLang(lang) {
+      currentLang = lang;
+      ['gu', 'hi', 'en'].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        if (l === lang) {
+          btn.classList.add('bg-emerald-600', 'text-white');
+          btn.classList.remove('text-slate-300');
+        } else {
+          btn.classList.remove('bg-emerald-600', 'text-white');
+          btn.classList.add('text-slate-300');
+        }
+      });
+
+      document.querySelectorAll('.lang-text').forEach(el => {
+        const translated = el.getAttribute(`data-${lang}`);
+        if (translated) el.innerText = translated;
+      });
+    }
+
+    // High Contrast Sunlight Mode Toggle
+    function toggleHighContrast() {
+      document.body.classList.toggle('contrast-more');
+      alert("High-contrast mode toggled for bright outdoor sunlight readability.");
+    }
+
+    // Initial Data Fetching
+    async function loadInitialData() {
+      try {
+        // Fetch Workers
+        const wRes = await fetch('/api/workers?limit=100');
+        allWorkers = await wRes.json();
+        populateWorkerSelect();
+
+        // Fetch Sites
+        const sRes = await fetch('/api/sites');
+        allSites = await sRes.json();
+        populateSiteSelect();
+
+        // Fetch Van Queue
+        await loadVanQueue('ALL');
+
+        // Render Initial Worker (Default first worker)
+        if (allWorkers.length > 0) {
+          await loadWorkerProfile(allWorkers[0].worker_id);
+        }
+
+        // Render Initial Site
+        if (allSites.length > 0) {
+          await loadSiteDetails(allSites[0].site_id);
+        }
+
+      } catch (e) {
+        console.error("Failed to load initial data", e);
+      }
+    }
+
+    // Populate Worker Dropdown
+    function populateWorkerSelect() {
+      const select = document.getElementById('worker-select');
+      select.innerHTML = '';
+      allWorkers.forEach(w => {
+        const opt = document.createElement('option');
+        opt.value = w.worker_id;
+        opt.text = `${w.full_name} (${w.job_role}) · ${w.masked_eshram_uan}`;
+        select.appendChild(opt);
+      });
+    }
+
+    // Worker Selection Handler
+    async function onWorkerSelected() {
+      const workerId = document.getElementById('worker-select').value;
+      if (workerId) await loadWorkerProfile(workerId);
+    }
+
+    // Load Specific Worker Profile
+    async function loadWorkerProfile(workerId) {
+      const res = await fetch(`/api/workers/${workerId}`);
+      const data = await res.json();
+      currentWorker = data;
+
+      document.getElementById('card-name').innerText = data.worker.full_name;
+      document.getElementById('card-role').innerText = `${data.worker.job_role} · ${data.worker.taluka || 'Kachchh'}`;
+      document.getElementById('card-uan').innerText = data.worker.masked_eshram_uan;
+      document.getElementById('card-abha').innerText = data.worker.abha_address;
+      document.getElementById('card-age-gender').innerText = `${data.worker.age} yrs · ${data.worker.gender}`;
+      document.getElementById('card-site').innerText = data.worker.site_name || 'Kachchh Cluster';
+
+      // Status Badge
+      const badge = document.getElementById('card-status-badge');
+      badge.innerText = data.pass_status.label_en;
+      if (data.pass_status.badge_color === 'GREEN') {
+        badge.className = "px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20";
+      } else if (data.pass_status.badge_color === 'AMBER') {
+        badge.className = "px-2.5 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20";
+      } else {
+        badge.className = "px-2.5 py-1 rounded-full text-xs font-bold bg-red-500/10 text-red-400 border border-red-500/20";
+      }
+
+      // Generate Dynamic QR Code
+      const qrContainer = document.getElementById('worker-qrcode');
+      qrContainer.innerHTML = '';
+      new QRCode(qrContainer, {
+        text: `https://workcheck-kachchh.gujarat.gov.in/verify/${data.worker.qr_card_hash}`,
+        width: 140,
+        height: 140,
+        colorDark: "#0f172a",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+
+      // Statutory Status
+      document.getElementById('statutory-explanation').innerText = data.statutory_rules.rule_explanation;
+
+      // Exposures
+      if (data.recent_exposures && data.recent_exposures.length > 0) {
+        const exp = data.recent_exposures[0];
+        document.getElementById('exp-dust').innerText = `${exp.cumulative_dust_dose_mg_m3_hr.toFixed(2)} mg/m³·hr`;
+        document.getElementById('exp-heat').innerText = `${exp.hours_above_wbgt_30.toFixed(1)} hrs`;
+      }
+    }
+
+    // Submit Self-Reported Symptoms
+    async function submitWorkerSymptoms() {
+      if (!currentWorker) return;
+      const payload = {
+        worker_id: currentWorker.worker.worker_id,
+        dark_urine: document.getElementById('sym-dark-urine').checked,
+        dizziness_or_fainting: document.getElementById('sym-dizziness').checked,
+        persistent_cough: document.getElementById('sym-cough').checked,
+        eye_burning_salt_glare: document.getElementById('sym-eye-glare').checked
+      };
+
+      const res = await fetch(`/api/workers/${currentWorker.worker.worker_id}/symptoms`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+
+      const msgEl = document.getElementById('symptom-msg');
+      msgEl.innerText = data[`message_${currentLang}`] || data.message_en;
+      msgEl.classList.remove('hidden');
+
+      setTimeout(() => {
+        msgEl.classList.add('hidden');
+        // Reset checkboxes
+        document.getElementById('sym-dark-urine').checked = false;
+        document.getElementById('sym-dizziness').checked = false;
+        document.getElementById('sym-cough').checked = false;
+        document.getElementById('sym-eye-glare').checked = false;
+      }, 5000);
+    }
+
+    // Populate Site Dropdown
+    function populateSiteSelect() {
+      const select = document.getElementById('site-select');
+      select.innerHTML = '';
+      allSites.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.site_id;
+        opt.text = `${s.site_name} (${s.taluka}) · ${s.current_lamp_color} LAMP`;
+        select.appendChild(opt);
+      });
+    }
+
+    // Site Selection Handler
+    async function onSiteSelected() {
+      const siteId = document.getElementById('site-select').value;
+      if (siteId) await loadSiteDetails(siteId);
+    }
+
+    // Load Specific Site Details
+    async function loadSiteDetails(siteId) {
+      const res = await fetch(`/api/sites/${siteId}`);
+      const data = await res.json();
+      currentSite = data;
+
+      const wbgt = data.current_stats.avg_wbgt || 28.5;
+      const globe = data.current_stats.avg_globe || 45.0;
+      const temp = data.current_stats.avg_temp || 38.0;
+      const rh = data.current_stats.avg_humidity || 60;
+      const pm25 = data.current_stats.avg_pm2_5 || 45;
+
+      document.getElementById('metric-wbgt').innerText = `${wbgt.toFixed(1)}°C`;
+      document.getElementById('metric-globe').innerText = `${globe.toFixed(1)}°C`;
+      document.getElementById('metric-temp-rh').innerText = `${temp.toFixed(1)}°C / ${rh}%`;
+      document.getElementById('metric-pm25').innerText = `${pm25.toFixed(1)} µg/m³`;
+
+      // Lamp Color Graphic Update
+      const lamp = document.getElementById('site-lamp-indicator');
+      const lampText = document.getElementById('lamp-color-text');
+      const lampCycle = document.getElementById('lamp-cycle-text');
+
+      lamp.className = "w-28 h-28 rounded-full flex items-center justify-center transition-all duration-500 border-4 border-white/20";
+
+      const color = data.iso_7243_status.lamp_color;
+      if (color === 'GREEN') {
+        lamp.classList.add('bg-hazard-green', 'lamp-glow-green');
+        lampText.innerText = "GREEN (NORMAL)";
+        lampText.className = "text-2xl font-black text-emerald-400 tracking-tight";
+      } else if (color === 'YELLOW') {
+        lamp.classList.add('bg-hazard-yellow', 'lamp-glow-yellow');
+        lampText.innerText = "YELLOW (WARNING)";
+        lampText.className = "text-2xl font-black text-amber-400 tracking-tight";
+      } else if (color === 'ORANGE') {
+        lamp.classList.add('bg-hazard-orange', 'lamp-glow-orange');
+        lampText.innerText = "ORANGE (DANGER)";
+        lampText.className = "text-2xl font-black text-orange-400 tracking-tight";
+      } else {
+        lamp.classList.add('bg-hazard-red', 'lamp-glow-red');
+        lampText.innerText = "RED (EXTREME)";
+        lampText.className = "text-2xl font-black text-red-500 tracking-tight";
+      }
+
+      lampCycle.innerText = data.iso_7243_status.work_rest_minutes;
+
+      // Compliance Checkboxes
+      document.getElementById('comp-water').checked = !!data.site.has_potable_water;
+      document.getElementById('comp-toilets').checked = !!data.site.has_toilets;
+      document.getElementById('comp-shade').checked = !!data.site.has_shaded_rest_area;
+    }
+
+    // Update Site Facility Compliance
+    async function updateSiteCompliance() {
+      if (!currentSite) return;
+      const payload = {
+        has_potable_water: document.getElementById('comp-water').checked,
+        has_toilets: document.getElementById('comp-toilets').checked,
+        has_shaded_rest_area: document.getElementById('comp-shade').checked
+      };
+
+      await fetch(`/api/sites/${currentSite.site.site_id}/compliance`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    }
+
+    // Simulate Node Hardware Telemetry Packet
+    async function simulateTelemetryPacket() {
+      if (!currentSite) return;
+      const simTa = 38.0 + Math.random() * 4.0;
+      const simRH = 55.0 + Math.random() * 20.0;
+      const simPm = 50.0 + Math.random() * 50.0;
+
+      const payload = {
+        site_id: currentSite.site.site_id,
+        device_id: "ESP32-NODE-SIM",
+        ambient_temp_c: Math.round(simTa * 10) / 10,
+        relative_humidity_pct: Math.round(simRH),
+        pm2_5_ug_m3: Math.round(simPm),
+        uv_index: 8.5
+      };
+
+      const res = await fetch('/api/telemetry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      alert(`ESP32 Telemetry Packet Ingested!\nWBGT: ${data.evaluation.calculated_wbgt_c}°C\nLamp: ${data.evaluation.lamp_color}\nPM2.5 (Corrected): ${data.evaluation.corrected_pm2_5_ug_m3} µg/m³`);
+      await loadSiteDetails(currentSite.site.site_id);
+    }
+
+    // Work-Rest Timer Logic
+    function startWorkRestTimer() {
+      timerInterval = setInterval(() => {
+        if (!timerRunning) return;
+        if (timerSeconds > 0) {
+          timerSeconds--;
+          const mins = Math.floor(timerSeconds / 60);
+          const secs = timerSeconds % 60;
+          document.getElementById('timer-display').innerText = `${mins}:${secs < 10 ? '0' : ''}${secs} remaining`;
+        } else {
+          timerSeconds = 1800; // Reset to 30 mins
+          alert("Work interval completed! Sounding chime for mandatory 30-minute shaded rest recovery.");
+        }
+      }, 1000);
+    }
+
+    function toggleTimer() {
+      timerRunning = !timerRunning;
+      document.getElementById('btn-timer-toggle').innerText = timerRunning ? 'Pause' : 'Resume';
+    }
+
+    function resetTimer() {
+      timerSeconds = 1800;
+    }
+
+    // Load Mobile Medical Van Queue
+    async function loadVanQueue(routeFilter = 'ALL') {
+      const res = await fetch(`/api/van/queue?route_filter=${routeFilter}`);
+      vanQueue = await res.json();
+
+      const listContainer = document.getElementById('van-queue-list');
+      listContainer.innerHTML = '';
+
+      if (vanQueue.length === 0) {
+        listContainer.innerHTML = '<div class="p-4 text-center text-slate-500 text-xs">No workers in queue for this filter.</div>';
+        return;
+      }
+
+      vanQueue.forEach((w, idx) => {
+        const item = document.createElement('div');
+        item.className = "p-3 rounded-xl bg-slate-800/60 border border-slate-700/80 hover:bg-slate-800 cursor-pointer transition flex items-center justify-between";
+        item.onclick = () => selectVanWorker(w);
+
+        let badgeColorClass = "bg-blue-500/10 text-blue-400 border-blue-500/20";
+        if (w.route_badge_color === 'red') badgeColorClass = "bg-red-500/10 text-red-400 border-red-500/20";
+        if (w.route_badge_color === 'amber' || w.route_badge_color === 'orange') badgeColorClass = "bg-amber-500/10 text-amber-400 border-amber-500/20";
+
+        item.innerHTML = `
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-xs font-bold text-white">${w.worker_name}</span>
+              <span class="text-[9px] font-bold px-1.5 py-0.5 rounded-full border ${badgeColorClass}">${w.route_label.split(' ')[0]}</span>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-0.5">${w.job_role} · ${w.site_name} · ${w.age}y</p>
+          </div>
+          <div class="text-right">
+            <span class="text-xs font-bold text-emerald-400 font-mono">Priority ${w.priority_score}/5</span>
+            <span class="text-[10px] text-slate-500 block">${w.masked_eshram_uan}</span>
+          </div>
+        `;
+        listContainer.appendChild(item);
+      });
+
+      // Select first worker by default
+      if (vanQueue.length > 0) {
+        selectVanWorker(vanQueue[0]);
+      }
+    }
+
+    function filterVanQueue(route) {
+      ['all', 'r1', 'r2', 'r3'].forEach(r => {
+        const btn = document.getElementById(`van-filter-${r}`);
+        if (btn) btn.className = "px-2.5 py-1 rounded-lg font-medium text-slate-300 hover:text-white transition";
+      });
+      const activeBtn = document.getElementById(route === 'ALL' ? 'van-filter-all' : (route === 'ROUTE_1_STATUTORY' ? 'van-filter-r1' : (route === 'ROUTE_2_EXPOSURE' ? 'van-filter-r2' : 'van-filter-r3')));
+      if (activeBtn) activeBtn.className = "px-2.5 py-1 rounded-lg font-medium bg-emerald-600 text-white transition";
+
+      loadVanQueue(route);
+    }
+
+    function selectVanWorker(w) {
+      selectedVanWorker = w;
+      document.getElementById('exam-worker-name').innerText = w.worker_name;
+      document.getElementById('exam-worker-meta').innerText = `e-Shram UAN: ${w.masked_eshram_uan} · ABHA: ${w.abha_address} · ${w.age}y · ${w.job_role}`;
+      document.getElementById('exam-route-badge').innerText = w.route_label;
+    }
+
+    function calcFevRatio() {
+      const fev1 = parseFloat(document.getElementById('exam-fev1').value) || 2.8;
+      const fvc = parseFloat(document.getElementById('exam-fvc').value) || 3.6;
+      const ratio = (fev1 / fvc).toFixed(2);
+      const ratioEl = document.getElementById('exam-ratio');
+      if (ratio < 0.70) {
+        ratioEl.innerText = `${ratio} (Obstructive Airway Deficit - Referral Required)`;
+        ratioEl.className = "font-mono font-bold text-red-400";
+      } else {
+        ratioEl.innerText = `${ratio} (Normal Lung Function)`;
+        ratioEl.className = "font-mono font-bold text-emerald-400";
+      }
+    }
+
+    // 1-Click Publish to ABHA ID
+    async function publishToAbhaAction() {
+      if (!selectedVanWorker) {
+        alert("Please select a worker from the queue first.");
+        return;
+      }
+
+      const fev1 = parseFloat(document.getElementById('exam-fev1').value) || 2.85;
+      const fvc = parseFloat(document.getElementById('exam-fvc').value) || 3.65;
+      const creat = parseFloat(document.getElementById('exam-creatinine').value) || 1.05;
+      const usg = parseFloat(document.getElementById('exam-usg').value) || 1.018;
+      const ilo = document.getElementById('exam-ilo').value;
+      const docReg = document.getElementById('exam-doc-reg').value;
+      const bocw = document.getElementById('exam-bocw').checked;
+      const notes = document.getElementById('exam-notes').value || "Routine examination complete.";
+
+      const payload = {
+        case_id: selectedVanWorker.case_id,
+        worker_id: selectedVanWorker.worker_id,
+        doctor_registration_no: docReg,
+        spirometry_fev1_liters: fev1,
+        spirometry_fvc_liters: fvc,
+        serum_creatinine_mg_dl: creat,
+        urine_specific_gravity: usg,
+        chest_xray_ilo_category: ilo,
+        clinical_notes: notes,
+        bocw_assistance_claimed: bocw
+      };
+
+      const btn = document.getElementById('btn-publish-abha');
+      btn.innerHTML = '<i data-lucide="loader" class="w-4 h-4 animate-spin"></i><span>Generating FHIR Bundle & Publishing...</span>';
+      lucide.createIcons();
+
+      try {
+        const res = await fetch('/api/van/publish-abha', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        // Render FHIR Preview Modal
+        document.getElementById('fhir-sms-gu').innerText = `SMS (ગુજરાતી): "${data.sms_dispatch.message_gu}"`;
+        document.getElementById('fhir-sms-hi').innerText = `SMS (हिंदी): "${data.sms_dispatch.message_hi}"`;
+        document.getElementById('fhir-json-preview').innerText = JSON.stringify(data.abdm_confirmation, null, 2);
+
+        document.getElementById('modal-fhir').classList.remove('hidden');
+
+        // Reload queue
+        await loadVanQueue('ALL');
+
+      } catch (e) {
+        alert("Publishing failed: " + e.message);
+      } finally {
+        btn.innerHTML = '<i data-lucide="cloud-upload" class="w-4 h-4"></i><span>1-Click Publish to ABHA Health Locker</span>';
+        lucide.createIcons();
+      }
+    }
+
+    // Modal Controls
+    function openCertificateModal() {
+      if (!currentWorker) return;
+      document.getElementById('cert-name').innerText = currentWorker.worker.full_name;
+      document.getElementById('cert-uan').innerText = currentWorker.worker.masked_eshram_uan;
+      document.getElementById('cert-abha-id').innerText = currentWorker.worker.abha_id;
+      document.getElementById('cert-abha-addr').innerText = currentWorker.worker.abha_address;
+
+      if (currentWorker.cases && currentWorker.cases.length > 0) {
+        const c = currentWorker.cases[0];
+        document.getElementById('cert-fev').innerText = c.spirometry_fev1_fvc_ratio ? `${c.spirometry_fev1_fvc_ratio} (Normal)` : "0.78 (Normal)";
+        document.getElementById('cert-creat').innerText = c.serum_creatinine_mg_dl ? `${c.serum_creatinine_mg_dl} mg/dL` : "1.05 mg/dL";
+        document.getElementById('cert-usg').innerText = c.urine_specific_gravity || "1.018";
+        document.getElementById('cert-xray').innerText = c.chest_xray_ilo_category || "0/0";
+      }
+
+      document.getElementById('modal-certificate').classList.remove('hidden');
+    }
+
+    function closeCertificateModal() {
+      document.getElementById('modal-certificate').classList.add('hidden');
+    }
+
+    function closeFhirModal() {
+      document.getElementById('modal-fhir').classList.add('hidden');
+    }
+
+    // Initialize Leaflet Map for District View
+    function initDistrictMap() {
+      if (districtMap) return;
+      // Centered on Kachchh District
+      districtMap = L.map('district-map').setView([23.2420, 69.6669], 9);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(districtMap);
+
+      // Key Taluka Coordinates & Risk
+      const talukas = [
+        { name: "Mundra Port Logistics", lat: 22.8395, lng: 69.7258, color: "orange", heat: "1,460 hrs", workers: 220 },
+        { name: "Kandla Port Loading Yard", lat: 23.0033, lng: 70.2185, color: "red", heat: "2,067 hrs", workers: 180 },
+        { name: "Little Rann Salt Pan Cluster", lat: 23.3500, lng: 71.0500, color: "red", heat: "1,580 hrs", workers: 310 },
+        { name: "Bhuj Construction & Masonry", lat: 23.2420, lng: 69.6669, color: "yellow", heat: "1,310 hrs", workers: 140 },
+        { name: "Abdasa Cement & Limestone Quarry", lat: 23.2100, lng: 68.8500, color: "orange", heat: "1,390 hrs", workers: 150 }
+      ];
+
+      talukas.forEach(t => {
+        const marker = L.circleMarker([t.lat, t.lng], {
+          radius: 12,
+          fillColor: t.color === 'red' ? '#ef4444' : (t.color === 'orange' ? '#f97316' : '#eab308'),
+          color: '#ffffff',
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.85
+        }).addTo(districtMap);
+
+        marker.bindPopup(`
+          <div class="text-xs p-1">
+            <strong class="text-sm font-bold">${t.name}</strong><br/>
+            <span>Active Workers: <strong>${t.workers}</strong></span><br/>
+            <span>Heat Hours (>30°C WBGT): <strong class="text-red-600">${t.heat}</strong></span>
+          </div>
+        `);
+      });
+
+      initJobHotspotsChart();
+    }
+
+    // Chart.js: Screening Referrals by Job Role
+    function initJobHotspotsChart() {
+      const ctx = document.getElementById('job-hotspots-chart');
+      if (!ctx) return;
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Salt Pan Rakers', 'Quarry Drillers', 'Cement Loaders', 'Port Yard Staff', 'Truck Drivers', 'Crane Operators'],
+          datasets: [{
+            label: 'Screening Referral Rate (%)',
+            data: [78.5, 74.2, 68.0, 52.1, 31.4, 18.2],
+            backgroundColor: [
+              '#ef4444',
+              '#f97316',
+              '#f59e0b',
+              '#10b981',
+              '#3b82f6',
+              '#6366f1'
+            ],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              grid: { color: 'rgba(255, 255, 255, 0.05)' },
+              ticks: { color: '#94a3b8' }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { color: '#94a3b8' }
+            }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

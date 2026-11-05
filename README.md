@@ -101,22 +101,40 @@ $$PM_{\text{corrected}} = \frac{PM_{\text{raw}}}{1 + 0.25 \cdot \left(\frac{RH^2
 python database/init_db.py
 python database/seed_data.py
 
-# 2. Test the query contracts (Who's due, Site risk today, Hotspots by job)
-python database/test_queries.py
+# 2. Run the Interactive Multi-Persona Dashboard & FastAPI Server
+python app/main.py
+# -> Open your browser at: http://127.0.0.1:8000
+# -> Interactive Swagger API Docs at: http://127.0.0.1:8000/docs
 
-# 3. Run unit tests for WBGT formulas and rules engine
+# 3. Test the ABDM FHIR R4 Publishing Service
+python -m unittest services/test_abdm_publisher.py
+
+# 4. Test all REST API endpoints & full integration
+python tests/test_api_runner.py
+
+# 5. Run unit tests for WBGT formulas and rules engine
 python -m unittest tests/test_rules_engine.py
-
-# 4. Generate or update all CSV datasets
-python data/fetch_and_generate_datasets.py
 ```
+
+---
+
+## 🖥️ The 4 Interactive Dashboard Personas (`app/`)
+
+| Persona / View | Route | Key Features & Target Audience |
+|---|---|---|
+| **Worker QR Health Pass** | `/worker` | Trilingual (**ગુજરાતી**, **हिंदी**, **English**), dynamic QR badge, e-Shram UAN & ABHA address (`ramesh.ahir@abdm`), personal dust/heat exposure gauge, 1-touch symptom logger (dark urine, cough, dizziness, eye glare), verified certificate export. |
+| **Worksite Live Watch** | `/site` | Real-time ESP32 telemetry (WBGT, 150mm globe temp, PM2.5, UV), dynamic ISO 7243 Neopixel Lamp (**GREEN** / **YELLOW** / **ORANGE** / **RED**), work-rest countdown clock, cool-shift optimizer (6am–3pm saves ~20% hot hours), mandatory facility checklist. |
+| **Mobile Medical Van** | `/van` | Designed for doctors aboard Gujarat BOCW Dhanvantari Arogya Rath & Salt-Worker Vans. Prioritized queue filtered by 3 routes (Statutory Rule 9/5, Cumulative Dust, Symptoms), spirometry ($FEV_1/FVC$), serum creatinine, ILO X-Ray, and **1-Click Publish to ABHA Health Locker**. |
+| **District Administration** | `/district` | **100% DPDP Act 2023 Compliant** macro overview for DDO Kachchh. Interactive Leaflet taluka hazard heatmap, mobile van fleet status, job hotspot rankings, 1-click statutory CSV/JSON exports (BOCW, Salt Pan, NPCCHH, ESIC). |
 
 ---
 
 ## 📜 Full Documentation Index
 
+- [`docs/WORKCHECK_KACHCHH_MASTER_SYSTEM_PLAN.md`](docs/WORKCHECK_KACHCHH_MASTER_SYSTEM_PLAN.md): Complete executive blueprint based on `PS000109_Final_Synopsis.pdf`.
+- [`docs/DASHBOARD_AND_ABHA_DATA_PLAN.md`](docs/DASHBOARD_AND_ABHA_DATA_PLAN.md): End-to-end data pipeline, HL7 FHIR R4 DiagnosticReport specifications, and UI contracts.
 - [`docs/DATABASE_ARCHITECTURE.md`](docs/DATABASE_ARCHITECTURE.md): Database design, ERD, and DPDP Act 2023 compliance.
 - [`docs/DATASET_CATALOG.md`](docs/DATASET_CATALOG.md): Source citations, schemas, and replay instructions for all datasets.
 - [`docs/TEAM_INTEGRATION_SPEC.md`](docs/TEAM_INTEGRATION_SPEC.md): Specifications for Person 2 (Hardware), Person 3 (API/Govt), and Person 4 (Pitch/Evidence).
-- [`docs/HARDWARE_COST_MODEL.md`](docs/HARDWARE_COST_MODEL.md): Bill of materials, ₹2,015 site node, and Kenzen competitor cost comparison.
+- [`docs/HARDWARE_COST_MODEL.md`](docs/HARDWARE_COST_MODEL.md): Bill of materials, ₹2,200 site node, and Kenzen competitor cost comparison.
 - [`docs/GOVT_SCHEMES_GUIDE.md`](docs/GOVT_SCHEMES_GUIDE.md): Integration guide for BOCW Dhanvantari Rath, Salt Pan Vans, e-Shram, and ABHA.
