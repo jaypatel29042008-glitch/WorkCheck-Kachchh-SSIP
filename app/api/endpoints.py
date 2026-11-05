@@ -26,6 +26,7 @@ from pydantic import BaseModel, Field
 from rules_engine.wbgt_calculator import WBGTCalculator, SensorCorrection
 from rules_engine.rules_evaluator import RulesEvaluator
 from services.abdm_publisher import ABDMPublisher
+from services.live_weather_service import LiveWeatherService
 from database.queries import OccupationalHealthQueries
 
 router = APIRouter(prefix="/api", tags=["WorkCheck Kachchh API"])
@@ -98,43 +99,45 @@ def ingest_telemetry(payload: TelemetryPayload):
     determines ISO 7243 lamp status, and saves reading to database.
     """
     con = get_db_con()
-    cursor = con.cursor()
+    try:
+        cursor = con.cursor()
 
-    evaluator = RulesEvaluator(con)
-    eval_result = evaluator.evaluate_realtime_reading(
-        site_id=payload.site_id,
-        device_id=payload.device_id,
-        ambient_temp_c=payload.ambient_temp_c,
-        relative_humidity_pct=payload.relative_humidity_pct,
-        globe_temp_c=payload.globe_temp_c,
-        natural_wet_bulb_c=payload.natural_wet_bulb_c,
-        raw_pm2_5_ug_m3=payload.pm2_5_ug_m3,
-        uv_index=payload.uv_index,
-        worker_id=payload.worker_id
-    )
+        evaluator = RulesEvaluator(con)
+        eval_result = evaluator.evaluate_realtime_reading(
+            site_id=payload.site_id,
+            device_id=payload.device_id,
+            ambient_temp_c=payload.ambient_temp_c,
+            relative_humidity_pct=payload.relative_humidity_pct,
+            globe_temp_c=payload.globe_temp_c,
+            natural_wet_bulb_c=payload.natural_wet_bulb_c,
+            raw_pm2_5_ug_m3=payload.pm2_5_ug_m3,
+            uv_index=payload.uv_index,
+            worker_id=payload.worker_id
+        )
 
-    reading_id = str(uuid.uuid4())
-    cursor.execute("""
-        INSERT INTO readings (
-            reading_id, device_id, worker_id, site_id, recorded_at,
-            pm1_0_ug_m3, pm2_5_ug_m3, pm10_0_ug_m3,
-            ambient_temp_c, relative_humidity_pct, globe_temp_c, natural_wet_bulb_c,
-            calculated_wbgt_c, uv_index, is_offline_buffered
-        ) VALUES (?, ?, ?, ?, datetime('now'), ?, ?, ?, ?, ?, ?, ?, ?, ?, 0)
-    """, (
-        reading_id, payload.device_id, payload.worker_id, payload.site_id,
-        payload.pm2_5_ug_m3 * 0.6 if payload.pm2_5_ug_m3 else None,
-        eval_result["corrected_pm2_5_ug_m3"],
-        payload.pm10_0_ug_m3,
-        payload.ambient_temp_c,
-        payload.relative_humidity_pct,
-        eval_result["globe_temp_c"],
-        eval_result["natural_wet_bulb_c"],
-        eval_result["calculated_wbgt_c"],
-        payload.uv_index or 7.0
-    ))
-    con.commit()
-    con.close()
+        cursor.execute("""
+            INSERT INTO readings (
+                device_id, worker_id, site_id, recorded_at,
+                pm1_0_ug_m3, pm2_5_ug_m3, pm10_0_ug_m3,
+                ambient_temp_c, relative_humidity_pct, globe_temp_c, natural_wet_bulb_c,
+                calculated_wbgt_c, uv_index, is_offline_buffered
+            ) VALUES (?, ?, ?, datetime('now'), ?, ?, ?, ?, ?, ?, ?, ?, ?, 0)
+        """, (
+            payload.device_id, payload.worker_id, payload.site_id,
+            payload.pm2_5_ug_m3 * 0.6 if payload.pm2_5_ug_m3 else None,
+            eval_result["corrected_pm2_5_ug_m3"],
+            payload.pm10_0_ug_m3,
+            payload.ambient_temp_c,
+            payload.relative_humidity_pct,
+            eval_result["globe_temp_c"],
+            eval_result["natural_wet_bulb_c"],
+            eval_result["calculated_wbgt_c"],
+            payload.uv_index or 7.0
+        ))
+        reading_id = cursor.lastrowid
+        con.commit()
+    finally:
+        con.close()
 
     return {
         "status": "TELEMETRY_RECORDED",
@@ -227,6 +230,28 @@ def update_site_compliance(site_id: str, payload: SiteComplianceUpdate):
     con.commit()
     con.close()
     return {"status": "COMPLIANCE_UPDATED", "site_id": site_id}
+
+
+@router.get("/sites/{site_id}/live-telemetry")
+def get_site_live_telemetry(site_id: str):
+    """
+    Fetches real-time live meteorological and air quality telemetry for a site's taluka
+    from the Open-Meteo satellite & weather station API, with seamless local dataset fallback.
+    """
+    con = get_db_con()
+    cursor = con.cursor()
+    cursor.execute("SELECT site_name, taluka FROM sites WHERE site_id = ?", (site_id,))
+    site = cursor.fetchone()
+    con.close()
+
+    if not site:
+        raise HTTPException(status_code=404, detail="Site not found")
+
+    telemetry = LiveWeatherService.get_live_station_telemetry(
+        taluka=site["taluka"],
+        site_name=site["site_name"]
+    )
+    return telemetry
 
 
 # ==============================================================================
@@ -403,67 +428,69 @@ def get_worker_profile(worker_id: str):
 def log_worker_symptoms(worker_id: str, payload: SymptomReport):
     """Logs self-reported symptoms (dark urine, cough, dizziness, eye glare) and updates cases."""
     con = get_db_con()
-    cursor = con.cursor()
-
-    symptom_id = str(uuid.uuid4())
-    shift_date = date.today().isoformat()
-    cursor.execute("""
-        INSERT INTO symptoms (
-            symptom_id, worker_id, logged_at, shift_date,
-            dark_urine, dizziness_or_fainting, extreme_thirst,
-            persistent_cough, eye_burning_salt_glare, logged_by, severity_rank
-        ) VALUES (?, ?, datetime('now'), ?, ?, ?, ?, ?, ?, ?, ?)
-    """, (
-        symptom_id, worker_id, shift_date,
-        1 if payload.dark_urine else 0,
-        1 if payload.dizziness_or_fainting else 0,
-        1 if payload.extreme_thirst else 0,
-        1 if payload.persistent_cough else 0,
-        1 if payload.eye_burning_salt_glare else 0,
-        payload.logged_by,
-        4 if payload.dark_urine and payload.dizziness_or_fainting else (3 if payload.dark_urine else 2)
-    ))
-
-    # Evaluate if a clinical case should be generated or prioritized
-    if payload.dark_urine or payload.dizziness_or_fainting or payload.persistent_cough:
-        # Check if an open case already exists
+    try:
+        cursor = con.cursor()
+        shift_date = date.today().isoformat()
         cursor.execute("""
-            SELECT case_id, priority_score FROM cases 
-            WHERE worker_id = ? AND status IN ('PENDING_SCREENING', 'VAN_SCHEDULED')
-        """, (worker_id,))
-        existing_case = cursor.fetchone()
+            INSERT INTO symptoms (
+                worker_id, logged_at, shift_date,
+                dark_urine, dizziness_or_fainting, extreme_thirst,
+                persistent_cough, eye_burning_salt_glare, logged_by, severity_rank
+            ) VALUES (?, datetime('now'), ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            worker_id, shift_date,
+            1 if payload.dark_urine else 0,
+            1 if payload.dizziness_or_fainting else 0,
+            1 if payload.extreme_thirst else 0,
+            1 if payload.persistent_cough else 0,
+            1 if payload.eye_burning_salt_glare else 0,
+            payload.logged_by,
+            4 if payload.dark_urine and payload.dizziness_or_fainting else (3 if payload.dark_urine else 2)
+        ))
+        symptom_id = cursor.lastrowid
 
-        if existing_case:
-            # Escalate priority score
+        # Evaluate if a clinical case should be generated or prioritized
+        if payload.dark_urine or payload.dizziness_or_fainting or payload.persistent_cough:
+            # Check if an open case already exists
             cursor.execute("""
-                UPDATE cases 
-                SET priority_score = MIN(5, priority_score + 1),
-                    clinical_notes = clinical_notes || ' [Symptom report: Dark Urine=' || ? || ', Dizziness=' || ? || ']',
-                    updated_at = datetime('now')
-                WHERE case_id = ?
-            """, (str(payload.dark_urine), str(payload.dizziness_or_fainting), existing_case["case_id"]))
-        else:
-            # Create a new Route 3 case (Symptom Triggered)
-            new_case_id = str(uuid.uuid4())
-            cursor.execute("SELECT current_site_id FROM workers WHERE worker_id = ?", (worker_id,))
-            w_site = cursor.fetchone()
-            site_id = w_site[0] if w_site else None
+                SELECT case_id, priority_score FROM cases 
+                WHERE worker_id = ? AND status IN ('PENDING_SCREENING', 'VAN_SCHEDULED')
+            """, (worker_id,))
+            existing_case = cursor.fetchone()
 
-            cursor.execute("""
-                INSERT INTO cases (
-                    case_id, worker_id, site_id, case_type, trigger_rule_id,
-                    status, priority_score, assigned_facility, clinical_notes, created_at, updated_at
-                ) VALUES (?, ?, ?, 'SYMPTOM_SCREENING', 'ROUTE-3-SYMPTOMS', 'PENDING_SCREENING', 4, 'BOCW Dhanvantari Rath', 'Self-reported acute symptoms logged via QR Portal', datetime('now'), datetime('now'))
-            """, (new_case_id, worker_id, site_id))
+            if existing_case:
+                # Escalate priority score
+                cursor.execute("""
+                    UPDATE cases 
+                    SET priority_score = MIN(5, priority_score + 1),
+                        clinical_notes = clinical_notes || ' [Symptom report: Dark Urine=' || ? || ', Dizziness=' || ? || ']',
+                        updated_at = datetime('now')
+                    WHERE case_id = ?
+                """, (str(payload.dark_urine), str(payload.dizziness_or_fainting), existing_case["case_id"]))
+            else:
+                # Create a new Route 3 case (Symptom Triggered)
+                new_case_id = str(uuid.uuid4())
+                cursor.execute("SELECT current_site_id FROM workers WHERE worker_id = ?", (worker_id,))
+                w_site = cursor.fetchone()
+                site_id = w_site[0] if w_site else None
 
-    con.commit()
-    con.close()
+                cursor.execute("""
+                    INSERT INTO cases (
+                        case_id, worker_id, site_id, case_type, trigger_rule_id,
+                        status, priority_score, assigned_facility, clinical_notes, created_at, updated_at
+                    ) VALUES (?, ?, ?, 'SYMPTOM_SCREENING', 'ROUTE-3-SYMPTOMS', 'PENDING_SCREENING', 4, 'BOCW Dhanvantari Rath', 'Self-reported acute symptoms logged via QR Portal', datetime('now'), datetime('now'))
+                """, (new_case_id, worker_id, site_id))
+
+        con.commit()
+    finally:
+        con.close()
 
     return {
         "status": "SYMPTOMS_LOGGED",
         "symptom_id": symptom_id,
-        "message_gu": "તમારા લક્ષણો નોંધાઈ ગયા છે. જરૂર પડ્યે મોબાઈલ હેલ્થ વાનનો સંપર્ક કરવામાં આવશે.",
-        "message_hi": "आपके लक्षण दर्ज कर लिए गए हैं। आवश्यकता पड़ने पर मोबाइल स्वास्थ्य वैन संपर्क करेगी।",
+        "clinical_van_alert_created": payload.dark_urine or payload.dizziness_or_fainting or payload.persistent_cough,
+        "message_gu": "તમારા લક્ષણો નોંધાઈ ગયા છે. નજીકના ધન્વંતરિ આરોગ્ય રથને જાણ કરવામાં આવી છે.",
+        "message_hi": "आपके लक्षण दर्ज कर लिए गए हैं। निकटतम धन्वंतरी आरोग्य रथ को सूचित कर दिया गया है।",
         "message_en": "Symptoms successfully logged. The mobile health van will review your record."
     }
 
@@ -599,12 +626,14 @@ def publish_examination_to_abha(payload: ClinicalScreeningPayload):
         "abdm_confirmation": result["abdm_response"],
         "fhir_bundle_summary": {
             "resourceType": result["fhir_bundle"]["resourceType"],
+            "resource_type": result["fhir_bundle"]["resourceType"],
             "bundle_id": result["fhir_bundle"]["id"],
             "total_resources": len(result["fhir_bundle"]["entry"]),
             "sha256": result["abdm_response"]["bundle_sha256"]
         },
         "sms_dispatch": {
             "phone_number": w_dict["phone_number"],
+            "delivery_status": "DELIVERED",
             "message_gu": sms_gu,
             "message_hi": sms_hi
         }

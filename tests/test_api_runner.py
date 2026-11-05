@@ -173,6 +173,18 @@ class TestWorkCheckAPI(unittest.TestCase):
         self.assertIn("sites_comparison", data)
         self.assertEqual(len(data["sites_comparison"]), 5)
 
+    def test_13_live_telemetry(self):
+        res = self.client.get("/api/sites")
+        sites = res.json()
+        site_id = sites[0]["site_id"]
+
+        res2 = self.client.get(f"/api/sites/{site_id}/live-telemetry")
+        self.assertEqual(res2.status_code, 200)
+        data = res2.json()
+        self.assertIn("ambient_temp_c", data)
+        self.assertIn("calculated_wbgt_c", data)
+        self.assertIn("lamp_color", data)
+
 
 if __name__ == "__main__":
     unittest.main()
