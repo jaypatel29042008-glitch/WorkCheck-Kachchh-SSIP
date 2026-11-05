@@ -52,7 +52,7 @@ app.include_router(api_router)
 
 
 @app.get("/", response_class=HTMLResponse)
-async def serve_dashboard(request: Request, view: str = "worker"):
+async def serve_dashboard(request: Request, view: str = "login"):
     """Serves the unified multi-persona WorkCheck Kachchh interactive dashboard."""
     return templates.TemplateResponse(
         request=request,
@@ -94,6 +94,11 @@ async def serve_research_view(request: Request):
 @app.get("/facilities", response_class=HTMLResponse)
 async def serve_facilities_view(request: Request):
     return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "facilities"})
+
+
+@app.get("/datasets", response_class=HTMLResponse)
+async def serve_datasets_view(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html", context={"initial_view": "datasets"})
 
 
 @app.get("/login", response_class=HTMLResponse)

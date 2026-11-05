@@ -1,0 +1,6 @@
+station_name,station_id,date_time_ist,imd_dry_bulb_c,imd_rh_pct,imd_wind_kmh,model_dry_bulb_c,model_rh_pct,ta_abs_bias_c,calculated_wbgt_c
+Bhuj Airport,42634,2025-05-15 14:00,42.4,48,16.2,41.8,50,0.6,31.4
+Bhuj Airport,42634,2025-05-16 14:00,43.1,44,14.8,42.5,46,0.6,31.8
+Kandla Port,42638,2025-05-15 14:00,38.6,64,22.5,39.1,62,0.5,30.8
+Kandla Port,42638,2025-05-16 14:00,39.2,61,20.1,38.8,63,0.4,30.7
+Naliya Airfield,42631,2025-05-15 14:00,40.8,52,18.0,40.2,55,0.6,30.9

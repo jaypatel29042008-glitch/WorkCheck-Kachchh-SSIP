@@ -1,0 +1,6 @@
+grid_cell_id,taluka,center_lat,center_lon,monthly_mean_daily_dose_j_m2,max_daily_dose_j_m2,mean_uv_index_noon,data_quality_flag
+OM-KCH-01,Rapar (Little Rann),23.350,71.050,5980,7120,12.5,VALID
+OM-KCH-02,Mundra Port SEZ,22.840,69.725,5840,6950,12.2,VALID
+OM-KCH-03,Kandla Yard #4,23.003,70.218,5890,7010,12.3,VALID
+OM-KCH-04,Abdasa Cement Belt,23.210,68.850,6020,7180,12.6,VALID
+OM-KCH-05,Bhuj Construction,23.242,69.667,5910,7040,12.4,VALID

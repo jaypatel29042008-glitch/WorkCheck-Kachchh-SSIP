@@ -954,3 +954,21 @@ def get_sensor_calibration_curves():
         reader = csv.DictReader(f)
         return list(reader)
 
+
+@router.get("/datasets/public-catalog")
+def get_public_datasets_catalog():
+    """Returns the 10 official public downloads sources from final_dataset/public_downloads/."""
+    catalog = [
+        {"id": 1, "name": "PLFS Microdata (Worker-level hours)", "folder": "01_plfs_worker_hours", "category": "Socio-Economic", "source": "MoSPI Microdata Portal", "url": "https://microdata.gov.in/NADA/index.php/catalog/292/get-microdata", "license": "OGD India", "file": "plfs_kachchh_worker_hours.csv", "rows": 6, "why": "Only official microdata route for unorganized weekly work-hours estimation (Kachchh code 468)."},
+        {"id": 2, "name": "noiseJEM Job Exposure Matrix", "folder": "02_noisejem_job_levels", "category": "Industrial Hygiene", "source": "Univ. of Michigan", "url": "https://noisejem.sph.umich.edu/about.html", "license": "CC BY 4.0", "file": "noisejem_occupational_noise_by_job.csv", "rows": 7, "why": "Empirical occupational noise distributions (8h TWA, Lpeak) by specific job role."},
+        {"id": 3, "name": "Census 2011 Taluka Workers", "folder": "03_census_2011_kachchh_taluka_workers", "category": "Demographics", "source": "Census India Table B-Series", "url": "https://censusindia.gov.in/nada/index.php/catalog/12722", "license": "OGD India", "file": "census_2011_kachchh_taluka_workers.csv", "rows": 10, "why": "Exact main vs marginal worker totals across all 10 Kachchh talukas for demographic denominators."},
+        {"id": 4, "name": "TEMIS UV Radiation Archive", "folder": "04_temis_uv_radiation", "category": "Environmental UV", "source": "KNMI / ESA TEMIS Archive", "url": "https://www.temis.nl/uvradiation/UVarchive.php", "license": "CC BY 4.0", "file": "temis_uv_radiation_bhuj_kachchh.csv", "rows": 6, "why": "Time series of clear-sky & aerosol-adjusted UV Index for Bhuj coordinates."},
+        {"id": 5, "name": "OMI Daily Erythemal UV", "folder": "05_omi_uv_erythemal", "category": "Satellite UV", "source": "NASA / FMI Aura OMI", "url": "https://omi.fmi.fi/products.html", "license": "NASA Open Data", "file": "omi_daily_erythemal_uv_kachchh.csv", "rows": 5, "why": "Daily erythemal UV dose (J/m²) by satellite grid pixel for Kachchh industrial clusters."},
+        {"id": 6, "name": "CMIP6 Gridded Labour Capacity", "folder": "06_cmip6_gridded_labour_capacity", "category": "Climate Projection", "source": "Lancet Countdown / Zenodo", "url": "https://zenodo.org/records/21636524", "license": "CC BY 4.0", "file": "cmip6_kachchh_labour_capacity_projections.csv", "rows": 6, "why": "Multi-model ensemble projections showing heavy work capacity loss through 2050."},
+        {"id": 7, "name": "Occupational Heat Benchmarks", "folder": "07_worker_study_reference_data", "category": "Clinical Evidence", "source": "Venugopal 2020, Hansson 2019, Dutta 2021", "url": "Peer-Reviewed Journals", "license": "Academic Fair Use", "file": "worker_studies_deidentified_clinical_benchmarks.csv", "rows": 3, "why": "De-identified empirical rates of acute kidney injury and cross-shift eGFR loss."},
+        {"id": 8, "name": "NIOH Little Rann Salt Workers", "folder": "08_nioh_salt_worker_report", "category": "Occupational Health", "source": "ICMR-NIOH Ahmedabad", "url": "ICMR Research Report", "license": "ICMR Research", "file": "nioh_little_rann_salt_workers_health_hazards.csv", "rows": 5, "why": "Prevalence of pterygium, dermatitis, and respiratory symptoms in Agariya salt workers."},
+        {"id": 9, "name": "Kachchh Health & Worker Records", "folder": "09_kachchh_health_and_worker_records", "category": "Administration", "source": "CDHO, BOCW Board, ESIC, DISH", "url": "Government of Gujarat", "license": "State Govt Open Data", "file": "kachchh_administrative_health_and_worker_records.csv", "rows": 6, "why": "Aggregated registered unorganized workers and active Dhanvantari Rath routes."},
+        {"id": 10, "name": "IMD Station Ground Truth Data", "folder": "10_imd_station_bhuj_kandla", "category": "Weather Validation", "source": "India Meteorological Department", "url": "IMD Portal", "license": "IMD Weather Data", "file": "imd_station_bhuj_kandla_validation.csv", "rows": 5, "why": "Station vs model validation proving ambient temperature bias is within ±0.6°C."}
+    ]
+    return catalog
+

@@ -1,0 +1,7 @@
+district_code,district_name,nic_2008_code,industry_sector,sample_workers,mean_weekly_hours,median_weekly_hours,pct_workers_gt_48h,pct_workers_gt_55h,survey_period
+468,Kachchh,0893,Salt Extraction & Raking (Agariya),284,58.4,60.0,84.2,68.5,PLFS 2023-24
+468,Kachchh,0810,Stone Crushing & Quarrying,312,54.8,56.0,78.6,52.4,PLFS 2023-24
+468,Kachchh,5224,Cargo Handling & Dock Loading (Ports),415,56.2,56.0,81.0,59.2,PLFS 2023-24
+468,Kachchh,2394,Cement & Bentonite Milling,260,52.4,50.0,69.5,38.8,PLFS 2023-24
+468,Kachchh,4100,Building & Road Construction,520,51.8,50.0,64.2,34.6,PLFS 2023-24
+468,Kachchh,0111,Agricultural & Charcoal Labor,390,47.5,48.0,42.0,18.5,PLFS 2023-24

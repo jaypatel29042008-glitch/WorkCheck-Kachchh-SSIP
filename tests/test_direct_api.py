@@ -42,7 +42,8 @@ from app.api.endpoints import (
     get_consent_audit_log,
     get_unregistered_enrollments,
     get_statutory_fitness_forms,
-    get_sensor_calibration_curves
+    get_sensor_calibration_curves,
+    get_public_datasets_catalog
 )
 
 
@@ -294,6 +295,22 @@ class TestWorkCheckDirectAPI(unittest.TestCase):
         curves = get_sensor_calibration_curves()
         self.assertIsInstance(curves, list)
         self.assertEqual(len(curves), 7)
+
+    def test_21_public_datasets_catalog(self):
+        """Tests the 10 official public downloads sources from final_dataset/public_downloads/."""
+        catalog = get_public_datasets_catalog()
+        self.assertIsInstance(catalog, list)
+        self.assertEqual(len(catalog), 10)
+        self.assertIn("PLFS Microdata", catalog[0]["name"])
+        self.assertIn("noiseJEM", catalog[1]["name"])
+        self.assertIn("Census 2011", catalog[2]["name"])
+        self.assertIn("TEMIS UV", catalog[3]["name"])
+        self.assertIn("OMI Daily", catalog[4]["name"])
+        self.assertIn("CMIP6", catalog[5]["name"])
+        self.assertIn("Occupational Heat", catalog[6]["name"])
+        self.assertIn("NIOH Little Rann", catalog[7]["name"])
+        self.assertIn("Kachchh Health", catalog[8]["name"])
+        self.assertIn("IMD Station", catalog[9]["name"])
 
 
 

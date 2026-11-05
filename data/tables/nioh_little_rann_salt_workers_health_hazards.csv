@@ -1,0 +1,6 @@
+health_condition,clinical_marker,agariya_salt_prevalence_pct,general_rural_control_pct,relative_risk,statutory_action_threshold
+Ocular Pterygium & Photokeratitis,Slit Lamp Corneal Growth,42.8,8.4,5.1,Protective UV Goggles + Van Eye Exam
+Hyperkeratosis & Brine Dermatitis,Skin Fissuring / Ulceration,58.2,12.1,4.8,Waterproof Boots + Barrier Ointment
+Dehydration / Prerenal Azotemia,Urine Specific Gravity > 1.025,64.5,18.2,3.5,Electrolyte Solution + Shaded Rest
+Musculoskeletal Low Back Pain,Nordic Questionnaire Score > 4,51.4,24.6,2.1,Ergonomic Rake + Rotation Shift
+Chronic Cough / Dyspnea,FEV1/FVC < 0.70,16.8,7.2,2.3,Spirometry + Mobile Digital X-Ray

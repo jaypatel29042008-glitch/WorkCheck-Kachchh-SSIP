@@ -145,153 +145,268 @@
       background-color: #111827 !important;
       color: #f1f5f9 !important;
     }
-  </style>
+    @media print {
+    body * { visibility: hidden !important; }
+    #modal-form-5:not(.hidden), #modal-form-5:not(.hidden) *,
+    #modal-abha-published:not(.hidden), #modal-abha-published:not(.hidden) * {
+      visibility: visible !important;
+    }
+    #modal-form-5, #modal-abha-published {
+      position: absolute !important;
+      left: 0 !important; top: 0 !important;
+      width: 100% !important; margin: 0 !important; padding: 0 !important;
+      background: white !important;
+    }
+    .modal-content-box { box-shadow: none !important; border: none !important; }
+    header, aside, footer, #toast-container { display: none !important; }
+  }
+</style>
 </head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
 
-  <!-- ===================================================================== -->
-  <!-- GOVERNMENT OF GUJARAT TRICOLOR & OFFICIAL IDENTITY BAR -->
-  <!-- ===================================================================== -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant/60 shadow-[0_1px_3px_rgba(15,23,42,0.06)]">
-    <!-- Tricolor Flag Accent -->
-    <div class="w-full h-1 bg-gradient-to-r from-[#FF9933] via-surface-container-lowest to-secondary"></div>
-    
-    <!-- State Authority Strip -->
-    <div class="bg-surface-container-low px-4 lg:px-8 py-1.5 border-b border-outline-variant/30">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-1">
-        <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary text-[18px]">assured_workload</span>
-          <span class="text-xs font-bold text-primary tracking-wide">
-            ગુજરાત સરકાર · Government of Gujarat · District Development Office, Kachchh
-          </span>
-        </div>
-        <div class="flex items-center gap-2 text-xs">
-          <span class="text-[11px] font-medium bg-surface-container-lowest px-2 py-0.5 rounded border border-outline-variant/50 text-on-surface-variant">
-            Problem Statement PS000109 · Team TM005024 (LDRP-ITR)
-          </span>
-          <span class="text-emerald-700 bg-emerald-100 font-bold px-2 py-0.5 rounded text-[10px] flex items-center gap-1 border border-emerald-300">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
-            ABDM Sandbox M3 Certified
-          </span>
-        </div>
-      </div>
-    </div>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
 
-    <!-- Main Navigation Bar -->
-    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
-      <!-- Title & Emblem -->
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded border border-primary/20 bg-primary/5 flex items-center justify-center text-primary font-serif font-bold text-xl shadow-sm">
+  <!-- ===================================================================== -->
+  <!-- TOP GOVERNMENT OF GUJARAT EMBLEM & IDENTITY BAR -->
+  <!-- ===================================================================== -->
+  <header class="fixed top-0 left-0 right-0 h-14 md:h-16 z-40 bg-surface-container-lowest border-b border-outline-variant/40 shadow-sm flex flex-col justify-between">
+    <!-- Tricolor Flag Accent Stripe -->
+    <div class="w-full h-1 bg-gradient-to-r from-[#FF9933] via-surface-container-lowest to-[#006C4E]"></div>
+
+    <!-- Main Header Bar -->
+    <div class="w-full max-w-[1920px] mx-auto px-3 md:px-6 py-1.5 flex items-center justify-between gap-2">
+      <!-- Left: Mobile Menu Toggle & Official Title -->
+      <div class="flex items-center gap-2.5">
+        <button id="sidebar-toggle" onclick="toggleSidebar()" class="md:hidden p-1.5 rounded hover:bg-surface-container text-primary transition">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+
+        <div class="w-8 h-8 md:w-9 md:h-9 rounded border border-primary/20 bg-primary/5 flex items-center justify-center text-primary font-serif font-bold text-base md:text-lg shadow-sm flex-shrink-0">
           GJ
         </div>
+
         <div>
-          <div class="flex items-center gap-2">
-            <h1 class="font-editorial text-lg md:text-xl font-bold tracking-tight text-primary leading-tight">
+          <div class="flex items-center gap-1.5">
+            <h1 class="font-editorial text-base md:text-lg font-bold tracking-tight text-primary leading-tight">
               WorkCheck Kachchh
             </h1>
-            <span class="bg-primary/10 text-primary font-mono text-[10px] font-bold px-1.5 py-0.2 rounded">
+            <span class="hidden sm:inline bg-primary/10 text-primary font-mono text-[9px] font-bold px-1.5 py-0.2 rounded">
               v2.0-STITCH
             </span>
           </div>
-          <p class="text-[11px] text-on-surface-variant leading-none mt-0.5">
-            Digital Occupational Health Monitoring &amp; ABHA Health Locker · District Development Office, Kachchh
+          <p class="hidden sm:block text-[10px] text-on-surface-variant leading-none mt-0.5">
+            District Development Office (DDO) Kachchh · Gujarat OSH Rule 9 &amp; ABDM Platform
           </p>
         </div>
       </div>
 
-      <!-- Right Controls: Session, Theme Switcher, Support & Language -->
-      <div class="flex items-center flex-wrap gap-2 text-xs">
+      <!-- Right Controls: IST Clock, Emergency, Theme, Language & Sign Out -->
+      <div class="flex items-center gap-1.5 md:gap-2 text-xs">
         <!-- Live Real-Time Clock -->
-        <div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-surface-container rounded text-on-surface font-mono text-[11px] border border-outline-variant/40">
+        <div class="hidden lg:flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded text-on-surface font-mono text-[11px] border border-outline-variant/40">
           <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
           <span id="live-clock">Bhuj HQ · IST Loading...</span>
         </div>
 
-        <!-- Help & Support Button -->
-        <button onclick="openSupportModal()" class="flex items-center gap-1 px-2.5 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 rounded font-semibold text-[11px] transition">
-          <span class="material-symbols-outlined text-[16px] text-amber-700">emergency</span>
-          <span>Help &amp; Support</span>
+        <!-- Emergency Help Button -->
+        <button onclick="openSupportModal()" class="flex items-center gap-1 px-2 md:px-2.5 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 rounded font-semibold text-[11px] transition">
+          <span class="material-symbols-outlined text-[15px] text-amber-700">emergency</span>
+          <span class="hidden sm:inline">Help &amp; Support</span>
         </button>
 
         <!-- Dark / Light Mode Toggle -->
-        <button id="btn-theme-toggle" onclick="toggleTheme()" class="flex items-center gap-1 px-2.5 py-1 bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/40 rounded font-semibold text-[11px] transition">
-          <span id="theme-icon" class="material-symbols-outlined text-[16px]">dark_mode</span>
-          <span id="theme-text">Dark</span>
+        <button id="btn-theme-toggle" onclick="toggleTheme()" class="flex items-center gap-1 px-2 md:px-2.5 py-1 bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/40 rounded font-semibold text-[11px] transition">
+          <span id="theme-icon" class="material-symbols-outlined text-[15px]">dark_mode</span>
+          <span id="theme-text" class="hidden sm:inline">Dark</span>
         </button>
 
-        <!-- User Session Indicator -->
-        <div id="user-session-bar" class="flex items-center gap-1.5 px-2 py-1 bg-surface-container-low rounded border border-outline-variant/40 text-[11px]">
-          <span class="material-symbols-outlined text-primary text-[16px]">account_circle</span>
-          <span id="user-session-name" class="font-bold text-on-surface">Guest</span>
-          <span id="user-session-badge" class="bg-primary/10 text-primary text-[9px] font-bold px-1 py-0.2 rounded">Public</span>
-          <button id="btn-auth-action" onclick="switchTab('login')" class="ml-1 text-primary hover:underline font-bold text-[10px]">Sign In</button>
+        <!-- User Session Chip & Sign Out Button -->
+        <div id="user-session-bar" class="flex items-center gap-1 px-2 py-1 bg-surface-container-low rounded border border-outline-variant/40 text-[11px]">
+          <span class="material-symbols-outlined text-primary text-[15px]">account_circle</span>
+          <span id="user-session-name" class="font-bold text-on-surface truncate max-w-[90px] sm:max-w-[130px]">Guest</span>
+          <span id="user-session-badge" class="hidden sm:inline bg-primary/10 text-primary text-[9px] font-bold px-1 py-0.2 rounded">Public</span>
+          <button id="btn-auth-action" onclick="switchTab('login')" class="ml-1 px-2 py-0.5 bg-primary hover:bg-primary-container text-white rounded font-bold text-[10px] transition flex items-center gap-0.5 shadow-sm">
+            <span class="material-symbols-outlined text-[12px]">login</span>
+            <span>Sign In</span>
+          </button>
         </div>
 
         <!-- Regional Language Switcher -->
-        <div class="flex items-center border border-outline-variant/50 rounded overflow-hidden text-[11px] bg-surface-container-lowest">
-          <button id="btn-lang-gu" onclick="setAppLanguage('gu')" class="px-2 py-1 font-medium hover:text-primary transition">ગુજરાતી</button>
-          <button id="btn-lang-hi" onclick="setAppLanguage('hi')" class="px-2 py-1 font-medium hover:text-primary transition border-l border-outline-variant/40">हिन्दी</button>
-          <button id="btn-lang-en" onclick="setAppLanguage('en')" class="px-2 py-1 font-bold text-primary transition border-l border-outline-variant/40">ENG</button>
+        <div class="hidden sm:flex items-center border border-outline-variant/50 rounded overflow-hidden text-[10px] bg-surface-container-lowest">
+          <button id="btn-lang-gu" onclick="setAppLanguage('gu')" class="px-1.5 py-1 font-medium hover:text-primary transition">ગુજ</button>
+          <button id="btn-lang-hi" onclick="setAppLanguage('hi')" class="px-1.5 py-1 font-medium hover:text-primary transition border-l border-outline-variant/40">हिन्दी</button>
+          <button id="btn-lang-en" onclick="setAppLanguage('en')" class="px-1.5 py-1 font-bold text-primary transition border-l border-outline-variant/40">ENG</button>
         </div>
       </div>
-    </div>
-
-    <!-- Multi-Persona Top Navigation Tabs (7 Core Views) -->
-    <div class="bg-surface-container-low border-t border-outline-variant/30 px-4 lg:px-8 overflow-x-auto">
-      <nav class="max-w-7xl mx-auto flex gap-1 md:gap-2 text-xs font-semibold py-1">
-        <!-- Tab 1: Worker Pass -->
-        <button id="nav-tab-worker" onclick="switchTab('worker')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-primary text-primary font-bold bg-surface-container-lowest rounded-t transition">
-          <span class="material-symbols-outlined text-[18px]">badge</span>
-          <span>1. Worker Health Pass &amp; ABHA</span>
-        </button>
-
-        <!-- Tab 2: Worksite Live Watch -->
-        <button id="nav-tab-site" onclick="switchTab('site')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">solar_power</span>
-          <span>2. Worksite Live Watch (ISO 7243)</span>
-        </button>
-
-        <!-- Tab 3: Dhanvantari Rath Van -->
-        <button id="nav-tab-van" onclick="switchTab('van')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">medical_services</span>
-          <span>3. Mobile Health Van Station</span>
-        </button>
-
-        <!-- Tab 4: District DDO Heatmap -->
-        <button id="nav-tab-district" onclick="switchTab('district')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">monitoring</span>
-          <span>4. District DDO Macro View</span>
-        </button>
-
-        <!-- Tab 5: Research & BME280 Mask Lab -->
-        <button id="nav-tab-research" onclick="switchTab('research')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">respiration</span>
-          <span>5. BME280 Mask Lab &amp; Silica</span>
-        </button>
-
-        <!-- Tab 6: Healthcare Facilities Directory -->
-        <button id="nav-tab-facilities" onclick="switchTab('facilities')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">local_hospital</span>
-          <span>6. Kachchh Health Facilities</span>
-        </button>
-
-        <!-- Tab 7: Official Institutional Login -->
-        <button id="nav-tab-login" onclick="switchTab('login')" class="nav-tab-btn flex items-center gap-1.5 px-3 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition">
-          <span class="material-symbols-outlined text-[18px]">lock</span>
-          <span>7. Institutional Portal Sign-In</span>
-        </button>
-      </nav>
     </div>
   </header>
 
   <!-- ===================================================================== -->
-  <!-- MAIN MULTI-PERSONA CONTENT AREA -->
+  <!-- MAIN WORKSPACE LAYOUT (LEFT SIDEBAR + CONTENT AREA) -->
   <!-- ===================================================================== -->
-  <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 pt-36 pb-16">
+  <div class="pt-14 md:pt-16 min-h-screen flex flex-col md:flex-row bg-surface">
 
-    <!-- =================================================================== -->
-    <!-- TAB 1: WORKER QR HEALTH PASS & ABHA LOCKER -->
-    <!-- =================================================================== -->
+    <!-- LEFT SIDEBAR NAVIGATION MENU -->
+    <aside id="app-sidebar" class="w-full md:w-64 lg:w-72 bg-surface-container-low border-r border-outline-variant/40 flex-shrink-0 flex flex-col justify-between p-3 md:p-4 sticky top-14 md:top-16 min-h-[calc(100vh-3.5rem)] md:max-h-[calc(100vh-3.5rem)] z-30 transition-all duration-200 overflow-y-auto">
+      <div>
+        <!-- Sidebar Header -->
+        <div class="flex items-center justify-between pb-3 mb-3 border-b border-outline-variant/30">
+          <div>
+            <span class="text-[10px] font-bold tracking-wider text-primary uppercase block">Occupational Modules</span>
+            <span class="text-xs font-semibold text-on-surface">મુખ્ય કાર્યક્ષેત્ર મેનુ</span>
+          </div>
+          <span class="flex items-center gap-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+            LIVE
+          </span>
+        </div>
+
+        <!-- Locked Banner (Visible when Logged Out) -->
+        <div id="sidebar-lock-banner" class="p-3 bg-amber-500/10 border border-amber-500/30 rounded mb-3 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
+          <span class="material-symbols-outlined text-amber-600 text-[18px] flex-shrink-0 mt-0.5">lock</span>
+          <div>
+            <span class="font-bold block">Institutional Access Locked</span>
+            <span class="text-[10px] leading-tight block mt-0.5">Please sign in with your official Gujarat Government credentials to unlock worker records and telemetry.</span>
+          </div>
+        </div>
+
+        <!-- Vertical Navigation Links (8 Items) -->
+        <nav id="sidebar-nav" class="space-y-1">
+          <!-- Tab 1: Worker Pass -->
+          <button id="nav-tab-worker" onclick="switchTab('worker')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-primary">badge</span>
+              <div>
+                <span class="block font-bold">1. Worker Health Pass</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">સ્વાસ્થ્ય કાર્ડ · ABHA Locker</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 2: Worksite Watch -->
+          <button id="nav-tab-site" onclick="switchTab('site')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-amber-600">solar_power</span>
+              <div>
+                <span class="block font-bold">2. Worksite Live Watch</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">કાર્યસ્થળ · ISO 7243 Beacon</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 3: Mobile Van Station -->
+          <button id="nav-tab-van" onclick="switchTab('van')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-secondary">medical_services</span>
+              <div>
+                <span class="block font-bold">3. Mobile Van Station</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">મોબાઇલ વાન · Clinical Triage</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 4: District DDO Macro View -->
+          <button id="nav-tab-district" onclick="switchTab('district')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-primary">monitoring</span>
+              <div>
+                <span class="block font-bold">4. District DDO View</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">જિલ્લા નકશો · Macro Heatmap</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 5: Respiration & Silica Lab -->
+          <button id="nav-tab-research" onclick="switchTab('research')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-secondary">respiration</span>
+              <div>
+                <span class="block font-bold">5. BME280 Mask Lab</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">BME280 સંશોધન · XRD Assays</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 6: Healthcare Facilities Directory -->
+          <button id="nav-tab-facilities" onclick="switchTab('facilities')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-red-600">local_hospital</span>
+              <div>
+                <span class="block font-bold">6. Health Facilities</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">હોસ્પિટલ ડિરેક્ટરી · 108 Bases</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 7: Public Datasets Catalog -->
+          <button id="nav-tab-datasets" onclick="switchTab('datasets')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-semibold transition text-left text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px] text-indigo-600">dataset</span>
+              <div>
+                <span class="block font-bold">7. Public Datasets</span>
+                <span class="text-[10px] text-on-surface-variant font-normal">10 સરકારી ડેટાસેટ · Catalog</span>
+              </div>
+            </div>
+            <span class="lock-indicator material-symbols-outlined text-[15px] text-amber-600">lock</span>
+          </button>
+
+          <!-- Tab 8: Institutional Login Portal -->
+          <button id="nav-tab-login" onclick="switchTab('login')" class="nav-tab-btn w-full flex items-center justify-between p-2.5 rounded text-xs font-bold transition text-left bg-primary text-white shadow-sm">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[19px]">login</span>
+              <div>
+                <span class="block">8. Institutional Sign-In</span>
+                <span class="text-[10px] font-normal opacity-90">સત્તાવાર લોગિન · Auth Portal</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-[15px]">key</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Sidebar Bottom: Environment Status & User Sign Out Card -->
+      <div class="mt-4 pt-3 border-t border-outline-variant/30 space-y-2.5">
+        <!-- Worksite Status Widget -->
+        <div class="p-2.5 bg-surface-container rounded border border-outline-variant/40 text-[11px] space-y-1">
+          <div class="flex items-center justify-between font-bold">
+            <span class="text-on-surface">Worksite Beacon:</span>
+            <span class="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 text-[9px] font-mono">ORANGE</span>
+          </div>
+          <div class="text-[10px] text-on-surface-variant">Kandla Port: 30.6°C WBGT</div>
+        </div>
+
+        <!-- User Profile & Sign Out Button -->
+        <div id="sidebar-user-card" class="p-2.5 bg-surface-container rounded border border-outline-variant/40 text-xs">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center text-xs flex-shrink-0">
+              <span class="material-symbols-outlined text-[16px]">person</span>
+            </div>
+            <div class="truncate">
+              <span id="sidebar-user-name" class="font-bold text-on-surface block leading-tight truncate">Guest User</span>
+              <span id="sidebar-user-badge" class="text-[9px] text-on-surface-variant block font-mono">Institutional Login Required</span>
+            </div>
+          </div>
+          <button id="btn-sidebar-signout" onclick="handleSignOut()" class="w-full py-1.5 bg-red-600 hover:bg-red-700 text-white rounded text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm hidden">
+            <span class="material-symbols-outlined text-[15px]">logout</span>
+            <span>Sign Out (લોગ આઉટ)</span>
+          </button>
+          <button id="btn-sidebar-signin" onclick="switchTab('login')" class="w-full py-1.5 bg-primary hover:bg-primary-container text-white rounded text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span class="material-symbols-outlined text-[15px]">login</span>
+            <span>Sign In to Access</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT MAIN CONTENT AREA -->
+    <main id="main-content" class="flex-1 p-3 md:p-6 lg:p-8 overflow-y-auto bg-surface">
+      <div class="max-w-7xl mx-auto space-y-8">
     <section id="section-worker" class="tab-section">
       <!-- Top Action Toolbar -->
       <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
@@ -480,8 +595,7 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 2: WORKSITE LIVE WATCH & ISO 7243 CONTROLLER -->
-    <!-- =================================================================== -->
+
     <section id="section-site" class="tab-section hidden">
       <!-- Site Toolbar -->
       <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
@@ -647,8 +761,7 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 3: DHANVANTARI AROGYA RATH CLINICAL STATION -->
-    <!-- =================================================================== -->
+
     <section id="section-van" class="tab-section hidden">
       <!-- Van Toolbar -->
       <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
@@ -782,8 +895,7 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 4: DISTRICT ADMINISTRATION (DDO KACHCHH) MACRO VIEW -->
-    <!-- =================================================================== -->
+
     <section id="section-district" class="tab-section hidden">
       <!-- District Toolbar -->
       <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
@@ -867,8 +979,7 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 5: BME280 MASK RESPIRATION LAB & SILICA XRD ASSAYS -->
-    <!-- =================================================================== -->
+
     <section id="section-research" class="tab-section hidden">
       <div class="mb-6 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
         <span class="text-xs font-bold text-secondary tracking-wider uppercase">Persona 5: Research &amp; Scientific Verification</span>
@@ -993,8 +1104,7 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 6: KACHCHH HEALTHCARE FACILITIES & REFERRAL DIRECTORY -->
-    <!-- =================================================================== -->
+
     <section id="section-facilities" class="tab-section hidden">
       <div class="mb-6 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -1029,8 +1139,78 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 7: OFFICIAL INSTITUTIONAL LOGIN PORTAL -->
+
     <!-- =================================================================== -->
+    <!-- TAB 7: PUBLIC DATASETS & SCIENTIFIC SOURCES CATALOG -->
+    <!-- =================================================================== -->
+    <section id="section-datasets" class="tab-section hidden">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
+        <div>
+          <span class="text-xs font-bold text-secondary tracking-wider uppercase">Public Empirical Data Vault</span>
+          <h2 class="text-xl font-bold font-editorial text-primary">Public Datasets &amp; Scientific Sources Catalog (PS000109)</h2>
+          <p class="text-xs text-on-surface-variant mt-0.5">
+            10 Verified Government, Demographics, Industrial Hygiene &amp; Scientific Sources Stored in <code class="bg-surface-container px-1 py-0.5 rounded font-mono">final_dataset/public_downloads/</code>.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="exportDistrictData()" class="px-3 py-1.5 bg-surface-container hover:bg-surface-container-high text-primary border border-outline-variant/40 text-xs font-semibold rounded transition flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Export District Data (CSV)</span>
+          </button>
+          <a href="/api/datasets/public-catalog" target="_blank" class="px-3 py-1.5 bg-primary text-white text-xs font-semibold rounded shadow hover:bg-primary-container transition flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">api</span>
+            <span>REST API Catalog</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Dataset Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 text-xs">
+        <div class="p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
+          <span class="text-[10px] text-on-surface-variant uppercase font-bold block">Cataloged Sources</span>
+          <span class="text-2xl font-bold font-mono text-primary mt-1 block">10</span>
+          <span class="text-[10px] text-secondary font-bold">100% De-Identified Data</span>
+        </div>
+        <div class="p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
+          <span class="text-[10px] text-on-surface-variant uppercase font-bold block">Government Bodies</span>
+          <span class="text-2xl font-bold font-mono text-secondary mt-1 block">MoSPI / IMD</span>
+          <span class="text-[10px] text-on-surface-variant">Census, ICMR-NIOH, DISH</span>
+        </div>
+        <div class="p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
+          <span class="text-[10px] text-on-surface-variant uppercase font-bold block">Scientific Satellites</span>
+          <span class="text-2xl font-bold font-mono text-tertiary mt-1 block">NASA / ESA</span>
+          <span class="text-[10px] text-on-surface-variant">TEMIS &amp; Aura OMI UV</span>
+        </div>
+        <div class="p-4 bg-surface-container-lowest rounded border border-outline-variant/40 shadow-sm">
+          <span class="text-[10px] text-on-surface-variant uppercase font-bold block">Privacy Compliance</span>
+          <span class="text-2xl font-bold font-mono text-emerald-700 mt-1 block">Zero PII</span>
+          <span class="text-[10px] text-secondary font-bold">DPDP Act 2023 Attested</span>
+        </div>
+      </div>
+
+      <!-- Datasets Filter & Grid -->
+      <div class="bg-surface-container-lowest p-6 rounded border border-outline-variant/50 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant/30 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">folder_special</span>
+            <h3 class="font-bold text-sm text-primary">All 10 Dedicated Source Folders</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-[11px]" id="dataset-filter-tabs">
+            <button onclick="filterDatasets('ALL')" class="dataset-tab-btn px-2.5 py-1 rounded font-bold bg-primary text-white">All (10)</button>
+            <button onclick="filterDatasets('Socio-Economic')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">Labor Hours</button>
+            <button onclick="filterDatasets('Industrial Hygiene')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">Noise JEM</button>
+            <button onclick="filterDatasets('Demographics')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">Census 2011</button>
+            <button onclick="filterDatasets('Environmental UV')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">TEMIS UV</button>
+            <button onclick="filterDatasets('Satellite UV')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">OMI UV</button>
+            <button onclick="filterDatasets('Climate Projection')" class="dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container">CMIP6</button>
+          </div>
+        </div>
+
+        <div id="datasets-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <!-- Dynamically populated from STATIC_DATA.datasets -->
+        </div>
+      </div>
+    </section>
     <section id="section-login" class="tab-section hidden">
       <div class="max-w-xl mx-auto bg-surface-container-lowest p-8 rounded border border-outline-variant/50 shadow-md">
         <!-- Official Crest -->
@@ -1101,8 +1281,11 @@
   </main>
 
   <!-- ===================================================================== -->
-  <!-- OFFICIAL FOOTER & STATUTORY ATTESTATION -->
-  <!-- ===================================================================== -->
+
+      </div>
+    </main>
+  </div>
+
   <footer class="bg-surface-container-low border-t border-outline-variant/40 text-on-surface-variant text-xs py-8">
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-4">
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -1132,6 +1315,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===================================================================== -->
+
 
   <!-- ===================================================================== -->
   <!-- MODAL 1: FORM 5 CERTIFICATE OF MEDICAL EXAMINATION (GUJARAT OSH) -->
@@ -1194,12 +1380,21 @@
         </div>
       </div>
 
-      <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+      <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
         <span class="text-[11px] text-slate-500 font-mono">Digitally attested with DISH Gujarat Signature</span>
-        <button onclick="window.print()" class="px-4 py-1.5 bg-primary text-white text-xs font-semibold rounded hover:bg-primary-container transition flex items-center gap-1">
-          <span class="material-symbols-outlined text-[16px]">print</span>
-          <span>Print Certificate</span>
-        </button>
+        <div class="flex items-center gap-2">
+          <button onclick="downloadForm5()" class="px-3 py-1.5 bg-secondary text-white text-xs font-semibold rounded hover:bg-secondary-container hover:text-primary transition flex items-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Download Certificate</span>
+          </button>
+          <button onclick="printForm5()" class="px-3 py-1.5 bg-primary text-white text-xs font-semibold rounded hover:bg-primary-container transition flex items-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Print Official Form 5</span>
+          </button>
+          <button onclick="closeForm5Modal()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold rounded transition">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1239,17 +1434,28 @@
         <pre id="modal-fhir-json" class="bg-slate-900 text-emerald-400 p-3 rounded text-[11px] font-mono overflow-x-auto max-h-48"></pre>
       </div>
 
-      <div class="mt-4 pt-3 border-t border-slate-200 flex justify-end">
-        <button onclick="closeAbhaPublishedModal()" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded">
-          Close Receipt
+      <div class="mt-4 pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="printAbhaReceipt()" class="px-3 py-1.5 bg-primary text-white text-xs font-semibold rounded hover:bg-primary-container transition flex items-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Print Official Receipt</span>
+          </button>
+          <button onclick="downloadFhirJson()" class="px-3 py-1.5 bg-secondary text-white text-xs font-semibold rounded hover:bg-secondary-container hover:text-primary transition flex items-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Download FHIR JSON</span>
+          </button>
+          <button onclick="sendWorkerSmsReceipt()" class="px-3 py-1.5 bg-surface-container hover:bg-surface-container-high text-primary border border-outline-variant/40 text-xs font-semibold rounded transition flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">sms</span>
+            <span>Issue SMS Receipt</span>
+          </button>
+        </div>
+        <button onclick="closeAbhaPublishedModal()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold rounded transition">
+          Close
         </button>
       </div>
     </div>
   </div>
 
-  <!-- ===================================================================== -->
-  <!-- MODAL 3: EMERGENCY HELP & SUPPORT HELPLINE -->
-  <!-- ===================================================================== -->
   <div id="modal-support" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="modal-content-box bg-white max-w-xl w-full rounded p-6 shadow-2xl border border-slate-300 max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
@@ -1313,8 +1519,8 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- MODAL 4: DPDP ACT 2023 SECURITY & DATA PRIVACY AUDIT -->
-  <!-- ===================================================================== -->
+
+
   <div id="modal-security" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="modal-content-box bg-white max-w-xl w-full rounded p-6 shadow-2xl border border-slate-300">
       <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
@@ -1347,6 +1553,7 @@
     </div>
   </div>
 
+
   <!-- Enterprise Toast Notification Container -->
   <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
@@ -1357,18 +1564,9 @@
     // Global Application State
     let state = {
       lang: 'en',
-      activeTab: (function() {
-        const init = "{{ initial_view or '' }}";
-        if (!init || init.startsWith("{" + "{")) {
-          const urlParams = new URLSearchParams(window.location.search);
-          const tabParam = urlParams.get('tab') || window.location.hash.replace('#', '');
-          const validTabs = ['worker', 'site', 'van', 'district', 'research', 'facilities', 'login'];
-          return validTabs.includes(tabParam) ? tabParam : 'worker';
-        }
-        return init;
-      })(),
       theme: localStorage.getItem('workcheck_theme') || 'light',
       currentUser: JSON.parse(localStorage.getItem('workcheck_user')) || null,
+      activeTab: 'login',
       workers: [],
       currentWorker: null,
       sites: [],
@@ -1377,7 +1575,8 @@
       selectedVanWorker: null,
       facilities: [],
       silicaAssays: [],
-      timerSeconds: 1125, // 18m 45s
+      datasets: [],
+      timerSeconds: 1125,
       timerRunning: true,
       timerInterval: null,
       map: null,
@@ -1427,6 +1626,18 @@
         { name: "Bhachau Community Health Centre", tier: "CHC", taluka: "Bhachau", xray: true, spiro: true, audio: false, lab: true, cbnaat: false, amb108: true },
         { name: "BOCW Dhanvantari Rath #1 (Mundra/Kandla)", tier: "Mobile Medical Van", taluka: "Mundra", xray: true, spiro: true, audio: true, lab: true, cbnaat: false, amb108: true },
         { name: "BOCW Dhanvantari Rath #2 (Little Rann Salt)", tier: "Mobile Medical Van", taluka: "Rapar", xray: true, spiro: true, audio: false, lab: true, cbnaat: false, amb108: true }
+      ],
+      datasets: [
+        { id: 1, name: "PLFS Microdata (Worker Hours)", folder: "01_plfs_worker_hours", category: "Socio-Economic", source: "MoSPI Microdata Portal", url: "https://microdata.gov.in/NADA/index.php/catalog/292/get-microdata", license: "OGD India", file: "plfs_kachchh_worker_hours.csv", rows: 6, why: "Only official microdata route for unorganized weekly work-hours estimation (Kachchh code 468)." },
+        { id: 2, name: "noiseJEM Job Exposure Matrix", folder: "02_noisejem_job_levels", category: "Industrial Hygiene", source: "Univ. of Michigan", url: "https://noisejem.sph.umich.edu/about.html", license: "CC BY 4.0", file: "noisejem_occupational_noise_by_job.csv", rows: 7, why: "Empirical occupational noise distributions (8h TWA, Lpeak) by specific job role." },
+        { id: 3, name: "Census 2011 Taluka Workers", folder: "03_census_2011_kachchh_taluka_workers", category: "Demographics", source: "Census India Table B-Series", url: "https://censusindia.gov.in/nada/index.php/catalog/12722", license: "OGD India", file: "census_2011_kachchh_taluka_workers.csv", rows: 10, why: "Exact main vs marginal worker totals across all 10 Kachchh talukas for demographic denominators." },
+        { id: 4, name: "TEMIS UV Radiation Archive", folder: "04_temis_uv_radiation", category: "Environmental UV", source: "KNMI / ESA TEMIS Archive", url: "https://www.temis.nl/uvradiation/UVarchive.php", license: "CC BY 4.0", file: "temis_uv_radiation_bhuj_kachchh.csv", rows: 6, why: "Time series of clear-sky & aerosol-adjusted UV Index for Bhuj coordinates." },
+        { id: 5, name: "OMI Daily Erythemal UV", folder: "05_omi_uv_erythemal", category: "Satellite UV", source: "NASA / FMI Aura OMI", url: "https://omi.fmi.fi/products.html", license: "NASA Open Data", file: "omi_daily_erythemal_uv_kachchh.csv", rows: 5, why: "Daily erythemal UV dose (J/m²) by satellite grid pixel for Kachchh industrial clusters." },
+        { id: 6, name: "CMIP6 Gridded Labour Capacity", folder: "06_cmip6_gridded_labour_capacity", category: "Climate Projection", source: "Lancet Countdown / Zenodo", url: "https://zenodo.org/records/21636524", license: "CC BY 4.0", file: "cmip6_kachchh_labour_capacity_projections.csv", rows: 6, why: "Multi-model ensemble projections showing heavy work capacity loss through 2050." },
+        { id: 7, name: "Occupational Heat Benchmarks", folder: "07_worker_study_reference_data", category: "Clinical Evidence", source: "Venugopal 2020, Hansson 2019, Dutta 2021", url: "Peer-Reviewed Journals", license: "Academic Fair Use", file: "worker_studies_deidentified_clinical_benchmarks.csv", rows: 3, why: "De-identified empirical rates of acute kidney injury and cross-shift eGFR loss." },
+        { id: 8, name: "NIOH Little Rann Salt Workers", folder: "08_nioh_salt_worker_report", category: "Occupational Health", source: "ICMR-NIOH Ahmedabad", url: "ICMR Research Report", license: "ICMR Research", file: "nioh_little_rann_salt_workers_health_hazards.csv", rows: 5, why: "Prevalence of pterygium, dermatitis, and respiratory symptoms in Agariya salt workers." },
+        { id: 9, name: "Kachchh Health & Worker Records", folder: "09_kachchh_health_and_worker_records", category: "Administration", source: "CDHO, BOCW Board, ESIC, DISH", url: "Government of Gujarat", license: "State Govt Open Data", file: "kachchh_administrative_health_and_worker_records.csv", rows: 6, why: "Aggregated registered unorganized workers and active Dhanvantari Rath routes." },
+        { id: 10, name: "IMD Station Ground Truth Data", folder: "10_imd_station_bhuj_kandla", category: "Weather Validation", source: "India Meteorological Department", url: "IMD Portal", license: "IMD Weather Data", file: "imd_station_bhuj_kandla_validation.csv", rows: 5, why: "Station vs model validation proving ambient temperature bias is within ±0.6°C." }
       ]
     };
 
@@ -1434,6 +1645,18 @@
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme(state.theme);
       initClock();
+      
+      // Strict Authentication Gate
+      state.currentUser = JSON.parse(localStorage.getItem('workcheck_user')) || null;
+      if (!state.currentUser) {
+        state.activeTab = 'login';
+      } else {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabParam = urlParams.get('tab') || window.location.hash.replace('#', '');
+        const validTabs = ['worker', 'site', 'van', 'district', 'research', 'facilities', 'datasets', 'login'];
+        state.activeTab = validTabs.includes(tabParam) ? tabParam : (state.currentUser.targetTab || 'worker');
+      }
+
       updateAuthUI();
       switchTab(state.activeTab);
       await fetchInitialData();
@@ -1443,10 +1666,7 @@
     // Enterprise Toast Notification
     function showToast(message, type = 'info') {
       const container = document.getElementById('toast-container');
-      if (!container) {
-        console.log(`[Toast ${type}] ${message}`);
-        return;
-      }
+      if (!container) return;
       const toast = document.createElement('div');
       let bg = "bg-primary text-on-primary";
       let icon = "info";
@@ -1466,6 +1686,12 @@
         toast.classList.add('opacity-0', 'translate-y-2');
         setTimeout(() => toast.remove(), 300);
       }, 3500);
+    }
+
+    // Sidebar Mobile Toggle
+    function toggleSidebar() {
+      const sidebar = document.getElementById('app-sidebar');
+      if (sidebar) sidebar.classList.toggle('hidden');
     }
 
     // Theme Management (Light vs Dark)
@@ -1501,13 +1727,19 @@
       }, 1000);
     }
 
-    // Tab Navigation
+    // Tab Navigation & Authentication Gate
     function switchTab(tabId) {
+      // Gate all tabs except login when unauthenticated
+      if (!state.currentUser && tabId !== 'login') {
+        showToast("Access Restricted: Please sign in with your institutional credentials to access this system.", "warning");
+        tabId = 'login';
+      }
+
       state.activeTab = tabId;
       document.querySelectorAll('.tab-section').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.nav-tab-btn').forEach(btn => {
-        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container-lowest');
-        btn.classList.add('border-transparent', 'text-on-surface-variant');
+        btn.classList.remove('bg-primary', 'text-white', 'shadow-sm', 'font-bold');
+        btn.classList.add('text-on-surface-variant');
       });
 
       const sec = document.getElementById(`section-${tabId}`);
@@ -1515,8 +1747,18 @@
 
       const btn = document.getElementById(`nav-tab-${tabId}`);
       if (btn) {
-        btn.classList.add('border-primary', 'text-primary', 'font-bold', 'bg-surface-container-lowest');
-        btn.classList.remove('border-transparent', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-white', 'shadow-sm', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+      }
+
+      if (history.replaceState) {
+        history.replaceState(null, null, `#${tabId}`);
+      }
+
+      // Close mobile sidebar on selection
+      if (window.innerWidth < 768) {
+        const sidebar = document.getElementById('app-sidebar');
+        if (sidebar && !sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
       }
 
       if (tabId === 'district' && !state.map) {
@@ -1533,9 +1775,10 @@
       ['gu', 'hi', 'en'].forEach(l => {
         const b = document.getElementById(`btn-lang-${l}`);
         if (b) {
-          b.className = (l === lang) ? "px-2 py-1 font-bold text-primary transition" : "px-2 py-1 font-medium hover:text-primary transition";
+          b.className = (l === lang) ? "px-1.5 py-1 font-bold text-primary transition" : "px-1.5 py-1 font-medium hover:text-primary transition border-l border-outline-variant/40";
         }
       });
+      showToast(`Interface language set to ${lang.toUpperCase()}`, "info");
     }
 
     // Data Fetch with Seamless Fallback
@@ -1565,6 +1808,9 @@
 
         // 5. Render Facilities
         renderFacilities();
+
+        // 6. Render Public Datasets
+        renderDatasets();
 
         // Initialize First Worker & Site
         if (state.workers.length > 0) await loadWorkerData(state.workers[0].worker_id);
@@ -1639,6 +1885,7 @@
     async function handleSymptomSubmit() {
       const fb = document.getElementById('symptom-feedback');
       fb.classList.remove('hidden');
+      showToast("Daily occupational symptoms logged. Dhanvantari Rath alert updated.", "success");
       setTimeout(() => {
         fb.classList.add('hidden');
         document.getElementById('symp-dark-urine').checked = false;
@@ -1699,19 +1946,19 @@
       const dirTitle = document.getElementById('beacon-directive-title');
       const dirCycle = document.getElementById('beacon-directive-cycle');
 
-      bulb.className = "relative w-28 h-28 rounded-full flex flex-col items-center justify-center text-white transition-all duration-500";
+      bulb.className = "w-20 h-20 rounded-full flex items-center justify-center transition-all duration-500 shadow-lg text-white font-bold text-xs uppercase";
       if (lampColor === 'GREEN') {
         bulb.classList.add('bg-secondary', 'lamp-glow-green');
         bulbText.innerText = "GREEN";
-        dirTitle.innerText = `GREEN (NORMAL) — WBGT ${wbgt.toFixed(1)}°C`;
+        dirTitle.innerText = `NORMAL WORKING CONDITIONS (WBGT ${wbgt.toFixed(1)}°C)`;
       } else if (lampColor === 'YELLOW') {
-        bulb.classList.add('bg-amber-500', 'lamp-glow-yellow');
+        bulb.classList.add('bg-amber-400', 'lamp-glow-yellow', 'text-slate-900');
         bulbText.innerText = "YELLOW";
-        dirTitle.innerText = `YELLOW ALERT — Moderate Heat (WBGT ${wbgt.toFixed(1)}°C)`;
+        dirTitle.innerText = `CAUTION — Moderate Heat Strain (WBGT ${wbgt.toFixed(1)}°C)`;
       } else if (lampColor === 'ORANGE') {
-        bulb.classList.add('bg-orange-600', 'lamp-glow-orange');
+        bulb.classList.add('bg-tertiary', 'lamp-glow-orange');
         bulbText.innerText = "ORANGE";
-        dirTitle.innerText = `ORANGE ALERT — Severe Heat Strain (WBGT ${wbgt.toFixed(1)}°C)`;
+        dirTitle.innerText = `WARNING — Mandatory Water & Rest Schedule (WBGT ${wbgt.toFixed(1)}°C)`;
       } else {
         bulb.classList.add('bg-error', 'lamp-glow-red');
         bulbText.innerText = "RED";
@@ -1751,10 +1998,11 @@
 
     function resetSiteTimer() {
       state.timerSeconds = 1800;
+      showToast("ACGIH Work-Rest Timer reset to 30:00.", "info");
     }
 
     function handleComplianceChange() {
-      // Compliance update stub
+      showToast("Worksite potable water & shade compliance logged.", "success");
     }
 
     // Van Queue & Triage
@@ -1805,7 +2053,7 @@
         if (b) b.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface";
       });
       const active = document.getElementById(route === 'ALL' ? 'van-tab-all' : (route === 'ROUTE_1_STATUTORY' ? 'van-tab-r1' : (route === 'ROUTE_2_EXPOSURE' ? 'van-tab-r2' : 'van-tab-r3')));
-      if (active) active.className = "px-2.5 py-1 rounded font-bold bg-primary text-on-primary";
+      if (active) active.className = "px-2.5 py-1 rounded font-bold bg-primary text-white";
       loadVanTriageQueue(route);
     }
 
@@ -1830,10 +2078,11 @@
       }
     }
 
+    // 1-Click Publish to ABHA Health Locker
     async function publishToAbhaDirect() {
       if (!state.selectedVanWorker) return;
       const btn = document.getElementById('btn-van-publish');
-      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Publishing...</span>';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Publishing to ABHA...</span>';
       btn.disabled = true;
 
       setTimeout(() => {
@@ -1848,21 +2097,61 @@
           resourceType: "Bundle",
           type: "document",
           id: `FHIR-ABDM-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
+          timestamp: new Date().toISOString(),
           entry: [
-            { resource: { resourceType: "DiagnosticReport", code: "Occupational Medical Examination", performer: "Dr. Rajesh V. Dave (GMC-4081)" } },
+            { resource: { resourceType: "DiagnosticReport", code: "Occupational Medical Examination (Gujarat Rule 9)", performer: "Dr. Rajesh V. Dave (GMC-4081)" } },
             { resource: { resourceType: "Observation", code: "FEV1/FVC Ratio", valueQuantity: { value: 0.78, unit: "ratio" } } },
-            { resource: { resourceType: "Observation", code: "Serum Creatinine", valueQuantity: { value: 1.05, unit: "mg/dL" } } }
+            { resource: { resourceType: "Observation", code: "Serum Creatinine", valueQuantity: { value: 1.05, unit: "mg/dL" } } },
+            { resource: { resourceType: "Observation", code: "Chest X-Ray ILO Profusion", valueCodeableConcept: { text: "0/0 Normal" } } }
           ]
         };
         document.getElementById('modal-fhir-json').innerText = JSON.stringify(fhirBundle, null, 2);
         document.getElementById('modal-abha-published').classList.remove('hidden');
-      }, 800);
+        showToast(`Clinical examination published to ABHA Locker for ${state.selectedVanWorker.worker_name}!`, "success");
+      }, 700);
+    }
+
+    // ABHA Receipt Action Functions
+    function printAbhaReceipt() {
+      window.print();
+    }
+
+    function downloadFhirJson() {
+      if (!state.selectedVanWorker) return;
+      const fhirBundle = {
+        resourceType: "Bundle",
+        type: "document",
+        id: `FHIR-ABDM-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
+        timestamp: new Date().toISOString(),
+        entry: [
+          { resource: { resourceType: "Patient", name: [{ text: state.selectedVanWorker.worker_name }], identifier: [{ system: "https://healthid.ndhm.gov.in", value: state.selectedVanWorker.abha_address }] } },
+          { resource: { resourceType: "DiagnosticReport", code: "Occupational Medical Examination (Gujarat OSH Rule 9)", performer: "Dr. Rajesh V. Dave (GMC-4081)" } },
+          { resource: { resourceType: "Observation", code: "FEV1/FVC Ratio", valueQuantity: { value: 0.78, unit: "ratio" } } },
+          { resource: { resourceType: "Observation", code: "Serum Creatinine", valueQuantity: { value: 1.05, unit: "mg/dL" } } }
+        ]
+      };
+      const blob = new Blob([JSON.stringify(fhirBundle, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `ABHA_FHIR_Receipt_${state.selectedVanWorker.worker_id}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("FHIR JSON Receipt downloaded.", "success");
+    }
+
+    function sendWorkerSmsReceipt() {
+      if (!state.selectedVanWorker) return;
+      showToast(`SMS receipt dispatched to ${state.selectedVanWorker.worker_name}: 'ABHA Exam Token OCC-2025-${state.selectedVanWorker.worker_id.slice(-4)} recorded successfully.'`, "success");
     }
 
     function closeAbhaPublishedModal() {
       document.getElementById('modal-abha-published').classList.add('hidden');
     }
 
+    // Form 5 Modal Functions
     function openForm5Modal() {
       document.getElementById('modal-form-5').classList.remove('hidden');
     }
@@ -1871,6 +2160,34 @@
       document.getElementById('modal-form-5').classList.add('hidden');
     }
 
+    function printForm5() {
+      window.print();
+    }
+
+    function downloadForm5() {
+      const text = `GOVERNMENT OF GUJARAT - FORM 5 CERTIFICATE OF FITNESS
+[Rule 9(1) of Gujarat OSH Rules 2025]
+Serial No: GJ-KCH-OSH-2025-0814
+Worker: Ramjibhai S. Koli (Age: 48, Male)
+e-Shram UAN: 9842-XXXX-1001 | ABHA: ramjibhai.kutch@abdm
+Trade: Salt Pan Brine Raking & Stacking (Little Rann Salt Cluster #3)
+Medical Opinion: FIT for employment in hazardous processes subject to mandatory 30-min shaded rest breaks during WBGT > 28°C.
+Certifying Surgeon: Dr. Rajesh V. Dave, MBBS, DPH (GMC-4081)
+Date of Exam: 15 April 2025 | Next Renewal: 14 April 2026
+Digitally Attested by DISH Gujarat.`;
+      const blob = new Blob([text], { type: "text/plain" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Form_5_Fitness_Certificate_Ramjibhai_Koli.txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("Form 5 Fitness Certificate downloaded.", "success");
+    }
+
+    // Support Modal Functions
     function openSupportModal() {
       document.getElementById('modal-support').classList.remove('hidden');
     }
@@ -1894,13 +2211,14 @@
       const conf = document.getElementById('ticket-confirmation');
       conf.innerText = `✓ Ticket ${tktId} generated. Forwarded to DDO Kachchh Grievance Cell.`;
       conf.classList.remove('hidden');
+      showToast(`Grievance Ticket ${tktId} created successfully.`, "success");
       setTimeout(() => {
         closeSupportModal();
         conf.classList.add('hidden');
       }, 3000);
     }
 
-    // Leaflet Map & Chart for District View
+    // District Map & Charts
     function initDistrictMap() {
       if (state.map) return;
       state.map = L.map('district-map').setView([23.2420, 69.6669], 9);
@@ -1956,11 +2274,33 @@
           responsive: true,
           maintainAspectRatio: false,
           plugins: { legend: { display: false } },
-          scales: {
-            y: { beginAtZero: true, max: 100 }
-          }
+          scales: { y: { beginAtZero: true, max: 100 } }
         }
       });
+    }
+
+    function exportDistrictData() {
+      const rows = [
+        ["taluka_name", "monitored_workers", "active_nodes", "avg_wbgt_c", "lamp_status", "referrals_count"],
+        ["Bhuj", "182415", "12", "28.2", "YELLOW", "42"],
+        ["Gandhidham", "124800", "10", "29.8", "YELLOW", "56"],
+        ["Mundra", "62410", "8", "29.4", "YELLOW", "68"],
+        ["Anjar", "102850", "6", "29.1", "YELLOW", "38"],
+        ["Rapar (Little Rann)", "98450", "5", "31.8", "RED", "94"],
+        ["Bhachau", "78500", "4", "29.5", "YELLOW", "32"],
+        ["Mandvi", "84120", "3", "28.8", "YELLOW", "24"],
+        ["Abdasa", "48900", "4", "30.1", "ORANGE", "45"],
+        ["Nakhatrana", "62100", "2", "28.5", "YELLOW", "18"],
+        ["Lakhpat", "28200", "2", "29.0", "YELLOW", "12"]
+      ];
+      let csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
+      const link = document.createElement("a");
+      link.setAttribute("href", encodeURI(csvContent));
+      link.setAttribute("download", "Kachchh_District_Occupational_Risk_Export_2026.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast("District risk summary exported as CSV.", "success");
     }
 
     // BME280 Mask Waveform Chart
@@ -1989,7 +2329,7 @@
       });
     }
 
-    // Render Silica Assays Table
+    // Silica Assays Table
     function renderSilicaAssays() {
       const tbody = document.getElementById('silica-assays-tbody');
       if (!tbody) return;
@@ -2008,7 +2348,7 @@
       });
     }
 
-    // Render Facilities Cards
+    // Healthcare Facilities Cards
     function renderFacilities() {
       const container = document.getElementById('facilities-grid');
       if (!container) return;
@@ -2052,7 +2392,58 @@
       });
     }
 
-    // Official Login & Auth
+    // Public Datasets Catalog Functions
+    function renderDatasets() {
+      const container = document.getElementById('datasets-grid');
+      if (!container) return;
+      container.innerHTML = '';
+      STATIC_DATA.datasets.forEach(d => {
+        const card = document.createElement('div');
+        card.className = "dataset-card p-4 rounded border border-outline-variant/40 bg-surface-container-low shadow-sm space-y-2.5";
+        card.setAttribute('data-category', d.category);
+
+        card.innerHTML = `
+          <div class="flex items-start justify-between">
+            <div>
+              <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-primary/10 text-primary uppercase">${d.category}</span>
+              <h4 class="font-bold text-sm text-primary mt-1">${d.name}</h4>
+              <span class="text-[10px] text-on-surface-variant font-mono">Folder: final_dataset/public_downloads/${d.folder}/</span>
+            </div>
+            <span class="material-symbols-outlined text-secondary text-[22px]">dataset</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">${d.why}</p>
+          <div class="pt-2 border-t border-outline-variant/30 text-[11px] grid grid-cols-2 gap-1 font-mono text-on-surface-variant">
+            <span>Provider: <b>${d.source}</b></span>
+            <span>License: <b>${d.license}</b></span>
+          </div>
+          <div class="pt-1 flex items-center justify-between">
+            <span class="text-[10px] text-emerald-700 font-bold">✓ DPDP Compliant (0 PII)</span>
+            <a href="${d.url}" target="_blank" class="text-xs font-bold text-primary hover:underline flex items-center gap-1">
+              <span>View Source</span>
+              <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+            </a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterDatasets(category) {
+      document.querySelectorAll('.dataset-tab-btn').forEach(btn => {
+        btn.className = "dataset-tab-btn px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface bg-surface-container";
+      });
+      event.target.className = "dataset-tab-btn px-2.5 py-1 rounded font-bold bg-primary text-white";
+
+      document.querySelectorAll('.dataset-card').forEach(card => {
+        if (category === 'ALL' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Official Login & Authentication Gate
     let selectedLoginRole = 'DDO';
     function selectLoginRole(role) {
       selectedLoginRole = role;
@@ -2111,8 +2502,8 @@
       state.currentUser = user;
       localStorage.setItem('workcheck_user', JSON.stringify(user));
       updateAuthUI();
-      showToast(`Welcome, ${user.name}! Authenticated with role: ${user.badge}`, "success");
-      switchTab(user.targetTab);
+      showToast(`Welcome, ${user.name}! Access Granted: ${user.badge}`, "success");
+      switchTab(user.targetTab || 'worker');
     }
 
     function updateAuthUI() {
@@ -2120,20 +2511,55 @@
       const badgeEl = document.getElementById('user-session-badge');
       const actionEl = document.getElementById('btn-auth-action');
 
+      const sideNameEl = document.getElementById('sidebar-user-name');
+      const sideBadgeEl = document.getElementById('sidebar-user-badge');
+      const sideSignoutBtn = document.getElementById('btn-sidebar-signout');
+      const sideSigninBtn = document.getElementById('btn-sidebar-signin');
+      const lockBanner = document.getElementById('sidebar-lock-banner');
+      const lockIndicators = document.querySelectorAll('.lock-indicator');
+
       if (state.currentUser) {
         if (nameEl) nameEl.innerText = state.currentUser.name;
         if (badgeEl) badgeEl.innerText = state.currentUser.badge;
         if (actionEl) {
           actionEl.innerText = "Sign Out";
+          actionEl.className = "ml-1 px-2 py-0.5 bg-red-600 hover:bg-red-700 text-white rounded font-bold text-[10px] transition flex items-center gap-0.5 shadow-sm";
+          actionEl.innerHTML = '<span class="material-symbols-outlined text-[12px]">logout</span><span>Sign Out</span>';
           actionEl.onclick = handleSignOut;
         }
+
+        if (sideNameEl) sideNameEl.innerText = state.currentUser.name;
+        if (sideBadgeEl) sideBadgeEl.innerText = state.currentUser.badge;
+        if (sideSignoutBtn) sideSignoutBtn.classList.remove('hidden');
+        if (sideSigninBtn) sideSigninBtn.classList.add('hidden');
+        if (lockBanner) lockBanner.classList.add('hidden');
+        lockIndicators.forEach(el => el.classList.add('hidden'));
+
+        document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+          btn.classList.remove('opacity-60');
+        });
       } else {
         if (nameEl) nameEl.innerText = "Guest";
         if (badgeEl) badgeEl.innerText = "Public";
         if (actionEl) {
           actionEl.innerText = "Sign In";
+          actionEl.className = "ml-1 px-2 py-0.5 bg-primary hover:bg-primary-container text-white rounded font-bold text-[10px] transition flex items-center gap-0.5 shadow-sm";
+          actionEl.innerHTML = '<span class="material-symbols-outlined text-[12px]">login</span><span>Sign In</span>';
           actionEl.onclick = () => switchTab('login');
         }
+
+        if (sideNameEl) sideNameEl.innerText = "Guest User";
+        if (sideBadgeEl) sideBadgeEl.innerText = "Institutional Access Required";
+        if (sideSignoutBtn) sideSignoutBtn.classList.add('hidden');
+        if (sideSigninBtn) sideSigninBtn.classList.remove('hidden');
+        if (lockBanner) lockBanner.classList.remove('hidden');
+        lockIndicators.forEach(el => el.classList.remove('hidden'));
+
+        document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+          if (btn.id !== 'nav-tab-login') {
+            btn.classList.add('opacity-60');
+          }
+        });
       }
     }
 
@@ -2141,8 +2567,8 @@
       state.currentUser = null;
       localStorage.removeItem('workcheck_user');
       updateAuthUI();
-      showToast("Signed out from WorkCheck Kachchh.", "info");
-      switchTab('worker');
+      showToast("Signed out from WorkCheck Kachchh. Access locked.", "info");
+      switchTab('login');
     }
   </script>
 </body>

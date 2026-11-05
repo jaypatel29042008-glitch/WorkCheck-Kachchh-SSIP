@@ -1,0 +1,7 @@
+decade,climate_scenario,region,heavy_work_capacity_pct,loss_relative_to_1995,annual_hours_above_wbgt_32,projected_rest_req_pct
+2010-2019,Historical Baseline,"Kachchh, Gujarat",82.4,0.0,420,25.0
+2020-2029,SSP2-4.5 (Current),"Kachchh, Gujarat",74.8,-7.6,610,32.5
+2030-2039,SSP2-4.5 (Middle),"Kachchh, Gujarat",67.2,-15.2,840,41.0
+2030-2039,SSP5-8.5 (High),"Kachchh, Gujarat",62.5,-19.9,1020,48.0
+2040-2049,SSP2-4.5 (Middle),"Kachchh, Gujarat",61.0,-21.4,1080,50.0
+2040-2049,SSP5-8.5 (High),"Kachchh, Gujarat",53.2,-29.2,1360,62.0

@@ -1,0 +1,8 @@
+job_code,job_title,industry,mean_dBA_8h_twa,sd_dBA,p50_dBA,p95_dBA,l_peak_dBC,exceeds_85dBA_action,exceeds_90dBA_pel
+NJ-0810-CR,Crusher Operator,Stone Crushing,94.2,4.6,94.0,101.5,118.2,YES,YES
+NJ-0810-DR,Pneumatic Drill Operator,Quarrying,98.6,5.2,99.0,106.8,124.5,YES,YES
+NJ-2394-BM,Ball Mill Feeder,Bentonite & Minerals,91.8,3.8,92.0,97.5,112.0,YES,YES
+NJ-5224-DK,Dock Crane & Winch Man,Port Terminal,87.4,4.1,87.0,93.8,108.5,YES,NO
+NJ-5224-LD,Manual Stevedore / Loader,Port Yard,84.2,3.5,84.0,89.2,104.0,NO,NO
+NJ-0893-SR,Salt Pan Raker,Solar Salt Works,72.5,3.1,72.0,77.0,92.0,NO,NO
+NJ-0893-PP,Diesel Pump Attendant,Salt Brine Pumping,88.6,4.0,88.5,94.8,110.2,YES,NO
